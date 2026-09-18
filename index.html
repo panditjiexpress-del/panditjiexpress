@@ -1577,26 +1577,39 @@
       </div>
     </section>
 
-    <!-- App Promo Section (from Screenshot) -->
-    <section class="app-promo-section">
+    </div> <!-- End .desktop-only-section -->
+
+    <!-- App Promo Section with Subtle Blur & Coming Soon Banner -->
+    <section class="app-promo-section" aria-label="Mobile App Announcement">
       <div class="container">
-        <div class="app-promo-inner">
-          <div>
-            <h3 class="app-promo-title">Pooja Booking, Now in Your Pocket</h3>
-            <p class="app-promo-sub">Download the Pandit Ji Express App for instant priest availability &amp; samagri orders.</p>
+        <div class="app-promo-wrapper">
+          <div class="app-promo-inner app-promo-blurred">
+            <div>
+              <h3 class="app-promo-title">Pooja Booking, Now in Your Pocket</h3>
+              <p class="app-promo-sub">Download the Pandit Ji Express App for instant priest availability &amp; samagri orders.</p>
+            </div>
+            <div class="app-store-badges">
+              <a href="javascript:void(0)" class="store-badge-btn" tabindex="-1" aria-disabled="true">
+                <svg class="pj-icon" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Google Play
+              </a>
+              <a href="javascript:void(0)" class="store-badge-btn" tabindex="-1" aria-disabled="true">
+                <span></span> App Store
+              </a>
+            </div>
           </div>
-          <div class="app-store-badges">
-            <a href="javascript:void(0)" onclick="alert('Pandit Ji Express App is available on Google Play & App Store!')" class="store-badge-btn">
-              <svg class="pj-icon" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> Google Play
-            </a>
-            <a href="javascript:void(0)" onclick="alert('Pandit Ji Express App is available on Google Play & App Store!')" class="store-badge-btn">
-              <span></span> App Store
-            </a>
+          <!-- Centered High-End Coming Soon Overlay -->
+          <div class="app-promo-overlay" aria-hidden="true">
+            <div class="app-coming-soon-card">
+              <span class="app-cs-tag">
+                <span class="app-cs-pulse"></span>
+                COMING SOON
+              </span>
+              <span class="app-cs-text">Mobile App for Android &amp; iOS</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    </div> <!-- End .desktop-only-section -->
   </main>
 
   <!-- Site Footer with Consistent NAP -->
