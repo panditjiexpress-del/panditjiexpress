@@ -7017,30 +7017,32 @@ nav[aria-label="Breadcrumb"] li {
     background: #FFFFFF;
     color: #541419;
     border-radius: 999px;
-    padding: 0.7rem 0.5rem;
-    font-size: 0.78rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
     font-weight: 800;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .app-ready-wa-btn {
     background: #25D366;
     color: #FFFFFF;
     border-radius: 999px;
-    padding: 0.7rem 0.5rem;
-    font-size: 0.78rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
     font-weight: 800;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   /* BOTTOM NAVIGATION BAR (5 TABS) */
