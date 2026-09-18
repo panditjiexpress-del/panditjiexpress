@@ -1,0 +1,11 @@
+{
+  "name": "panditjiexpress",
+  "version": "1.0.0",
+  "description": "Best North Indian Pandit in Bangalore - Pandit Ji Express",
+  "private": true,
+  "scripts": {
+    "dev": "npx -y serve . -p 8080",
+    "deploy": "npx wrangler pages deploy . --project-name panditjiexpress",
+    "deploy:preview": "npx wrangler pages deploy . --project-name panditjiexpress --branch preview"
+  }
+}

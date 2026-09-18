@@ -1,0 +1,12 @@
+# Redirect old pandit pages to Pandit Shyam Sundar (SEO-safe 301)
+/pandits.html              /pandit-shyam-sundar.html  301
+/pandit-rahul-shastri.html /pandit-shyam-sundar.html  301
+
+# Redirect vastu page to services (301 permanent)
+/vastu-shanti-puja-bangalore.html  /services.html  301
+
+# Remove trailing slashes (canonical URL hygiene)
+/index.html                /  301
+
+# www to non-www redirect (set this in Cloudflare DNS too)
+https://www.panditjiexpress.com/*  https://panditjiexpress.com/:splat  301

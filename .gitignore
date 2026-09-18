@@ -1,0 +1,23 @@
+# Node
+node_modules/
+.npm
+npm-debug.log*
+
+# Wrangler
+.wrangler/
+.dev.vars
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
