@@ -1,0 +1,34 @@
+# Master Robots Policy - 100% Crawlable & Indexable (Pandit Ji Express)
+User-agent: *
+Allow: /
+
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search & Generative Engine Crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Internal system paths protection
+Disallow: /scratch/
+Disallow: /.system_generated/
+
+# Master XML Sitemap
+Sitemap: https://panditjiexpress.com/sitemap.xml
+

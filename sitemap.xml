@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ===== TIER 1: Homepage ===== -->
+  <url>
+    <loc>https://panditjiexpress.com/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.com/assets/images/hero-bg-master.jpg</image:loc>
+      <image:title>Best North Indian Pandit in Bangalore - Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+
+  <!-- ===== TIER 2: Core Pillar Pages ===== -->
+  <url>
+    <loc>https://panditjiexpress.com/services.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/pandit-shyam-sundar.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.com/assets/images/pandit-shyam-sundar.jpg</image:loc>
+      <image:title>Pandit Shyam Sundar - Founder & Head Vedic Priest, Pandit Ji Express Bangalore</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/booking.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/samagri.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/gallery.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/blog.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/about.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/contact.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/resources.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/privacy.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- ===== TIER 3: High-Priority Ceremony Landing Pages ===== -->
+  <url>
+    <loc>https://panditjiexpress.com/wedding-pandit-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.com/assets/images/card-marriage.jpg</image:loc>
+      <image:title>Wedding Pandit Bangalore - North Indian Vedic Vivah by Pandit Shyam Sundar</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/griha-pravesh-pooja-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.com/assets/images/card-grihapravesh.jpg</image:loc>
+      <image:title>Griha Pravesh Puja Pandit Bangalore - Housewarming Ceremony by Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/satyanarayan-puja-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/havan-yagna-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/rudrabhishek-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/ganesh-puja-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/durga-puja-navratri-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/vastu-shanti-puja-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <!-- ===== TIER 4: Vedic Sanskar / Life-Event Pages ===== -->
+  <url>
+    <loc>https://panditjiexpress.com/mundan-ceremony-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/naamkaran-ceremony-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/upanayanam-janeu-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/annaprashan-bangalore.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ===== TIER 5: Geo-targeted Locality Landing Pages ===== -->
+  <url>
+    <loc>https://panditjiexpress.com/north-indian-pandit-whitefield.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/north-indian-pandit-hsr-layout.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.com/north-indian-pandit-marathahalli.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
+  <defs>
+    <linearGradient id="maroonGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C2430"/>
+      <stop offset="50%" stop-color="#5C1A21"/>
+      <stop offset="100%" stop-color="#4A1116"/>
+    </linearGradient>
+    <linearGradient id="goldGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF4E6"/>
+      <stop offset="35%" stop-color="#E9CE95"/>
+      <stop offset="70%" stop-color="#E7A33E"/>
+      <stop offset="100%" stop-color="#B8862B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Icon Emblem -->
+  <g transform="translate(4, 4)">
+    <circle cx="28" cy="28" r="27" fill="url(#maroonGradL)" stroke="url(#goldGradL)" stroke-width="2"/>
+    <circle cx="28" cy="28" r="23.5" fill="none" stroke="#E9CE95" stroke-width="0.75" stroke-dasharray="2 1.5"/>
+    <!-- Mango Leaves -->
+    <path d="M 21 20 C 21 13, 25 10, 28 9 C 31 10, 35 13, 35 20 Z" fill="#2E7D32"/>
+    <path d="M 17 22 C 14 16, 18 13, 23 15 C 22 18, 20 21, 17 22 Z" fill="#388E3C"/>
+    <path d="M 39 22 C 42 16, 38 13, 33 15 C 34 18, 36 21, 39 22 Z" fill="#388E3C"/>
+    <!-- Coconut -->
+    <path d="M 23 19 C 23 13, 33 13, 33 19 Z" fill="#8D4F25"/>
+    <circle cx="28" cy="15" r="1" fill="#E7A33E"/>
+    <!-- Kalash Pot Body -->
+    <path d="M 21 21 L 35 21 L 33 24 L 37 30 C 38 35, 34 39, 28 39 C 22 39, 18 35, 19 30 L 23 24 Z" fill="url(#goldGradL)"/>
+    <ellipse cx="28" cy="22" rx="7" ry="1.8" fill="#FBF4E6"/>
+    <!-- Sacred Swastika -->
+    <path d="M 28 26 L 28 34 M 24 30 L 32 30 M 28 26 L 31 26 M 32 30 L 32 33 M 28 34 L 25 34 M 24 30 L 24 27" 
+          stroke="#5C1A21" stroke-width="1.1" stroke-linecap="square" fill="none"/>
+    <!-- Base -->
+    <path d="M 23 39 L 33 39 L 34 41 L 22 41 Z" fill="#B8862B"/>
+  </g>
+
+  <!-- Typography: PANDIT JI -->
+  <text x="68" y="27" font-family="'Eczar', Georgia, 'Times New Roman', serif" font-size="22" font-weight="800" fill="#5C1A21" letter-spacing="1.5">PANDIT JI</text>
+  
+  <!-- Typography: EXPRESS with decorative speed bars -->
+  <g transform="translate(68, 32)">
+    <line x1="0" y1="9" x2="16" y2="9" stroke="#E7A33E" stroke-width="2"/>
+    <text x="22" y="14" font-family="'Karla', -apple-system, sans-serif" font-size="14" font-weight="800" fill="#C1440E" letter-spacing="3.5">EXPRESS</text>
+    <line x1="102" y1="9" x2="118" y2="9" stroke="#E7A33E" stroke-width="2"/>
+  </g>
+
+  <!-- Subtitle Tagline -->
+  <text x="68" y="58" font-family="'Karla', -apple-system, sans-serif" font-size="8.5" font-weight="600" fill="#4A362A" letter-spacing="1">POOJA SAMAGRI • PANDIT • PUJA - AT YOUR DOORSTEP</text>
+</svg>

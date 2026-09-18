@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="maroonGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C2430"/>
+      <stop offset="50%" stop-color="#5C1A21"/>
+      <stop offset="100%" stop-color="#4A1116"/>
+    </linearGradient>
+    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF4E6"/>
+      <stop offset="40%" stop-color="#E9CE95"/>
+      <stop offset="75%" stop-color="#E7A33E"/>
+      <stop offset="100%" stop-color="#B8862B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#maroonGradIcon)" stroke="url(#goldGradIcon)" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#E9CE95" stroke-width="0.75" stroke-dasharray="2 1.5"/>
+  
+  <!-- Mango Leaves -->
+  <path d="M 24 23 C 24 16, 29 13, 32 12 C 35 13, 40 16, 40 23 Z" fill="#2E7D32"/>
+  <path d="M 20 25 C 16 19, 21 15, 27 17 C 26 21, 23 24, 20 25 Z" fill="#388E3C"/>
+  <path d="M 44 25 C 48 19, 43 15, 37 17 C 38 21, 41 24, 44 25 Z" fill="#388E3C"/>
+  
+  <!-- Coconut -->
+  <path d="M 27 22 C 27 16, 37 16, 37 22 Z" fill="#8D4F25"/>
+  <circle cx="32" cy="18" r="1.2" fill="#E7A33E"/>
+  
+  <!-- Kalash Pot Body -->
+  <path d="M 24 24 L 40 24 L 38 27 L 42 34 C 43 40, 39 44, 32 44 C 25 44, 21 40, 22 34 L 26 27 Z" fill="url(#goldGradIcon)"/>
+  <ellipse cx="32" cy="25" rx="8" ry="2" fill="#FBF4E6"/>
+  
+  <!-- Sacred Swastika -->
+  <path d="M 32 30 L 32 38 M 28 34 L 36 34 M 32 30 L 35 30 M 36 34 L 36 37 M 32 38 L 29 38 M 28 34 L 28 31" 
+        stroke="#5C1A21" stroke-width="1.2" stroke-linecap="square" fill="none"/>
+        
+  <!-- Base Pedestal -->
+  <path d="M 26 44 L 38 44 L 39 46 L 25 46 Z" fill="#B8862B"/>
+  
+  <!-- Express Wing Speed Accents -->
+  <path d="M 12 30 L 18 30 M 10 34 L 17 34 M 13 38 L 19 38" stroke="#E7A33E" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 52 30 L 46 30 M 54 34 L 47 34 M 51 38 L 45 38" stroke="#E7A33E" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
