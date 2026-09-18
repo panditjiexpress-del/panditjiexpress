@@ -6250,10 +6250,12 @@ nav[aria-label="Breadcrumb"] li {
   gap: 14px;
 }
 
-.gallery-lightbox-meta h3 {
+.gallery-lightbox-meta h3,
+.gallery-lightbox-meta .lightbox-title {
   color: #FFF;
   font-size: 1.15rem;
   margin: 0 0 4px 0;
+  font-weight: 700;
 }
 
 .gallery-lightbox-meta span {
@@ -6574,7 +6576,8 @@ nav[aria-label="Breadcrumb"] li {
     padding: 1.6rem 1rem 0.85rem 1rem;
   }
 
-  .app-section-title-group h2 {
+  .app-section-title-group h2,
+  .app-section-title-group .app-h2 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.35rem;
     font-weight: 800;
@@ -6977,7 +6980,8 @@ nav[aria-label="Breadcrumb"] li {
     height: 20px;
   }
 
-  .app-why-text-box h3 {
+  .app-why-text-box h3,
+  .app-why-text-box .app-why-item-title {
     font-size: 0.92rem;
     font-weight: 800;
     color: #2E1E19;
@@ -7000,7 +7004,8 @@ nav[aria-label="Breadcrumb"] li {
     box-shadow: 0 6px 20px rgba(84, 20, 25, 0.3);
   }
 
-  .app-ready-card-banner h3 {
+  .app-ready-card-banner h3,
+  .app-ready-card-banner .app-ready-card-title {
     font-size: 1.25rem;
     font-weight: 800;
     color: #FFFFFF;
