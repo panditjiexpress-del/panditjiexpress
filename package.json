@@ -7,5 +7,12 @@
     "dev": "npx -y serve . -p 8080",
     "deploy": "npx wrangler pages deploy . --project-name panditjiexpress",
     "deploy:preview": "npx wrangler pages deploy . --project-name panditjiexpress --branch preview"
+  },
+  "devDependencies": {
+    "wrangler": "^4.134.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260917.1": true
   }
 }
