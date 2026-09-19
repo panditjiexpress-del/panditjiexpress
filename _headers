@@ -1,5 +1,9 @@
 /*
-  # Security Headers (Google recommends these for SEO + trust)
+  # Security Headers (Google & Security Audit Compliance)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Resource-Policy: same-site
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
