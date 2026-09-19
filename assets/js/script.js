@@ -148,8 +148,7 @@ function openPanditSelectionModal() {
 }
 
 function openHawanDetailModal() {
-  closeModal('panditSelectModal');
-  openModal('hawanDetailModal');
+  openCeremonyDetailModal('Hawan / Yagya', 'assets/images/card-hawan.jpg', 'Hawan / Yagya', 'Sacred fire ceremony with shanti mantra chanting.', '4.9 (320 bookings)');
 }
 
 let currentBookingStep = 1;

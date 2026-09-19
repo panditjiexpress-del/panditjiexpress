@@ -32,11 +32,23 @@
   <link rel="preload" as="image" href="assets/images/hero-bg-master.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/images/logo.png">
 
-  <!-- Fonts & Stylesheet -->
+  <!-- Fonts & Stylesheet (Optimized Non-Blocking Delivery) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap&font-display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="assets/css/styles.min.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/styles.min.css"></noscript>
+  <style>
+    body{margin:0;background-color:#FFF8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#22150E;}
+    .site-header{background:#FFFFFF;min-height:74px;}
+    .hero-wrapper{background-color:#FFF8F0;min-height:480px;}
+    .mobile-app-view{background-color:#FBF8F3;}
+    .app-mobile-header{background:#FAF6EE;height:54px;}
+    .app-hero{min-height:580px;background-color:#200608;}
+  </style>
   <!-- MASTER SEO & STRUCTURED DATA VAULT (JSON-LD SCHEMA ENGINE) -->
   <script type="application/ld+json">
 {
@@ -234,8 +246,6 @@
   <!-- Header matching exact Desktop & Mobile Screenshot -->
   <header class="site-header">
     <div class="container header-inner">
-      <!-- Mobile Hamburger (Left on Mobile) -->
-      <button class="mobile-menu-btn" aria-label="Open Navigation Menu" onclick="openDrawer()"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
 
       <!-- Brand Logo & Tagline -->
       <a href="index.html" class="brand-wrapper" aria-label="Pandit Ji Express Home">
@@ -269,12 +279,6 @@
           </div>
         </a>
         <button class="btn-header-book" onclick="openBookingModal('General Puja')">Book Now</button>
-
-        <!-- Mobile Bell (Right on Mobile) -->
-        <button class="mobile-bell-btn" aria-label="Notifications" onclick="alert('Welcome to Pandit Ji Express! Call us at +91 90657 88789 for instant assistance.')">
-          <svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-          <span class="bell-badge">1</span>
-        </button>
       </div>
     </div>
   </header>
@@ -498,7 +502,7 @@
                   Founder &amp; Head Priest
                 </div>
                 <div class="app-pandit-rating-row" style="margin-bottom:4px;">
-                  <span class="star" style="color:#E6A117;">★</span> 4.9 <span style="font-weight:normal; color:#777; font-size:0.75rem;">(500+ Ceremonies in Bangalore)</span>
+                  <span class="star" style="color:#D97706;">★</span> 4.9 <span style="font-weight:600; color:#4A3C35; font-size:0.75rem;">(500+ Ceremonies in Bangalore)</span>
                 </div>
                 <div class="app-pandit-lineage-text" style="color:#541419; font-weight:600; font-size:0.75rem;">
                   Vedic Gurukul Trained &bull; Hindi &bull; Sanskrit
@@ -509,16 +513,16 @@
             <!-- Authentic Trust Badges -->
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; background:#FAF6EE; padding:10px; border-radius:12px; border:1px solid #EFE4D0;">
               <div style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:#4A1519; font-weight:600;">
-                <span style="color:#D4AF37;">✓</span> 15+ Yrs Experience
+                <span style="color:#2E7D32; font-weight:800;">✓</span> 15+ Yrs Experience
               </div>
               <div style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:#4A1519; font-weight:600;">
-                <span style="color:#D4AF37;">✓</span> Certified Acharya
+                <span style="color:#2E7D32; font-weight:800;">✓</span> Certified Acharya
               </div>
               <div style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:#4A1519; font-weight:600;">
-                <span style="color:#D4AF37;">✓</span> Shastric Vidhi
+                <span style="color:#2E7D32; font-weight:800;">✓</span> Shastric Vidhi
               </div>
               <div style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:#4A1519; font-weight:600;">
-                <span style="color:#D4AF37;">✓</span> Doorstep Samagri
+                <span style="color:#2E7D32; font-weight:800;">✓</span> Doorstep Samagri
               </div>
             </div>
 
@@ -780,11 +784,6 @@
                   <strong>Pandit Ji Express</strong> is Bangalore’s premier Vedic purohit service, providing verified, Hindi-speaking North Indian pandits for Griha Pravesh, Vedic Weddings, Hawan, and Satyanarayan Puja with complete doorstep samagri across Bengaluru.
                 </p>
               </div>
-
-              <!-- Mobile Pandit Ji Portrait (Visible Only on Mobile Screen 1) -->
-              <div class="hero-mobile-pandit-thumb">
-                <img fetchpriority="high" src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Acharya Pandit Shyam Sundar Ji welcoming devotees for Vedic puja in Bangalore" width="140" height="150" class="mobile-pandit-thumb-img">
-              </div>
             </div>
 
             <!-- 4 Trust Badges (Desktop - Exactly like Uploaded Master Image) -->
@@ -811,40 +810,6 @@
               <a href="#how-it-works" class="btn-pill-outline">
                 <svg class="pj-icon" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> How It Works
               </a>
-            </div>
-
-            <!-- Mobile Quick Action Cards (Screen 1 Replica) -->
-            <div class="mobile-action-cards">
-              <a href="javascript:void(0)" onclick="openBookingModal('Quick Booking')" class="m-action-card-orange">
-                <span class="card-icon"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
-                <span class="card-title">Book a Pandit</span>
-                <span class="card-sub">Quick &amp; Easy Booking</span>
-              </a>
-              <a href="#how-it-works" class="m-action-card-white">
-                <span class="card-icon"><svg class="pj-icon" style="width:12px;height:12px;display:inline-block;vertical-align:middle;margin-right:4px;" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></span>
-                <span class="card-title">How It Works</span>
-                <span class="card-sub">Learn in Simple Steps</span>
-              </a>
-            </div>
-
-            <!-- 4 Trust Badges (Screen 1 Replica) -->
-            <div class="mobile-trust-badges-bar">
-              <div class="m-trust-badge">
-                <div class="badge-icon"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
-                <div class="badge-label">Verified Pandits</div>
-              </div>
-              <div class="m-trust-badge">
-                <div class="badge-icon"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
-                <div class="badge-label">On-time Service</div>
-              </div>
-              <div class="m-trust-badge">
-                <div class="badge-icon"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-1.5 3-4 6-4 9a4 4 0 0 0 8 0c0-3-2.5-6-4-9z"></path></svg></div>
-                <div class="badge-label">Authentic Rituals</div>
-              </div>
-              <div class="m-trust-badge">
-                <div class="badge-icon"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
-                <div class="badge-label">100% Satisfaction</div>
-              </div>
             </div>
           </div>
 
@@ -910,52 +875,7 @@
       </div>
     </section>
 
-    <!-- Mobile Popular Poojas Section (Screen 1 Replica) -->
-    <section class="mobile-popular-section container">
-      <div class="mobile-popular-header">
-        <div class="mobile-popular-title">Popular Poojas</div>
-        <a href="services.html" class="mobile-popular-view-all">View All →</a>
-      </div>
-      <div class="mobile-poojas-scroll">
-        <!-- Ganesh Pooja -->
-        <div class="m-pooja-card" onclick="openBookingModal('Ganesh Pooja')">
-          <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" class="m-pooja-card-img" width="150" height="95" loading="lazy">
-          <div class="m-pooja-card-info">
-            <span class="m-pooja-name">Ganesh Pooja</span>
-            <span class="m-pooja-price">Vedic Shastric Vidhi</span>
-            <div class="m-pooja-rating"><span class="star"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span> 4.9</div>
-          </div>
-        </div>
-        <!-- Hawan / Yagya (clicking opens Hawan Detail Modal - Screen 3) -->
-        <div class="m-pooja-card" onclick="openHawanDetailModal()">
-          <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" class="m-pooja-card-img" width="150" height="95" loading="lazy">
-          <div class="m-pooja-card-info">
-            <span class="m-pooja-name">Hawan / Yagya</span>
-            <span class="m-pooja-price">Vedic Shastric Vidhi</span>
-            <div class="m-pooja-rating"><span class="star"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span> 4.9</div>
-          </div>
-        </div>
-        <!-- Griha Pravesh -->
-        <div class="m-pooja-card" onclick="openBookingModal('Griha Pravesh')">
-          <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" class="m-pooja-card-img" width="150" height="95" loading="lazy">
-          <div class="m-pooja-card-info">
-            <span class="m-pooja-name">Griha Pravesh</span>
-            <span class="m-pooja-price">Vedic Shastric Vidhi</span>
-            <div class="m-pooja-rating"><span class="star"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span> 4.8</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Need Pooja Samagri? Banner (Screen 1 Replica) -->
-      <div class="mobile-samagri-card">
-        <div class="samagri-left">
-          <div class="samagri-heading">Need Pooja Samagri?</div>
-          <p class="samagri-text">Get all essentials delivered at your doorstep.</p>
-          <a href="samagri.html" class="samagri-btn">Order Now →</a>
-        </div>
-        <img src="assets/images/pooja_samagri_thali.jpg?v=8k" alt="Complete 100% pure authentic Vedic Pooja Samagri Thali with brass diyas in Bangalore" class="samagri-right-img" width="100" height="85" loading="lazy">
-      </div>
-    </section>
 
     <!-- ============================================================
          DESKTOP-ONLY SECTIONS (EXACT REPLICA OF DESKTOP SCREENSHOT)
@@ -1305,116 +1225,7 @@
           </a>
         </div>
 
-        <!-- 1. Interactive Expanding Pinterest Showcase (Matches Pinterest Pin UI) -->
-        <div class="pinterest-showcase-container">
-          <div class="pinterest-showcase-bar">
-            <span class="showcase-dot dot-red"></span>
-            <span class="showcase-dot dot-yellow"></span>
-            <span class="showcase-dot dot-green"></span>
-            <span class="showcase-title">Interactive Pinterest Gallery • Hover any ceremony to enlarge</span>
-            <span class="showcase-badge">Interactive Collage</span>
-          </div>
-
-          <div class="pinterest-showcase" id="pinterestShowcase">
-            <!-- Column 1 -->
-            <div class="pinterest-col">
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Vedic Vivah Sanskar (Sacred Wedding)" data-category="Wedding Vivah" data-img="assets/images/card-marriage.jpg">
-                <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Vivah Sanskar</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Wedding Vivah')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Vedic Wedding Rituals • Bangalore</span>
-                </div>
-              </div>
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Lord Ganesha Sthapana &amp; Aarti" data-category="Ganesh Puja" data-img="assets/images/card-ganesh.jpg">
-                <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Ganapati Puja</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Ganesh Puja')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Sthapana, Modak &amp; Aarti</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="pinterest-col">
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Griha Pravesh &amp; Vastu Shanti Puja" data-category="Griha Pravesh" data-img="assets/images/card-grihapravesh.jpg">
-                <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Griha Pravesh</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Griha Pravesh')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">New Home Vastu Shanti</span>
-                </div>
-              </div>
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Traditional Mangal Kalash Sthapana" data-category="Vedic Rituals" data-img="assets/images/about_kalash.jpg">
-                <img src="assets/images/about_kalash.jpg?v=8k" alt="Auspicious Mangal Kalash Sthapana with coconut, mango leaves, and sacred mauli in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Mangal Kalash</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('General Puja')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Varun Devata Sthapana</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="pinterest-col">
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Senior Vedic Pandit Performing Archana" data-category="Vedic Scholars" data-img="assets/images/hero-bg-master.jpg">
-                <img src="assets/images/hero-bg-master.jpg?v=8k" alt="Vedic Pandit Ji performing sacred puja archana with brass lamps in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Vedic Archana</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('General Puja')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Authentic Sanskrit Shlokas</span>
-                </div>
-              </div>
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Maha Navchandi Hawan &amp; Yagna Kund" data-category="Hawan &amp; Yagna" data-img="assets/images/card-hawan.jpg">
-                <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Hawan Yagna</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Hawan Yagna')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Sacred Fire Ahuti Ritual</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="pinterest-col">
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Shri Satyanarayan Mahapuja Katha" data-category="Satyanarayan" data-img="assets/images/card-satyanarayan.jpg">
-                <img src="assets/images/card-satyanarayan.jpg?v=8k" alt="North Indian Pandit reciting Shri Satyanarayan Katha Puja with sacred prasad in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Satyanarayan Katha</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Satyanarayan Katha')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">Family Happiness &amp; Vrat</span>
-                </div>
-              </div>
-              <div class="pinterest-item" tabindex="0" onclick="openGalleryLightbox(this)" data-title="Pavitra Puja Thali with Brass Kalash &amp; Samagri" data-category="Doorstep Samagri" data-img="assets/images/puja-thali-samagri.jpg">
-                <img src="assets/images/puja-thali-samagri.jpg?v=8k" alt="Complete 100% pure authentic Vedic Pooja Samagri Thali with brass diyas in Bangalore" loading="lazy">
-                <div class="pinterest-item-overlay">
-                  <div class="pinterest-tag-row">
-                    <span class="pinterest-tag">Holy Puja Thali</span>
-                    <button class="pinterest-book-btn" onclick="event.stopPropagation(); openBookingModal('Samagri Kit')">Book</button>
-                  </div>
-                  <span class="pinterest-sub">100% Shuddh Vedic Items</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Filter Tabs & Pinterest Masonry Grid -->
+        <!-- Filter Tabs & Pinterest Masonry Grid -->
         <div class="gallery-filter-bar">
           <button class="filter-pill active" onclick="filterGallery('all', this)">All Ceremonies</button>
           <button class="filter-pill" onclick="filterGallery('griha-pravesh', this)">Griha Pravesh</button>
@@ -1546,103 +1357,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Card 9: Dramatic Agni Hawan (Tall 350px) -->
-          <div class="masonry-card" data-category="hawan" onclick="openGalleryLightbox(this)" data-title="Maha Agni Hawan with Ghee Ahuti" data-category-name="Hawan &amp; Yagna" data-img="assets/images/pandits_hero_fire.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/pandits_hero_fire.jpg?v=8k" alt="Sacred Agni Hawan Kund fire ritual for positive energy and Vedic blessings in Bangalore" style="height: 350px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Maha Yagna</span>
-                <p class="masonry-title">Pavitra Agni Ahuti &amp; Shanti Mantra</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Electronic City</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('Maha Hawan')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 10: Vastu Shanti (Medium 270px) -->
-          <div class="masonry-card" data-category="griha-pravesh" onclick="openGalleryLightbox(this)" data-title="Vastu Purush Mandala Sthapana" data-category-name="Griha Pravesh" data-img="assets/images/card-vastu.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-vastu.jpg?v=8k" alt="Vastu Shanti Puja and home purification ritual conducted by North Indian Vedic Pandit in Bangalore" style="height: 270px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Vastu</span>
-                <p class="masonry-title">Vastu Dosh Nivaran &amp; Shanti</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Bellandur</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('Vastu Shanti')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 11: Mangal Kalash (Medium 310px) -->
-          <div class="masonry-card" data-category="sanskar" onclick="openGalleryLightbox(this)" data-title="Mangal Kalash with Coconut &amp; Mango Leaves" data-category-name="Vedic Rituals" data-img="assets/images/about_kalash.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/about_kalash.jpg?v=8k" alt="Auspicious Mangal Kalash Sthapana with coconut, mango leaves, and sacred mauli in Bangalore" style="height: 310px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Kalash</span>
-                <p class="masonry-title">Varun Kalash &amp; Panchamrit</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Jayanagar</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('General Puja')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 12: Naamkaran Sanskar (Medium 290px) -->
-          <div class="masonry-card" data-category="sanskar" onclick="openGalleryLightbox(this)" data-title="Naamkaran &amp; Baby Naming Sanskar" data-category-name="Sanskars" data-img="assets/images/card-namkaran.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-namkaran.jpg?v=8k" alt="Vedic Naamkaran Sanskar baby naming ceremony conducted by North Indian Pandit in Bangalore" style="height: 290px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Naamkaran</span>
-                <p class="masonry-title">Vedic Naamkaran Sanskar</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Sarjapur</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('Naamkaran Sanskar')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Stat Counters Banner (from Screenshot) -->
-    <section class="stats-banner-bar">
-      <div class="container">
-        <div class="stats-grid-row">
-          <div class="stat-item-col">
-            <span class="stat-icon"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.8 2-2 3.5-2 5a2 2 0 0 0 4 0c0-1.5-1.2-3-2-5z" fill="currentColor"></path><path d="M3 13c0 4.5 4 7 9 7s9-2.5 9-7c0-2-3-3-9-3s-9 1-9 3z"></path><line x1="7" y1="20" x2="17" y2="20"></line></svg></span>
-            <div class="stat-text-block">
-              <span class="stat-number">10,000+</span>
-              <span class="stat-label">Poojas Completed</span>
-            </div>
-          </div>
-          <div class="stat-item-col">
-            <span class="stat-icon"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
-            <div class="stat-text-block">
-              <span class="stat-number">500+</span>
-              <span class="stat-label">Verified Pandits</span>
-            </div>
-          </div>
-          <div class="stat-item-col">
-            <span class="stat-icon"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
-            <div class="stat-text-block">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Bangalore Localities</span>
-            </div>
-          </div>
-          <div class="stat-item-col">
-            <span class="stat-icon"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-            <div class="stat-text-block">
-              <span class="stat-number">4.9 <svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
-              <span class="stat-label">Customer Rating</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1678,6 +1392,77 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (AEO, Voice Search & AI Overviews Direct Answer Engine) -->
+    <section class="faq-section container" id="faq" aria-labelledby="faqHeading" style="padding: 3rem 1.25rem;">
+      <div class="faq-section-header" style="text-align: center; margin-bottom: 2rem;">
+        <span style="color:var(--color-orange-text); font-weight:700; font-size:0.8rem; letter-spacing:1px; text-transform:uppercase; display:block; margin-bottom:0.35rem;">Frequently Asked Questions</span>
+        <h2 id="faqHeading" class="section-title-ornate" style="margin-bottom:0.75rem;">Got Questions? Pandit Ji Has Answers</h2>
+        <p style="color:var(--color-text-muted); font-size:0.92rem; max-width:650px; margin:0 auto;">Clear answers for your Vedic ceremony, samagri requirements, muhurat, and doorstep booking in Bangalore.</p>
+      </div>
+
+      <div class="faq-accordion-grid" style="max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:0.75rem;">
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;" open>
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>Who is the best North Indian Pandit in Bangalore?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            Pandit Shyam Sundar Ji, Founder of Pandit Ji Express, is widely regarded as one of the best North Indian pandits in Bangalore. With 15+ years of experience in authentic Vedic ceremonies including weddings, Griha Pravesh, havans, and Satyanarayan Katha, he serves Hindi-speaking families across Bengaluru with doorstep samagri delivery. Call +91 90657 88789 to book.
+          </p>
+        </details>
+
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>How to book a North Indian Pandit in Bangalore for Griha Pravesh?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            To book a North Indian Pandit for Griha Pravesh in Bangalore, call Pandit Ji Express at +91 90657 88789 or WhatsApp us. We provide verified, Hindi-speaking Vedic pandits with complete samagri for housewarming ceremonies. Same-day booking is available. Visit our Griha Pravesh page for muhurat dates and detailed puja packages.
+          </p>
+        </details>
+
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>What is the cost of Griha Pravesh Puja in Bangalore?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            Griha Pravesh puja costs at Pandit Ji Express in Bangalore start from ₹5,100 for a basic ceremony. Complete packages including pandit dakshina, all puja samagri, and doorstep delivery are available. Prices vary based on ceremony duration and samagri requirements. Contact us at +91 90657 88789 for a custom quote.
+          </p>
+        </details>
+
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>Do you provide samagri along with the pandit?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            Yes, Pandit Ji Express provides complete puja samagri along with the pandit for all ceremonies in Bangalore. Our samagri kit includes all required items like kalash, gangajal, sindoor, kusha, flowers, incense, and more — delivered to your doorstep. This eliminates the hassle of sourcing items separately.
+          </p>
+        </details>
+
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>Which areas in Bangalore does Pandit Ji Express serve?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            Pandit Ji Express serves all areas across Bengaluru including Whitefield, HSR Layout, Marathahalli, Indiranagar, Koramangala, JP Nagar, Electronic City, Hebbal, Yelahanka, Bannerghatta Road, Sarjapur Road, Outer Ring Road, and more. We cover both North and South Bangalore for all Vedic ceremonies.
+          </p>
+        </details>
+
+        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
+          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>Is Pandit Shyam Sundar Ji available for same-day booking?</span>
+            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
+          </summary>
+          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
+            Yes, Pandit Ji Express offers same-day pandit booking in Bangalore for urgent ceremonies. Call or WhatsApp +91 90657 88789 and we will confirm availability within minutes. We recommend booking 2-3 days in advance for auspicious muhurat-based ceremonies like Griha Pravesh and weddings.
+          </p>
+        </details>
       </div>
     </section>
   </main>
@@ -1716,7 +1501,7 @@
             <a href="https://wa.me/919065788789" target="_blank" rel="noopener" aria-label="WhatsApp Us" style="width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; color:#25D366; transition:all 0.2s;">
               <svg class="pj-icon pj-icon-green" style="width:18px;height:18px;" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.769.814 2.796.814 3.182 0 5.768-2.587 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm3.385 8.163c-.145.407-.841.776-1.163.823-.321.047-.693.074-2.072-.497-1.761-.73-2.883-2.518-2.971-2.635-.088-.117-.714-.949-.714-1.81 0-.861.45-1.286.611-1.46.161-.174.351-.218.468-.218.117 0 .234 0 .336.005.107.005.25.04.387.37.145.351.498 1.214.542 1.302.044.088.073.19.015.307-.058.117-.088.19-.175.292-.088.102-.185.228-.264.306-.088.088-.18.184-.078.36.102.175.454.748.974 1.212.67.597 1.235.782 1.41.87.175.088.277.073.38-.044.102-.117.438-.511.555-.686.117-.175.234-.146.394-.088.161.058 1.022.482 1.197.57.175.088.292.131.336.204.044.073.044.423-.101.83zM12 2C6.477 2 2 6.477 2 12c0 1.891.527 3.66 1.444 5.17L2 22l4.981-1.306C8.441 21.574 10.165 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpanditjiexpress-avp.pages.dev%2F" target="_blank" rel="noopener" aria-label="Share on Facebook" style="width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; color:#1877F2; transition:all 0.2s;">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit Pandit Ji Express on Facebook" style="width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; color:#1877F2; transition:all 0.2s;">
               <svg style="width:16px;height:16px;" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
             <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpanditjiexpress-avp.pages.dev%2F&text=Best%20North%20Indian%20Pandit%20in%20Bangalore%20for%20Griha%20Pravesh%2C%20Wedding%20%26%20Puja%20Services" target="_blank" rel="noopener" aria-label="Share on X Twitter" style="width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; color:#E0CEBE; transition:all 0.2s;">
@@ -2024,14 +1809,7 @@
           <input type="text" class="form-control" placeholder="Search by name, language or expertise" aria-label="Search by name, language or expertise" style="font-size: 0.82rem; padding: 0.55rem 0.85rem 0.55rem 2.2rem; border-radius: 999px; background: #FFF;">
           <span style="position: absolute; left: 12px; top: 9px; color: #666; display:flex;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
         </div>
-        <!-- Filter pills -->
-        <div style="display: flex; gap: 0.45rem; overflow-x: auto; margin-bottom: 1rem; padding-bottom: 0.2rem; align-items: center;">
-          <span style="background: var(--color-orange-primary); color: #FFF; padding: 0.3rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; white-space: nowrap;">All</span>
-          <span style="background: #FFF; color: #444; border: 1px solid #E5DCD3; padding: 0.3rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">Vedic Pooja</span>
-          <span style="background: #FFF; color: #444; border: 1px solid #E5DCD3; padding: 0.3rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">Hawan</span>
-          <span style="background: #FFF; color: #444; border: 1px solid #E5DCD3; padding: 0.3rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">Sanskar</span>
-          <span style="background: #FFF; color: #444; border: 1px solid #E5DCD3; padding: 0.3rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">More <svg class="pj-icon" style="width:10px;height:10px;margin-left:3px;vertical-align:middle;display:inline-block;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-        </div>
+
 
         <!-- Pandit Shyam Sundar: Founder & Head Priest -->
         <div class="pandit-modal-card" style="position: relative;">
@@ -2062,81 +1840,7 @@
     </div>
   </div>
 
-  <!-- ============================================================
-       MODAL 2: HAWAN / YAGYA DETAIL (REPLICA OF SCREEN 3)
-       ============================================================ -->
-  <div id="hawanDetailModal" class="app-modal-overlay" onclick="closeModalOnBackdrop(event, 'hawanDetailModal')">
-    <div class="app-modal-window">
-      <!-- Hawan Hero Image with floating buttons -->
-      <div style="position: relative; width: 100%; height: 180px; overflow: hidden; background: #2B080B;">
-        <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-        <button class="modal-close-btn" onclick="closeModal('hawanDetailModal')" style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.55); color: #FFF; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; border: none; cursor: pointer;">&larr;</button>
-        <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 8px;">
-          <span style="background: rgba(0,0,0,0.55); color: #FFF; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; cursor: pointer;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
-          <span style="background: rgba(0,0,0,0.55); color: #FFF; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; cursor: pointer;">↗</span>
-        </div>
-        <div style="position: absolute; bottom: 12px; left: 12px; background: #FFFFFF; color: var(--color-orange-primary); font-weight: 800; font-size: 0.75rem; padding: 0.2rem 0.65rem; border-radius: 999px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-          <svg class="pj-icon pj-icon-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg> Popular
-        </div>
-      </div>
 
-      <div class="modal-screen-body">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem;">
-          <div style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--color-text-dark);">Hawan / Yagya</div>
-          <span style="font-size: 0.85rem; font-weight: 800; color: var(--color-text-dark);"><span style="color: var(--color-rating);"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span> 4.9 <span style="font-size: 0.72rem; color: #555;">(320)</span></span>
-        </div>
-        <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">Purify your home and attract positivity.</p>
-
-        <!-- 4 Quick Specs Grid -->
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; text-align: center; margin-bottom: 1.25rem; background: #FAF5EE; padding: 0.75rem 0.4rem; border-radius: 12px;">
-          <div>
-            <div style="display:flex; justify-content:center;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
-            <div style="font-size: 0.62rem; color: #555;">Duration</div>
-            <div style="font-size: 0.72rem; font-weight: 700; color: #333;">2 - 3 Hours</div>
-          </div>
-          <div>
-            <div style="display:flex; justify-content:center;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
-            <div style="font-size: 0.62rem; color: #555;">Pandit</div>
-            <div style="font-size: 0.72rem; font-weight: 700; color: #333;">2 Pandits</div>
-          </div>
-          <div>
-            <div style="display:flex; justify-content:center;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
-            <div style="font-size: 0.62rem; color: #555;">Items</div>
-            <div style="font-size: 0.72rem; font-weight: 700; color: #333;">Included</div>
-          </div>
-          <div>
-            <div style="display:flex; justify-content:center;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
-            <div style="font-size: 0.62rem; color: #555;">At Home</div>
-            <div style="font-size: 0.72rem; font-weight: 700; color: #333;">Service</div>
-          </div>
-        </div>
-
-        <div style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 800; margin-bottom: 0.35rem; color: var(--color-text-dark);">About This Pooja</div>
-        <p style="font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.45; margin-bottom: 1rem;">
-          Hawan removes negative energy and brings peace, prosperity and good health. It is recommended for new home, health issues, business growth and many more.
-        </p>
-
-        <div style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--color-text-dark);">Pooja Includes</div>
-        <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.78rem; color: var(--color-text-dark);">
-          <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--color-orange-primary); font-weight: 800;"><svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Experienced Pandits</li>
-          <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--color-orange-primary); font-weight: 800;"><svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Complete Pooja Samagri</li>
-          <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--color-orange-primary); font-weight: 800;"><svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> At Your Doorstep</li>
-          <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--color-orange-primary); font-weight: 800;"><svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Pooja Vidhi &amp; Sankalp</li>
-          <li style="display: flex; gap: 0.5rem; align-items: center;"><span style="color: var(--color-orange-primary); font-weight: 800;"><svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Post Pooja Prasad</li>
-        </ul>
-
-        <!-- Bottom Action Bar -->
-        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-card-border); padding-top: 0.85rem;">
-          <div>
-            <span style="font-size: 0.78rem; color: var(--color-maroon-deep); font-weight: 700;">Vedic Shastric Vidhi</span>
-          </div>
-          <button class="btn-pill-orange" onclick="openBookingModal('Hawan / Yagya')" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">
-            Book This Pooja
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ============================================================
        MODAL 3: 4-STEP GUIDED BOOKING FLOW WIZARD
@@ -2176,7 +1880,7 @@
         <form id="activeBookingFlowForm" onsubmit="handleBookingFlowSubmit(event)">
           <!-- STEP 1: POOJA & PANDIT -->
           <div id="bookingStep1" class="booking-step-panel active">
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--color-orange-primary); margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 1 of 3: Ceremony &amp; Pandit</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: #B84D00; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 1 of 3: Ceremony &amp; Pandit</div>
             
             <div class="form-group" style="margin-bottom: 0.85rem;">
               <label class="form-label" for="flowPooja">Select Sacred Ceremony / Pooja *</label>
@@ -2217,15 +1921,15 @@
 
           <!-- STEP 2: DATE, MUHURAT & SAMAGRI -->
           <div id="bookingStep2" class="booking-step-panel">
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--color-orange-primary); margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 2 of 3: Date, Muhurat &amp; Samagri</div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: #B84D00; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 2 of 3: Date, Muhurat &amp; Samagri</div>
 
             <div class="form-group" style="margin-bottom: 0.75rem;">
               <label class="form-label" for="flowDate">Preferred Ceremony Date *</label>
               <div style="position: relative;">
                 <input type="date" id="flowDate" class="form-control" required style="font-size: 0.88rem;">
               </div>
-              <label style="display:flex; align-items:center; gap:0.4rem; font-size:0.75rem; color:#666; margin-top:0.35rem; cursor:pointer;">
-                <input type="checkbox" id="flowNeedMuhuratCheck" onchange="toggleMuhuratAdvise(this)" style="accent-color:var(--color-orange-primary); width: 15px; height: 15px;">
+              <label style="display:flex; align-items:center; gap:0.4rem; font-size:0.75rem; color:#333; margin-top:0.35rem; cursor:pointer;">
+                <input type="checkbox" id="flowNeedMuhuratCheck" onchange="toggleMuhuratAdvise(this)" style="accent-color:#B84D00; width: 15px; height: 15px;">
                 <span>Need Pandit Ji to calculate/advise auspicious Muhurat (Tithi &amp; Nakshatra)</span>
               </label>
             </div>
@@ -2263,8 +1967,8 @@
 
           <!-- STEP 3: YAJMAN & GOTRA DETAILS -->
           <div id="bookingStep3" class="booking-step-panel">
-            <div style="font-size: 0.8rem; font-weight: 800; color: var(--color-orange-primary); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 3 of 3: Yajman &amp; Sankalp Details</div>
-            <p style="font-size: 0.75rem; color: #666; margin-bottom: 0.85rem;">Required for Pandit Shyam Sundar Ji to prepare the Vedic Sankalp before speaking with you.</p>
+            <div style="font-size: 0.8rem; font-weight: 800; color: #B84D00; margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 0.5px;">Step 3 of 3: Yajman &amp; Sankalp Details</div>
+            <p style="font-size: 0.75rem; color: #4A3C35; margin-bottom: 0.85rem;">Required for Pandit Shyam Sundar Ji to prepare the Vedic Sankalp before speaking with you.</p>
 
             <div class="form-group" style="margin-bottom: 0.6rem;">
               <label class="form-label" for="flowName">Yajman (Host) Full Name *</label>
@@ -2272,8 +1976,8 @@
             </div>
 
             <div class="form-group" style="margin-bottom: 0.6rem;">
-              <label class="form-label" for="flowPhone">WhatsApp Mobile Number *</label>
-              <input type="tel" id="flowPhone" class="form-control" placeholder="10-digit WhatsApp number (e.g. 9876543210)" required pattern="[0-9]{10}" style="font-size: 0.88rem;">
+              <label class="form-label" for="flowPhone">Mobile Phone (WhatsApp Active) *</label>
+              <input type="tel" id="flowPhone" class="form-control" placeholder="e.g. 9876543210" required style="font-size: 0.88rem;">
             </div>
 
             <div class="form-group" style="margin-bottom: 0.6rem;">
@@ -2282,12 +1986,12 @@
             </div>
 
             <div class="form-group" style="margin-bottom: 0.6rem;">
-              <label class="form-label" for="flowGotra">Gotra &amp; Cultural Tradition <span style="font-weight: normal; color: #555;">(For Vedic Sankalp)</span></label>
+              <label class="form-label" for="flowGotra">Gotra &amp; Cultural Tradition <span style="font-weight: 600; color: #333;">(For Vedic Sankalp)</span></label>
               <input type="text" id="flowGotra" class="form-control" placeholder="e.g. Kashyap Gotra / UP-Bihar / Rajasthani / Not sure" style="font-size: 0.88rem;">
             </div>
 
             <div class="form-group" style="margin-bottom: 1.25rem;">
-              <label class="form-label" for="flowSpecial">Special Sankalp / Requests <span style="font-weight: normal; color: #555;">(Optional)</span></label>
+              <label class="form-label" for="flowSpecial">Special Sankalp / Requests <span style="font-weight: 600; color: #333;">(Optional)</span></label>
               <textarea id="flowSpecial" class="form-control" placeholder="Any specific requirements, family members attending, or notes for Pandit Ji..." style="font-size: 0.85rem; min-height: 52px;"></textarea>
             </div>
 
@@ -2323,7 +2027,7 @@
           <div style="display: flex; gap: 0.75rem; align-items: center; border-bottom: 1px solid #EEE; padding-bottom: 0.65rem; margin-bottom: 0.65rem;">
             <span style="display:flex;"><svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-1.5 3-4 6-4 9a4 4 0 0 0 8 0c0-3-2.5-6-4-9z"></path></svg></span>
             <div>
-              <span style="font-size: 0.72rem; color: #666;">Puja / Ceremony</span><br>
+              <span style="font-size: 0.72rem; color: #333; font-weight: 600;">Puja / Ceremony</span><br>
               <strong style="font-size: 0.9rem; color: var(--color-maroon-primary);" id="confirmPoojaDisplay">Vedic Ceremony</strong>
             </div>
           </div>
@@ -2332,7 +2036,7 @@
             <span style="display:flex;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
             <div>
               <strong style="font-size: 0.88rem;" id="confirmDateDisplay">Date to be confirmed</strong><br>
-              <span style="font-size: 0.78rem; color: #666;" id="confirmSlotDisplay">Morning Auspicious Muhurat</span>
+              <span style="font-size: 0.78rem; color: #333; font-weight: 500;" id="confirmSlotDisplay">Morning Auspicious Muhurat</span>
             </div>
           </div>
 
@@ -2341,7 +2045,7 @@
               <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-gold);" loading="lazy">
               <div>
                 <strong style="font-size: 0.88rem;">Pandit Shyam Sundar</strong><br>
-                <span style="font-size: 0.78rem; color: #666;">+91 90657 88789</span>
+                <span style="font-size: 0.78rem; color: #333; font-weight: 500;">+91 90657 88789</span>
               </div>
             </div>
             <a href="tel:+919065788789" style="background: #FFF2E8; color: var(--color-orange-primary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.95rem;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
@@ -2350,7 +2054,7 @@
           <div style="display: flex; gap: 0.75rem; align-items: center;">
             <span style="display:flex;"><svg class="pj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg></span>
             <div>
-              <span style="font-size: 0.72rem; color: #666;">Enquiry Booking Ref</span><br>
+              <span style="font-size: 0.72rem; color: #333; font-weight: 600;">Enquiry Booking Ref</span><br>
               <strong style="color: var(--color-maroon-primary); font-size: 0.95rem;" id="confirmIdDisplay">PJEXP12405</strong>
             </div>
           </div>

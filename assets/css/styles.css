@@ -17,9 +17,11 @@
   --color-cream-card: #FFFFFF;
   --color-card-border: #EFE6D8;
   --color-text-dark: #22150E;
-  --color-text-muted: #66554B;
-  --color-text-light: #948074;
-  --color-rating: #FF9800;
+  --color-text-muted: #504037;
+  --color-text-light: #5A483E;
+  --color-orange-text: #B84D00;
+  --color-gold-text: #8A6000;
+  --color-rating: #D97706;
   --color-green: #2E7D32;
 
   /* Typography */
@@ -533,7 +535,7 @@ img {
 }
 
 .hero-main-title .highlight-orange {
-  color: var(--color-orange-primary);
+  color: var(--color-orange-text);
   position: relative;
 }
 
@@ -1036,7 +1038,7 @@ img {
 .view-all-link {
   font-size: 0.92rem;
   font-weight: 700;
-  color: var(--color-orange-primary);
+  color: var(--color-orange-text);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
