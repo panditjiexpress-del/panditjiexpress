@@ -28,19 +28,19 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/logo.png">
 
-  <!-- Performance: Preload LCP Hero Image -->
-  <link rel="preload" as="image" href="assets/images/hero-bg-master.jpg" fetchpriority="high">
+  <!-- Performance: Responsive Preloads for LCP Element -->
+  <link rel="preload" as="image" href="assets/images/hero-bg-master.jpg" media="(max-width: 991px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-pandit.jpg" media="(min-width: 992px)" fetchpriority="high">
   <link rel="preload" as="image" href="assets/images/logo.png">
 
-  <!-- Fonts & Stylesheet (Optimized Non-Blocking Delivery) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Main Stylesheet (Preloaded & Synchronous to Prevent CLS) -->
+  <link rel="preload" href="assets/css/styles.min.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+
+  <!-- Web Fonts (Asynchronous Non-Blocking Delivery) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700;800&family=Karla:wght@400;500;600;700&display=swap"></noscript>
-  <link rel="preload" href="assets/css/styles.min.css" as="style">
-  <link rel="stylesheet" href="assets/css/styles.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="assets/css/styles.min.css"></noscript>
   <style>
     body{margin:0;background-color:#FFF8F0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#22150E;}
     .site-header{background:#FFFFFF;min-height:74px;}
@@ -177,7 +177,11 @@
         }
       ]
     }
-  ]
+  ],
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero-direct-answer", ".faq-question", ".faq-answer", ".aeo-fact-summary"]
+  }
 }
   </script>
   <!-- FAQ Schema: AI Overview & PAA Eligibility -->
@@ -234,7 +238,11 @@
         "text": "Yes, Pandit Ji Express offers same-day pandit booking in Bangalore for urgent ceremonies. Call or WhatsApp +91 90657 88789 and we will confirm availability within minutes. We recommend booking 2-3 days in advance for auspicious muhurat-based ceremonies like Griha Pravesh and weddings."
       }
     }
-  ]
+  ],
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero-direct-answer", ".faq-question", ".faq-answer", ".aeo-fact-summary"]
+  }
 }
   </script>
 </head>
@@ -323,7 +331,7 @@
       <!-- SCREEN 1: Mobile App Top Bar -->
       <header class="app-mobile-header">
         <a href="index.html" class="app-header-brand">
-          <img src="assets/images/logo.png?v=8k" alt="Pandit Ji Express - Best North Indian Pandit in Bangalore for Vedic Puja Services" class="app-header-logo" loading="lazy">
+          <img src="assets/images/logo.png?v=8k" alt="Pandit Ji Express - Best North Indian Pandit in Bangalore for Vedic Puja Services" class="app-header-logo" width="36" height="36" loading="lazy">
           <div>
             <div class="app-header-title">PANDIT JI EXPRESS</div>
             <div class="app-header-tagline">POOJA • PANDIT • SAMAGRI</div>
@@ -390,7 +398,7 @@
           <!-- 1. Ganesh Pooja -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Ganesh Pooja', 'assets/images/card-ganesh.jpg', 'Ganesh Pooja', 'Authentic invocation of Lord Ganesha for prosperity and obstacle removal.', '4.9 (180+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" loading="lazy">
+              <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Ganesh Pooja</div>
           </div>
@@ -398,7 +406,7 @@
           <!-- 2. Griha Pravesh -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Griha Pravesh', 'assets/images/card-grihapravesh.jpg', 'Griha Pravesh', 'Auspicious housewarming ceremony with Vastu Shanti and Navagraha Havan.', '4.9 (340+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" loading="lazy">
+              <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Griha Pravesh</div>
           </div>
@@ -406,7 +414,7 @@
           <!-- 3. Satyanarayan Katha -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Satyanarayan Katha', 'assets/images/card-satyanarayan.jpg', 'Satyanarayan Katha', 'Divine narrative of Lord Vishnu for family harmony and prosperity.', '4.9 (290+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-satyanarayan.jpg?v=8k" alt="Sacred Satyanarayan Puja Katha recited by experienced Hindi Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-satyanarayan.jpg?v=8k" alt="Sacred Satyanarayan Puja Katha recited by experienced Hindi Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Satyanarayan Katha</div>
           </div>
@@ -414,7 +422,7 @@
           <!-- 4. Hawan / Yagya -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Hawan / Yagya', 'assets/images/card-hawan.jpg', 'Hawan / Yagya', 'Sacred fire oblation with ancient Vedic mantras for purification and positive aura.', '4.9 (210+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Hawan / Yagya</div>
           </div>
@@ -422,7 +430,7 @@
           <!-- 5. Marriage Pooja -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Marriage Pooja', 'assets/images/card-marriage.jpg', 'Marriage Pooja', 'Traditional Vedic Vivah Sanskar following authentic North Indian rituals and Saptapadi.', '4.9 (250+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" loading="lazy">
+              <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Marriage Pooja</div>
           </div>
@@ -430,7 +438,7 @@
           <!-- 6. Vastu Shanti -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Vastu Shanti', 'assets/images/card-vastu.jpg', 'Vastu Shanti', 'Harmonize architectural energies and dissolve negative vibes before occupancy.', '4.8 (140+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-vastu.jpg?v=8k" alt="Vastu Shanti Puja and Yagya for positive home energy conducted by Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-vastu.jpg?v=8k" alt="Vastu Shanti Puja and Yagya for positive home energy conducted by Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Vastu Shanti</div>
           </div>
@@ -438,7 +446,7 @@
           <!-- 7. Naamkaran -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Naamkaran', 'assets/images/card-namkaran.jpg', 'Naamkaran', 'Sacred newborn baby naming ceremony based on Janma Nakshatra calculations.', '4.9 (160+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-namkaran.jpg?v=8k" alt="Vedic Naamkaran Baby Naming ceremony with astrology calculation by Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-namkaran.jpg?v=8k" alt="Vedic Naamkaran Baby Naming ceremony with astrology calculation by Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Naamkaran</div>
           </div>
@@ -446,7 +454,7 @@
           <!-- 8. Mundan Ceremony -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Mundan Ceremony', 'assets/images/card-mundan.jpg', 'Mundan Ceremony', 'First haircut ceremony for child with sacred Vedic blessings.', '4.8 (120+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-mundan.jpg?v=8k" alt="Traditional Mundan Chudakarana Sanskar ceremony conducted by North Indian Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-mundan.jpg?v=8k" alt="Traditional Mundan Chudakarana Sanskar ceremony conducted by North Indian Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Mundan Ceremony</div>
           </div>
@@ -454,7 +462,7 @@
           <!-- 9. Shraddh / Tarpan -->
           <div class="app-pooja-card-item" onclick="openCeremonyDetailModal('Shraddh / Tarpan', 'assets/images/card-shraddh.jpg', 'Shraddh / Tarpan', 'Ancestral homage and Pitru Dosh Shanti following strict Vedic scriptures.', '4.8 (110+ bookings)')">
             <div class="app-pooja-img-wrap">
-              <img src="assets/images/card-shraddh.jpg?v=8k" alt="Ancestral Shraddh Tarpan ceremony performed by knowledgeable Vedic Pandit in Bangalore" loading="lazy">
+              <img src="assets/images/card-shraddh.jpg?v=8k" alt="Ancestral Shraddh Tarpan ceremony performed by knowledgeable Vedic Pandit in Bangalore" loading="lazy" width="480" height="320">
             </div>
             <div class="app-pooja-card-label">Shraddh / Tarpan</div>
           </div>
@@ -494,7 +502,7 @@
           <div class="app-pandit-card-item app-single-pandit-card" style="display:flex; flex-direction:column; gap:14px; padding:1.15rem; border:1.5px solid #D4AF37; border-radius:18px; background:linear-gradient(180deg, #FFFFFF 0%, #FFFDF9 100%); box-shadow:0 6px 20px rgba(84,20,25,0.08);">
             
             <div style="display:flex; gap:14px; align-items:center;">
-              <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" class="app-pandit-photo" style="width:84px; height:84px; border-radius:16px; border:2px solid #D4AF37; box-shadow:0 4px 10px rgba(0,0,0,0.12);" loading="lazy">
+              <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" class="app-pandit-photo" style="width:84px; height:84px; border-radius:16px; border:2px solid #D4AF37; box-shadow:0 4px 10px rgba(0,0,0,0.12);" loading="lazy" width="48" height="48">
               
               <div class="app-pandit-info" style="flex:1;">
                 <div class="app-pandit-title" style="font-size:1.08rem; font-weight:800; color:#2E1E19; margin-bottom:3px;">Pandit Shyam Sundar Ji</div>
@@ -551,22 +559,22 @@
 
         <div class="app-gallery-masonry-2col" id="appGalleryMasonry">
           <div class="app-masonry-item" data-app-cat="all wedding" onclick="openCeremonyDetailModal('Marriage Pooja', 'assets/images/card-marriage.jpg', 'Marriage Pooja', 'Vedic Vivah rituals officiated with sacred Agni & Saptapadi.', '4.9 (250+ bookings)')">
-            <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" loading="lazy">
+            <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" loading="lazy" width="480" height="320">
           </div>
           <div class="app-masonry-item" data-app-cat="all hawan" onclick="openCeremonyDetailModal('Hawan / Yagya', 'assets/images/card-hawan.jpg', 'Hawan / Yagya', 'Sacred fire ceremony with shanti mantra chanting.', '4.9 (210+ bookings)')">
-            <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" loading="lazy">
+            <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" loading="lazy" width="480" height="320">
           </div>
           <div class="app-masonry-item" data-app-cat="all wedding" onclick="openCeremonyDetailModal('Marriage Pooja', 'assets/images/hero-desktop-master.jpg', 'Marriage Pooja', 'Auspicious wedding ceremony with family traditions.', '4.9 (250+ bookings)')">
-            <img src="assets/images/hero-desktop-master.jpg?v=8k" alt="North Indian Vedic Wedding ceremony and Vivah rituals conducted by Pandit in Bangalore" loading="lazy">
+            <img src="assets/images/hero-desktop-master.jpg?v=8k" alt="North Indian Vedic Wedding ceremony and Vivah rituals conducted by Pandit in Bangalore" loading="lazy" width="560" height="380">
           </div>
           <div class="app-masonry-item" data-app-cat="all griha" onclick="openCeremonyDetailModal('Griha Pravesh', 'assets/images/card-grihapravesh.jpg', 'Griha Pravesh', 'New home entry puja with auspicious Vastu rituals.', '4.9 (340+ bookings)')">
-            <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" loading="lazy">
+            <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" loading="lazy" width="480" height="320">
           </div>
           <div class="app-masonry-item" data-app-cat="all hawan" onclick="openCeremonyDetailModal('Vedic Archana', 'assets/images/hero-bg-master.jpg', 'Vedic Archana', 'Senior Pandit conducting sacred puja rituals.', '4.9 (320+ bookings)')">
-            <img src="assets/images/hero-bg-master.jpg?v=8k" alt="Vedic Pandit Ji performing sacred puja archana with brass lamps in Bangalore" loading="lazy">
+            <img src="assets/images/hero-bg-master.jpg?v=8k" alt="Vedic Pandit Ji performing sacred puja archana with brass lamps in Bangalore" loading="lazy" width="560" height="380">
           </div>
           <div class="app-masonry-item" data-app-cat="all griha" onclick="openCeremonyDetailModal('Mangal Kalash', 'assets/images/about_kalash.jpg', 'Mangal Kalash', 'Sacred Kalash Sthapana for prosperity and health.', '4.9 (180+ bookings)')">
-            <img src="assets/images/about_kalash.jpg?v=8k" alt="Auspicious Mangal Kalash Sthapana with coconut, mango leaves, and sacred mauli in Bangalore" loading="lazy">
+            <img src="assets/images/about_kalash.jpg?v=8k" alt="Auspicious Mangal Kalash Sthapana with coconut, mango leaves, and sacred mauli in Bangalore" loading="lazy" width="480" height="320">
           </div>
         </div>
       </section>
@@ -816,7 +824,7 @@
           <!-- Right Column: Hero Visual with Vedic Altar & Pandit Ji (Desktop Only) -->
           <div class="hero-visual-col desktop-only-hero-visual">
             <div class="hero-pandit-frame">
-              <img src="assets/images/hero-pandit.jpg?v=8k" alt="Pandit Ji Express - North Indian Vedic Priest in Traditional Ceremony with Sacred Kalash & Puja Thali in Bangalore" class="hero-pandit-img" width="560" height="380" loading="lazy">
+              <img src="assets/images/hero-pandit.jpg?v=8k" alt="Pandit Ji Express - North Indian Vedic Priest in Traditional Ceremony with Sacred Kalash & Puja Thali in Bangalore" class="hero-pandit-img" width="560" height="380" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -868,7 +876,7 @@
 
             <div class="hero-stat-quote">
               &ldquo;Karma se bada koi dharma nahi, aur seva se bada koi pooja nahi.&rdquo;
-              <div style="font-size:0.72rem; color:var(--color-gold); margin-top:0.25rem; font-style:normal; font-weight:700;">&mdash; Pandit Ji Express</div>
+              <div style="font-size:0.72rem; color:#FFE082; margin-top:0.25rem; font-style:normal; font-weight:700;">&mdash; Pandit Ji Express</div>
             </div>
           </div>
         </div>
@@ -1040,8 +1048,8 @@
             <h2 class="why-left-title" style="margin-bottom: 0.75rem;">
               <svg class="pj-icon pj-icon-gold" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"></path></svg> Why Choose<br>Pandit Ji Express?
             </h2>
-            <p style="color: rgba(255,255,255,0.85); font-size: 0.88rem; max-width: 580px; margin-bottom: 1.5rem; line-height: 1.55;">
-              Officiated by authentic <a href="https://en.wikipedia.org/wiki/Purohita" target="_blank" rel="noopener" style="color: #FAD4B2; text-decoration: underline;">Vedic Purohits</a> following genuine Shastric vidhi for <a href="https://en.wikipedia.org/wiki/Griha_Pravesh" target="_blank" rel="noopener" style="color: #FAD4B2; text-decoration: underline;">Griha Pravesh</a>, Vedic Vivah, and sacred <a href="https://en.wikipedia.org/wiki/Yajna" target="_blank" rel="noopener" style="color: #FAD4B2; text-decoration: underline;">Yagya</a> ceremonies across Bangalore.
+            <p style="color: #FFFFFF; font-size: 0.88rem; max-width: 580px; margin-bottom: 1.5rem; line-height: 1.55;">
+              Officiated by authentic <a href="https://en.wikipedia.org/wiki/Purohita" target="_blank" rel="noopener" style="color: #FFF5EB; text-decoration: underline;">Vedic Purohits</a> following genuine Shastric vidhi for <a href="https://en.wikipedia.org/wiki/Griha_Pravesh" target="_blank" rel="noopener" style="color: #FFF5EB; text-decoration: underline;">Griha Pravesh</a>, Vedic Vivah, and sacred <a href="https://en.wikipedia.org/wiki/Yajna" target="_blank" rel="noopener" style="color: #FFF5EB; text-decoration: underline;">Yagya</a> ceremonies across Bangalore.
             </p>
             <div class="why-icons-row">
               <div>
@@ -1241,7 +1249,7 @@
           <!-- Card 1: Griha Pravesh (Medium 270px) -->
           <div class="masonry-card" data-category="griha-pravesh" onclick="openGalleryLightbox(this)" data-title="Vedic Griha Pravesh Pooja" data-category-name="Griha Pravesh" data-img="assets/images/card-grihapravesh.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" style="height: 270px;" loading="lazy">
+              <img src="assets/images/card-grihapravesh.jpg?v=8k" alt="Vedic Pandit performing Griha Pravesh Puja with auspicious Kalash and Hawan in Bangalore" style="height: 270px;" loading="lazy" width="480" height="320">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Griha Pravesh</span>
                 <p class="masonry-title">Vedic Griha Pravesh &amp; Vastu Puja</p>
@@ -1256,7 +1264,7 @@
           <!-- Card 2: Senior Pandit (Tall 360px) -->
           <div class="masonry-card" data-category="hawan" onclick="openGalleryLightbox(this)" data-title="Vedic Pandit Performing Havan Archana" data-category-name="Vedic Hawan" data-img="assets/images/hero-bg-master.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/hero-bg-master.jpg?v=8k" alt="Vedic Pandit Ji performing sacred puja archana with brass lamps in Bangalore" style="height: 360px;" loading="lazy">
+              <img src="assets/images/hero-bg-master.jpg?v=8k" alt="Vedic Pandit Ji performing sacred puja archana with brass lamps in Bangalore" style="height: 360px;" loading="lazy" width="560" height="380">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Vedic Scholar</span>
                 <p class="masonry-title">Senior Pandit Conducting Havan</p>
@@ -1271,7 +1279,7 @@
           <!-- Card 3: Wedding Vivah (Tall 390px) -->
           <div class="masonry-card" data-category="wedding" onclick="openGalleryLightbox(this)" data-title="Traditional Vedic Vivah Sanskar" data-category-name="Wedding Vivah" data-img="assets/images/card-marriage.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" style="height: 390px;" loading="lazy">
+              <img src="assets/images/card-marriage.jpg?v=8k" alt="Authentic North Indian Vedic Vivah Wedding Ceremony and Agni Havan conducted in Bangalore" style="height: 390px;" loading="lazy" width="480" height="320">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Wedding</span>
                 <p class="masonry-title">Vedic Vivah Sanskar &amp; Saptapadi</p>
@@ -1286,7 +1294,7 @@
           <!-- Card 4: Ganesha Puja (Medium 250px) -->
           <div class="masonry-card" data-category="sanskar" onclick="openGalleryLightbox(this)" data-title="Lord Ganesha Sthapana Mahapuja" data-category-name="Ganesh Puja" data-img="assets/images/card-ganesh.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" style="height: 250px;" loading="lazy">
+              <img src="assets/images/card-ganesh.jpg?v=8k" alt="Lord Ganesha Puja ceremony with modak, durva grass, and Vedic mantras in Bangalore" style="height: 250px;" loading="lazy" width="480" height="320">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Ganapati</span>
                 <p class="masonry-title">Maha Ganapati Sthapana</p>
@@ -1301,7 +1309,7 @@
           <!-- Card 5: Sacred Hawan Kund (Medium 310px) -->
           <div class="masonry-card" data-category="hawan" onclick="openGalleryLightbox(this)" data-title="Navchandi Hawan &amp; Sacred Kund" data-category-name="Hawan &amp; Yagna" data-img="assets/images/card-hawan.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" style="height: 310px;" loading="lazy">
+              <img src="assets/images/card-hawan.jpg?v=8k" alt="Sacred Hawan Kund fire ceremony and Vedic Yagya conducted by North Indian Pandit in Bangalore" style="height: 310px;" loading="lazy" width="480" height="320">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Hawan</span>
                 <p class="masonry-title">Navchandi &amp; Gayatri Hawan</p>
@@ -1316,43 +1324,13 @@
           <!-- Card 6: Sacred Deepam Altar (Compact 230px) -->
           <div class="masonry-card" data-category="sanskar" onclick="openGalleryLightbox(this)" data-title="Deepam &amp; Altar Puja Decoration" data-category-name="Altar Rituals" data-img="assets/images/poojas_hero_diyas.jpg">
             <div class="masonry-card-img-wrap">
-              <img src="assets/images/poojas_hero_diyas.jpg?v=8k" alt="Auspicious glowing brass diyas and sacred lamps prepared for North Indian Vedic rituals in Bangalore" style="height: 230px;" loading="lazy">
+              <img src="assets/images/poojas_hero_diyas.jpg?v=8k" alt="Auspicious glowing brass diyas and sacred lamps prepared for North Indian Vedic rituals in Bangalore" style="height: 230px;" loading="lazy" width="560" height="380">
               <div class="masonry-card-details">
                 <span class="masonry-badge">Deepam</span>
                 <p class="masonry-title">Sacred Deepam &amp; Altar Sthapana</p>
                 <div class="masonry-card-footer">
                   <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Koramangala</span>
                   <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('General Puja')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 7: Satyanarayan Katha (Medium 310px) -->
-          <div class="masonry-card" data-category="katha" onclick="openGalleryLightbox(this)" data-title="Shri Satyanarayan Maha Vrat Katha" data-category-name="Satyanarayan" data-img="assets/images/card-satyanarayan.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/card-satyanarayan.jpg?v=8k" alt="North Indian Pandit reciting Shri Satyanarayan Katha Puja with sacred prasad in Bangalore" style="height: 310px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Katha</span>
-                <p class="masonry-title">Shri Satyanarayan Katha &amp; Prasad</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> Marathahalli</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('Satyanarayan Katha')">Book Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 8: Holy Puja Thali (Medium 260px) -->
-          <div class="masonry-card" data-category="sanskar" onclick="openGalleryLightbox(this)" data-title="Doorstep Shuddh Puja Samagri &amp; Thali" data-category-name="Doorstep Samagri" data-img="assets/images/puja-thali-samagri.jpg">
-            <div class="masonry-card-img-wrap">
-              <img src="assets/images/puja-thali-samagri.jpg?v=8k" alt="Complete 100% pure authentic Vedic Pooja Samagri Thali with brass diyas in Bangalore" style="height: 260px;" loading="lazy">
-              <div class="masonry-card-details">
-                <span class="masonry-badge">Samagri</span>
-                <p class="masonry-title">100% Shuddh Doorstep Samagri Kit</p>
-                <div class="masonry-card-footer">
-                  <span class="masonry-location"><svg class="pj-icon pj-icon-gold" style="width:12px;height:12px;" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg> All Bangalore</span>
-                  <button class="masonry-btn-book" onclick="event.stopPropagation(); openBookingModal('Samagri Kit')">Book Now</button>
                 </div>
               </div>
             </div>
@@ -1395,74 +1373,97 @@
       </div>
     </section>
 
-    <!-- FAQ Section (AEO, Voice Search & AI Overviews Direct Answer Engine) -->
-    <section class="faq-section container" id="faq" aria-labelledby="faqHeading" style="padding: 3rem 1.25rem;">
+    <!-- FAQ & Direct Answer Section (AEO, GEO, Voice Search & AI Overviews) -->
+    <section class="faq-section container" id="faq" aria-labelledby="faqHeading" style="padding: 3rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
       <div class="faq-section-header" style="text-align: center; margin-bottom: 2rem;">
         <span style="color:var(--color-orange-text); font-weight:700; font-size:0.8rem; letter-spacing:1px; text-transform:uppercase; display:block; margin-bottom:0.35rem;">Frequently Asked Questions</span>
         <h2 id="faqHeading" class="section-title-ornate" style="margin-bottom:0.75rem;">Got Questions? Pandit Ji Has Answers</h2>
-        <p style="color:var(--color-text-muted); font-size:0.92rem; max-width:650px; margin:0 auto;">Clear answers for your Vedic ceremony, samagri requirements, muhurat, and doorstep booking in Bangalore.</p>
+        <p style="color:var(--color-text-muted); font-size:0.92rem; max-width:650px; margin:0 auto 1.5rem auto;">Clear answers for your Vedic ceremony, samagri requirements, muhurat, and doorstep booking in Bangalore.</p>
       </div>
 
-      <div class="faq-accordion-grid" style="max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:0.75rem;">
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;" open>
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>Who is the best North Indian Pandit in Bangalore?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            Pandit Shyam Sundar Ji, Founder of Pandit Ji Express, is widely regarded as one of the best North Indian pandits in Bangalore. With 15+ years of experience in authentic Vedic ceremonies including weddings, Griha Pravesh, havans, and Satyanarayan Katha, he serves Hindi-speaking families across Bengaluru with doorstep samagri delivery. Call +91 90657 88789 to book.
-          </p>
-        </details>
+      <!-- Quick Answer & Verified Service Facts Block (AEO / GEO Engine) -->
+      <div class="aeo-fact-summary" style="max-width:860px; margin: 0 auto 2rem auto; background:#FFF; border:2px solid var(--color-gold); border-radius:14px; padding:1.25rem 1.5rem; box-shadow:0 4px 16px rgba(0,0,0,0.04);">
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+          <span style="font-size:1.25rem;">⚡</span>
+          <h3 style="font-size:1.02rem; font-weight:800; color:var(--color-maroon-primary); margin:0;">Quick Answer &amp; Verified Service Facts</h3>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:0.75rem; font-size:0.86rem; color:var(--color-text-dark);">
+          <div><strong>Primary Service:</strong> North Indian Vedic Pandit &amp; Purohit</div>
+          <div><strong>Head Priest:</strong> Pandit Shyam Sundar Ji (15+ Yrs Exp)</div>
+          <div><strong>Languages:</strong> Hindi, Sanskrit, Maithili, Bhojpuri</div>
+          <div><strong>Samagri:</strong> 100% Pure Vedic Samagri Included</div>
+          <div><strong>Service Areas:</strong> Entire Bengaluru (Whitefield, HSR, Marathahalli, etc.)</div>
+          <div><strong>Direct Contact:</strong> <a href="tel:+919065788789" style="color:var(--color-orange-text); font-weight:700;">+91 90657 88789</a></div>
+        </div>
+      </div>
 
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>How to book a North Indian Pandit in Bangalore for Griha Pravesh?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            To book a North Indian Pandit for Griha Pravesh in Bangalore, call Pandit Ji Express at +91 90657 88789 or WhatsApp us. We provide verified, Hindi-speaking Vedic pandits with complete samagri for housewarming ceremonies. Same-day booking is available. Visit our Griha Pravesh page for muhurat dates and detailed puja packages.
-          </p>
-        </details>
+      <div class="faq-accordion-grid" style="max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:0.85rem;">
+        
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> Who is the best North Indian Pandit in Bangalore?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              <strong>Pandit Shyam Sundar Ji</strong>, Founder of Pandit Ji Express, is widely regarded as one of the best North Indian pandits in Bangalore. With 15+ years of experience in authentic Vedic ceremonies including weddings, Griha Pravesh, havans, and Satyanarayan Katha, he serves Hindi-speaking families across Bengaluru with doorstep samagri delivery. Call +91 90657 88789 to book.
+            </p>
+          </div>
+        </article>
 
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>What is the cost of Griha Pravesh Puja in Bangalore?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            Griha Pravesh puja costs at Pandit Ji Express in Bangalore start from ₹5,100 for a basic ceremony. Complete packages including pandit dakshina, all puja samagri, and doorstep delivery are available. Prices vary based on ceremony duration and samagri requirements. Contact us at +91 90657 88789 for a custom quote.
-          </p>
-        </details>
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> How to book a North Indian Pandit in Bangalore for Griha Pravesh?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              To book a North Indian Pandit for Griha Pravesh in Bangalore, call Pandit Ji Express at <strong>+91 90657 88789</strong> or WhatsApp us. We provide verified, Hindi-speaking Vedic pandits with complete samagri for housewarming ceremonies. Same-day booking is available with instant muhurat guidance.
+            </p>
+          </div>
+        </article>
 
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>Do you provide samagri along with the pandit?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            Yes, Pandit Ji Express provides complete puja samagri along with the pandit for all ceremonies in Bangalore. Our samagri kit includes all required items like kalash, gangajal, sindoor, kusha, flowers, incense, and more — delivered to your doorstep. This eliminates the hassle of sourcing items separately.
-          </p>
-        </details>
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> What is the cost of Griha Pravesh Puja in Bangalore?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              Griha Pravesh puja costs at Pandit Ji Express in Bangalore start from <strong>₹5,100</strong> for a basic ceremony. Complete packages including pandit dakshina, all puja samagri, and doorstep delivery are available. Prices vary based on ceremony duration and samagri requirements. Contact us at +91 90657 88789 for a custom quote.
+            </p>
+          </div>
+        </article>
 
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>Which areas in Bangalore does Pandit Ji Express serve?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            Pandit Ji Express serves all areas across Bengaluru including Whitefield, HSR Layout, Marathahalli, Indiranagar, Koramangala, JP Nagar, Electronic City, Hebbal, Yelahanka, Bannerghatta Road, Sarjapur Road, Outer Ring Road, and more. We cover both North and South Bangalore for all Vedic ceremonies.
-          </p>
-        </details>
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> Do you provide samagri along with the pandit?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              <strong>Yes</strong>, Pandit Ji Express provides complete 100% pure puja samagri along with the pandit for all ceremonies in Bangalore. Our samagri kit includes all required items like kalash, gangajal, sindoor, kusha, flowers, hawan samagri, dry fruits, and incense — delivered directly to your home.
+            </p>
+          </div>
+        </article>
 
-        <details class="faq-item" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:0.9rem 1.15rem;">
-          <summary style="font-weight:700; font-size:1rem; cursor:pointer; color:var(--color-text-dark); list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span>Is Pandit Shyam Sundar Ji available for same-day booking?</span>
-            <span style="color:var(--color-orange-text); font-weight:800; font-size:1.1rem;">+</span>
-          </summary>
-          <p style="margin-top:0.6rem; font-size:0.88rem; color:var(--color-text-muted); line-height:1.55;">
-            Yes, Pandit Ji Express offers same-day pandit booking in Bangalore for urgent ceremonies. Call or WhatsApp +91 90657 88789 and we will confirm availability within minutes. We recommend booking 2-3 days in advance for auspicious muhurat-based ceremonies like Griha Pravesh and weddings.
-          </p>
-        </details>
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> Which areas in Bangalore does Pandit Ji Express serve?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              Pandit Ji Express serves <strong>all areas across Bengaluru</strong> including Whitefield, HSR Layout, Marathahalli, Indiranagar, Koramangala, JP Nagar, Electronic City, Hebbal, Yelahanka, Bannerghatta Road, Sarjapur Road, Outer Ring Road, and nearby localities for all Vedic ceremonies.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-card" style="background:#FFF; border:1px solid var(--color-card-border); border-radius:12px; padding:1.1rem 1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.03);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question" itemprop="name" style="font-size:1.02rem; font-weight:700; color:var(--color-text-dark); margin:0 0 0.5rem 0; display:flex; align-items:center; gap:0.5rem;">
+            <span style="color:var(--color-orange-text); font-weight:800;">Q:</span> Is Pandit Shyam Sundar Ji available for same-day booking?
+          </h3>
+          <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text" style="margin:0; font-size:0.9rem; color:var(--color-text-muted); line-height:1.6;">
+              <strong>Yes</strong>, Pandit Ji Express offers same-day pandit booking in Bangalore for urgent ceremonies. Call or WhatsApp <strong>+91 90657 88789</strong> and we will confirm availability within minutes. We also advise booking 2-3 days in advance for auspicious muhurat-based ceremonies.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -1623,7 +1624,7 @@
 
       <!-- Hero Banner -->
       <div class="app-detail-hero-banner">
-        <img id="appDetailImg" src="assets/images/card-marriage.jpg?v=8k" alt="North Indian Vedic Wedding ceremony and Vivah Puja conducted by Pandit in Bangalore" loading="lazy">
+        <img id="appDetailImg" src="assets/images/card-marriage.jpg?v=8k" alt="North Indian Vedic Wedding ceremony and Vivah Puja conducted by Pandit in Bangalore" loading="lazy" width="480" height="240">
       </div>
 
       <!-- Content -->
@@ -1813,7 +1814,7 @@
 
         <!-- Pandit Shyam Sundar: Founder & Head Priest -->
         <div class="pandit-modal-card" style="position: relative;">
-          <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" class="pandit-avatar-img" loading="lazy">
+          <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" class="pandit-avatar-img" loading="lazy" width="48" height="48">
           <div class="pandit-details-block" style="flex: 1;">
             <span class="pandit-available-tag">Founder &amp; Head Priest</span>
             <div class="pandit-name">Pandit Shyam Sundar</div>
@@ -1905,7 +1906,7 @@
             <!-- Assigned Vedic Priest Card -->
             <div style="border: 1px solid var(--color-card-border); border-radius: 12px; padding: 0.85rem; background: #FFFDF9; margin-bottom: 1.25rem;">
               <div style="display: flex; gap: 0.75rem; align-items: center;">
-                <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-gold);" loading="lazy">
+                <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-gold);" loading="lazy" width="48" height="48">
                 <div style="flex: 1;">
                   <span style="background: #E8F5E9; color: #2E7D32; font-size: 0.65rem; font-weight: 800; padding: 0.15rem 0.5rem; border-radius: 999px; display: inline-block; margin-bottom: 0.2rem;">✓ Verified Head Priest</span>
                   <div style="font-weight: 800; font-size: 0.95rem; color: var(--color-text-dark);">Pandit Shyam Sundar</div>
@@ -2014,13 +2015,13 @@
        MODAL 4: BOOKING ENQUIRY CONFIRMED
        ============================================================ -->
   <div id="bookingConfirmModal" class="app-modal-overlay" onclick="closeModalOnBackdrop(event, 'bookingConfirmModal')">
-    <div class="app-modal-window" style="background: linear-gradient(180deg, #430C0F 0%, #2A070A 100%); color: #FFF; text-align: center;">
+    <div class="app-modal-window" style="background-color: #2A070A; background: linear-gradient(180deg, #430C0F 0%, #2A070A 100%); color: #FFFFFF; text-align: center;">
       <div style="padding: 1.75rem 1.25rem 1.25rem;">
         <div style="width: 58px; height: 58px; border-radius: 50%; background: #2E7D32; color: #FFF; font-size: 1.8rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; border: 3px solid #FFF;">
           <svg class="pj-icon pj-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
         </div>
         <div style="font-size: 1.45rem; font-weight: 800; color: #FFF; margin-bottom: 0.2rem;">Booking Enquiry Sent!</div>
-        <p style="font-size: 0.82rem; color: #FAD4B2; margin-bottom: 1.25rem;">Pandit Shyam Sundar Ji will connect with you shortly</p>
+        <p style="font-size: 0.82rem; color: #FFF5EB; margin-bottom: 1.25rem;">Pandit Shyam Sundar Ji will connect with you shortly</p>
 
         <!-- Summary White Card -->
         <div style="background: #FFFFFF; color: var(--color-text-dark); border-radius: 14px; padding: 1.15rem; text-align: left; margin-bottom: 1.25rem; box-shadow: 0 4px 14px rgba(0,0,0,0.25);">
@@ -2042,7 +2043,7 @@
 
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EEE; padding-bottom: 0.65rem; margin-bottom: 0.65rem;">
             <div style="display: flex; gap: 0.75rem; align-items: center;">
-              <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-gold);" loading="lazy">
+              <img src="assets/images/pandit-shyam-sundar-avatar.jpg?v=8k" alt="Pandit Shyam Sundar - Founder and Senior North Indian Vedic Pandit in Bangalore" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-gold);" loading="lazy" width="48" height="48">
               <div>
                 <strong style="font-size: 0.88rem;">Pandit Shyam Sundar</strong><br>
                 <span style="font-size: 0.78rem; color: #333; font-weight: 500;">+91 90657 88789</span>
@@ -2060,7 +2061,7 @@
           </div>
         </div>
 
-        <p style="font-size: 0.78rem; color: #E0CEBE; margin-bottom: 1.25rem; line-height: 1.35;">
+        <p style="font-size: 0.78rem; color: #FFF5EB; margin-bottom: 1.25rem; line-height: 1.35;">
           Your Vedic enquiry has been forwarded directly to Pandit Shyam Sundar Ji on WhatsApp for instant confirmation.
         </p>
 
@@ -2070,7 +2071,7 @@
 
         <!-- Holy Thali Motif at bottom of Confirmed Screen -->
         <div style="display: flex; justify-content: center; margin-top: 0.5rem;">
-          <img src="assets/images/pooja_samagri_thali.jpg?v=8k" alt="Complete 100% pure authentic Vedic Pooja Samagri Thali with brass diyas in Bangalore" style="width: 100%; max-width: 220px; height: 140px; object-fit: cover; border-radius: 8px;" loading="lazy">
+          <img src="assets/images/pooja_samagri_thali.jpg?v=8k" alt="Complete 100% pure authentic Vedic Pooja Samagri Thali with brass diyas in Bangalore" style="width: 100%; max-width: 220px; height: 140px; object-fit: cover; border-radius: 8px;" loading="lazy" width="220" height="140">
         </div>
       </div>
     </div>
@@ -2081,7 +2082,7 @@
     <div class="gallery-lightbox-card">
       <button class="gallery-lightbox-close" aria-label="Close Lightbox" onclick="closeGalleryLightbox()">&times;</button>
       <div class="gallery-lightbox-img-wrap">
-        <img id="lightboxImg" src="assets/images/card-grihapravesh.jpg?v=8k" alt="North Indian family performing sacred Griha Pravesh housewarming puja in Bangalore" loading="lazy">
+        <img id="lightboxImg" src="assets/images/card-grihapravesh.jpg?v=8k" alt="North Indian family performing sacred Griha Pravesh housewarming puja in Bangalore" loading="lazy" width="800" height="600">
       </div>
       <div class="gallery-lightbox-body">
         <div class="gallery-lightbox-meta">

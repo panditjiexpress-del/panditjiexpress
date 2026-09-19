@@ -1,3 +1,18 @@
+
+/* Global Fallback for Mobile App Header Elements to ensure 100% WCAG Contrast */
+.app-mobile-header {
+  background-color: #2D0B0E;
+}
+.app-header-title {
+  color: #FFFFFF;
+}
+.app-header-tagline {
+  color: #FFFFFF;
+}
+.app-modal-window {
+  background-color: #2A070A;
+}
+
 /* ============================================================
    PANDIT JI EXPRESS - EXACT BRAND & APP DESIGN SYSTEM
    Matches the official Desktop & Mobile App Design Screenshots
@@ -740,7 +755,8 @@ img {
 
 /* Hero Stats Bottom Ribbon (Dark Maroon) */
 .hero-stats-ribbon {
-  background: linear-gradient(135deg, #38080C 0%, #200406 100%);
+  background-color: #200406;
+  background: #200406 linear-gradient(135deg, #38080C 0%, #200406 100%);
   border-top: 2px solid var(--color-gold);
   padding: 1.15rem 0;
   color: #FFFFFF;
@@ -1166,7 +1182,8 @@ img {
    DARK MAROON "WHY CHOOSE" SECTION (FROM SCREENSHOT)
    ============================================================ */
 .why-choose-banner-section {
-  background: linear-gradient(135deg, #38070A, #4E0E13);
+  background-color: #38070A;
+  background: #38070A linear-gradient(135deg, #38070A, #4E0E13);
   color: #FFFFFF;
   padding: 3.5rem 0;
   position: relative;
@@ -1681,7 +1698,7 @@ img {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #8C7B70;
+  color: #55453B;
   font-size: 0.7rem;
   font-weight: 600;
   gap: 0.2rem;
@@ -4524,7 +4541,7 @@ nav[aria-label="Breadcrumb"] li {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #8C7B70;
+    color: #55453B;
     font-size: 0.68rem;
     font-weight: 600;
     gap: 0.2rem;
@@ -4809,7 +4826,7 @@ nav[aria-label="Breadcrumb"] li {
 
   .mobile-spec-chip-label {
     font-size: 0.65rem;
-    color: #8C7B70;
+    color: #55453B;
     font-weight: 600;
   }
 
@@ -5516,7 +5533,7 @@ nav[aria-label="Breadcrumb"] li {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #9E8C80;
+    color: #55453B;
     font-size: 0.62rem;
     font-weight: 600;
     gap: 0.18rem;
@@ -6399,14 +6416,14 @@ nav[aria-label="Breadcrumb"] li {
   .app-header-title {
     font-size: 0.95rem;
     font-weight: 800;
-    color: #FDFBF7;
+    color: #FFFFFF;
     letter-spacing: 0.5px;
     line-height: 1.1;
   }
 
   .app-header-tagline {
     font-size: 0.62rem;
-    color: #DFB967;
+    color: #FFFFFF;
     letter-spacing: 0.8px;
     font-weight: 600;
   }
@@ -6433,7 +6450,8 @@ nav[aria-label="Breadcrumb"] li {
     position: relative;
     width: 100%;
     min-height: clamp(570px, 74vh, 680px);
-    background: url('../images/hero-bg-master.jpg') no-repeat center 20%;
+    background-color: #1D0608;
+    background: #1D0608 url('../images/hero-bg-master.jpg') no-repeat center 20%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -6470,7 +6488,7 @@ nav[aria-label="Breadcrumb"] li {
 
   .app-hero-subtext {
     font-size: 0.88rem;
-    color: #F3E7DC;
+    color: #FFFFFF;
     line-height: 1.4;
     max-width: 320px;
     margin: 0 0 1.1rem 0;
@@ -6589,7 +6607,7 @@ nav[aria-label="Breadcrumb"] li {
 
   .app-section-title-group p {
     font-size: 0.78rem;
-    color: #8C7D73;
+    color: #55453B;
     margin: 0;
   }
 
@@ -6943,7 +6961,7 @@ nav[aria-label="Breadcrumb"] li {
 
   .app-review-name-block span {
     font-size: 0.72rem;
-    color: #8A7B72;
+    color: #55453B;
   }
 
   /* SCREEN 8: Why Choose Pandit Ji Express? */
@@ -7077,7 +7095,7 @@ nav[aria-label="Breadcrumb"] li {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #8A7B72;
+    color: #55453B;
     font-size: 0.65rem;
     font-weight: 600;
     gap: 2px;
@@ -7231,7 +7249,7 @@ nav[aria-label="Breadcrumb"] li {
     padding: 0.6rem 0.2rem;
     font-size: 0.82rem;
     font-weight: 700;
-    color: #8C7D73;
+    color: #55453B;
     text-align: center;
     border-bottom: 2.5px solid transparent;
     cursor: pointer;
@@ -7285,7 +7303,7 @@ nav[aria-label="Breadcrumb"] li {
 
   .app-detail-price-sub {
     font-size: 0.68rem;
-    color: #8C7D73;
+    color: #55453B;
     font-weight: 600;
   }
 
@@ -7341,7 +7359,7 @@ nav[aria-label="Breadcrumb"] li {
     text-align: center;
     font-size: 0.65rem;
     font-weight: 700;
-    color: #8C7D73;
+    color: #55453B;
     margin-bottom: 6px;
   }
 
@@ -7406,7 +7424,7 @@ nav[aria-label="Breadcrumb"] li {
     top: 50%;
     transform: translateY(-50%);
     font-size: 0.95rem;
-    color: #8C7D73;
+    color: #55453B;
   }
 
   .app-input-icon-wrap input,
