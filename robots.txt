@@ -30,5 +30,5 @@ Disallow: /scratch/
 Disallow: /.system_generated/
 
 # Master XML Sitemap
-Sitemap: https://panditjiexpress.com/sitemap.xml
+Sitemap: https://panditjiexpress.in/sitemap.xml
 

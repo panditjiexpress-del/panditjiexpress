@@ -76,7 +76,7 @@ PanditJiExpress/
 
 Please review and confirm these items prior to official launch:
 
-- [ ] **Final Domain**: The default URLs are set to `https://panditjiexpress.com/`. If you use another domain (e.g. `.in` or `.co.in`), find and replace `https://panditjiexpress.com/` across HTML/XML files.
+- [ ] **Final Domain**: The default URLs are set to `https://panditjiexpress.in/`. If you use another domain (e.g. `.in` or `.co.in`), find and replace `https://panditjiexpress.in/` across HTML/XML files.
 - [ ] **Official Email**: Check if you wish to configure `contact@panditjiexpress.com` or another mailbox.
 - [ ] **Exact Google Maps CID URL**: If Google supplies an exact direct sharing URL for your GBP (e.g. `https://maps.app.goo.gl/...`), you can replace the Google Maps search link in the header, footer, and schema.
 - [ ] **Operating Hours**: The current schema and footer indicate Monday–Sunday: 6:00 AM – 10:00 PM (with ceremonies conducted 24/7 as per shubh muhurat). Verify if any changes are required.
@@ -118,11 +118,11 @@ This project has **zero external build dependencies** (no Node.js, npm, Webpack,
 1. **Verify Ownership**: Open [Google Search Console](https://search.google.com/search-console), add your property via Domain DNS or HTML tag.
 2. **Submit Sitemap**: Go to **Sitemaps** in the left menu and enter:
    ```
-   https://panditjiexpress.com/sitemap.xml
+   https://panditjiexpress.in/sitemap.xml
    ```
-3. **Inspect URL**: Use the URL Inspection tool on `https://panditjiexpress.com/` and click **Request Indexing**.
+3. **Inspect URL**: Use the URL Inspection tool on `https://panditjiexpress.in/` and click **Request Indexing**.
 4. **Synchronize Google Business Profile**:
-   - Ensure the website link on your GBP listing points to `https://panditjiexpress.com/`.
+   - Ensure the website link on your GBP listing points to `https://panditjiexpress.in/`.
    - Ensure the business name, phone (`+91 90657 88789`), and address match exactly.
    - Send the Google Maps review link to satisfied clients after completed ceremonies to naturally gather reviews.
 

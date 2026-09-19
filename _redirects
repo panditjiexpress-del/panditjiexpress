@@ -9,4 +9,5 @@
 /index.html                /  301
 
 # www to non-www redirect (set this in Cloudflare DNS too)
-https://www.panditjiexpress.com/*  https://panditjiexpress.com/:splat  301
+https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
+https://panditjiexpress-avp.pages.dev/*  https://panditjiexpress.in/:splat  301

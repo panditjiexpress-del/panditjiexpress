@@ -91,7 +91,7 @@ panditjiexpress.com/griha-pravesh-pooja-bangalore.html
 
 ## After Deployment: SEO Next Steps
 
-1. **Google Search Console** → Add property → Submit `https://panditjiexpress.com/sitemap.xml`
+1. **Google Search Console** → Add property → Submit `https://panditjiexpress.in/sitemap.xml`
 2. **Google Business Profile** → Claim/create listing for "Pandit Ji Express"
 3. **Rich Results Test** → https://search.google.com/test/rich-results
-4. **PageSpeed Insights** → https://pagespeed.web.dev/?url=https://panditjiexpress.com
+4. **PageSpeed Insights** → https://pagespeed.web.dev/?url=https://panditjiexpress.in
