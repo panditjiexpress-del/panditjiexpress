@@ -185,4 +185,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+  <url>
+    <loc>https://panditjiexpress.in/best-north-indian-pandit-bangalore</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/best-north-indian-pandit-bangalore.jpg</image:loc>
+      <image:title>Best North Indian Pandit in Bangalore - Complete Guide by Pandit Ji Express</image:title>
+    </image:image>
+  </url>
 </urlset>

@@ -7121,6 +7121,18 @@ nav[aria-label="Breadcrumb"] li {
 
   .mob-nav-item.active svg {
     stroke: #541419;
+    stroke-width: 2.2;
+  }
+
+  /* Active indicator dot above active tab icon */
+  .mob-nav-item.active .mob-nav-icon::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 2.5px;
+    background: #541419;
+    border-radius: 2px;
+    margin: 0 auto 3px;
   }
 
   /* SCREEN 3: POOJA DETAIL MODAL */
