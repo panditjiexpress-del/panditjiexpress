@@ -21,3 +21,6 @@ npm-debug.log*
 # Logs
 *.log
 logs/
+
+# Scratch
+scratch/

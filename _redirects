@@ -1,9 +1,16 @@
 # Redirect old pandit pages to Pandit Shyam Sundar (SEO-safe 301)
-/pandits.html              /pandit-shyam-sundar.html  301
-/pandit-rahul-shastri.html /pandit-shyam-sundar.html  301
+/pandits.html              /pandit-shyam-sundar  301
+/pandits                   /pandit-shyam-sundar  301
+/pandit-rahul-shastri.html /pandit-shyam-sundar  301
+/pandit-rahul-shastri      /pandit-shyam-sundar  301
 
 # Redirect vastu page to services (301 permanent)
-/vastu-shanti-puja-bangalore.html  /services.html  301
+/vastu-shanti-puja-bangalore.html  /services  301
+/vastu-shanti-puja-bangalore       /services  301
+
+# Redirect resources to samagri (301 permanent)
+/resources.html            /samagri  301
+/resources                 /samagri  301
 
 # Remove trailing slashes (canonical URL hygiene)
 /index.html                /  301
