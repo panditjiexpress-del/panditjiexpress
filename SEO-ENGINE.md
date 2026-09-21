@@ -50,6 +50,11 @@ Max: 60 characters
 | north-indian-pandit-hsr-layout.html | /north-indian-pandit-hsr-layout | North Indian Pandit in HSR Layout Bangalore | Hindi Pandit Ji |
 | north-indian-pandit-marathahalli.html | /north-indian-pandit-marathahalli | North Indian Pandit in Marathahalli Bangalore | Hindi Pandit Ji |
 | best-north-indian-pandit-bangalore.html | /best-north-indian-pandit-bangalore | Best North Indian Pandit in Bangalore | Hindi Pandit Ji |
+| pandit-cost-bangalore.html | /pandit-cost-bangalore | How Much Does a Pandit Cost in Bangalore? | Puja &amp; Ceremony Guide |
+| griha-pravesh-puja-bangalore-guide.html | /griha-pravesh-puja-bangalore-guide | Griha Pravesh Puja in Bangalore | Cost, Samagri, Muhurat &amp; Process |
+| puja-samagri-list-bangalore.html | /puja-samagri-list-bangalore | Puja Samagri List for Bangalore | Complete Hindu Ceremony Checklist |
+| how-to-book-pandit-bangalore.html | /how-to-book-pandit-bangalore | How to Book a North Indian Pandit in Bangalore | Complete Guide |
+| hindi-speaking-pandit-bangalore.html | /hindi-speaking-pandit-bangalore | Hindi-Speaking North Indian Pandit in Bangalore | Puja &amp; Vedic Ceremonies |
 
 ---
 
@@ -199,10 +204,14 @@ Guideline: Aim for the first 100-120 characters to directly address the search q
 └── /upanayanam-janeu-bangalore
 
 /blog (hub)
-├── /best-north-indian-pandit-bangalore (Hub Guide: How to choose a North Indian Pandit in Bangalore)
-├── All blog posts link back to /blog
-├── Each blog post links to its relevant service page
-└── Each service page links to related blog posts
+├── /best-north-indian-pandit-bangalore (Pillar Guide: How to choose a North Indian Pandit in Bangalore)
+├── /pandit-cost-bangalore (Pillar Guide: Transparent cost, dakshina & pricing breakdown in Bangalore)
+├── /griha-pravesh-puja-bangalore-guide (Cluster Guide: Apartment & villa housewarming rituals, Vastu, milk boiling & muhurat)
+├── /puja-samagri-list-bangalore (Cluster Guide: Itemized checklists across 5 major pujas & local sourcing)
+├── /how-to-book-pandit-bangalore (Cluster Guide: Booking steps, info required, calendar coordination & prep)
+├── /hindi-speaking-pandit-bangalore (Cluster Guide: Language clarity, mantra explanation & regional North Indian traditions)
+├── All blog posts link back to /blog and relevant service pages
+└── Related service pages contextually link to guides
 
 Location pages → Link to all service pages + /booking
 
