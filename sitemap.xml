@@ -245,4 +245,34 @@
       <image:title>Hindi-Speaking North Indian Pandit in Bangalore - Pandit Ji Express</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://panditjiexpress.in/bihari-pandit-bangalore</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/hindi-speaking-pandit-bangalore.jpg</image:loc>
+      <image:title>Bihari Pandit in Bangalore - Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/maithil-pandit-bangalore</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/card-marriage.jpg</image:loc>
+      <image:title>Maithil Pandit in Bangalore - Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/online-pandit-bangalore</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/how-to-book-pandit-bangalore.jpg</image:loc>
+      <image:title>Online Pandit in Bangalore - Pandit Ji Express</image:title>
+    </image:image>
+  </url>
 </urlset>

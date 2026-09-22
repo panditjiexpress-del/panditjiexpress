@@ -7737,26 +7737,38 @@ nav[aria-label="Breadcrumb"] li {
   }
 }
 
-/* Tiny Floating Call & WhatsApp Action Buttons (Above bottom nav bar) */
-.app-floating-contact-pills {
-  position: fixed;
-  bottom: 80px; /* Elevated cleanly above 60px bottom nav bar */
+/* Floating Call & WhatsApp Action Buttons (Fixed on every page, mobile & desktop) */
+.app-floating-contact-pills,
+.app-float-btns {
+  position: fixed !important;
+  bottom: 80px; /* Elevated cleanly above 60px bottom nav bar on mobile */
   right: 14px;
-  z-index: 1050;
-  display: flex;
+  z-index: 9999 !important;
+  display: flex !important;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
+  pointer-events: auto;
+}
+
+/* On ceremony pages with mobile sticky booking bar, elevate above the bar */
+@media (max-width: 768px) {
+  .mobile-sticky-action-bar ~ .app-floating-contact-pills,
+  .mobile-sticky-action-bar ~ .app-float-btns,
+  body:has(.mobile-sticky-action-bar) .app-floating-contact-pills,
+  body:has(.mobile-sticky-action-bar) .app-float-btns {
+    bottom: calc(125px + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 .app-float-btn {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
   cursor: pointer;
@@ -7764,7 +7776,7 @@ nav[aria-label="Breadcrumb"] li {
 
 .app-float-btn:hover,
 .app-float-btn:active {
-  transform: scale(1.15);
+  transform: scale(1.12);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
 }
 
@@ -7773,9 +7785,10 @@ nav[aria-label="Breadcrumb"] li {
   color: #FFFFFF;
 }
 
-.app-float-wa svg {
-  width: 20px;
-  height: 20px;
+.app-float-wa svg,
+.app-float-wa .pj-icon {
+  width: 22px;
+  height: 22px;
   fill: #FFFFFF;
 }
 
@@ -7785,14 +7798,38 @@ nav[aria-label="Breadcrumb"] li {
   border: 1.5px solid rgba(212, 175, 55, 0.45);
 }
 
-.app-float-call svg {
-  width: 17px;
-  height: 17px;
+.app-float-call svg,
+.app-float-call .pj-icon {
+  width: 19px;
+  height: 19px;
   stroke: #FFFFFF;
 }
 
 @media (min-width: 992px) {
   .app-floating-contact-pills,
+  .app-float-btns {
+    bottom: 24px;
+    right: 24px;
+    gap: 12px;
+  }
+
+  .app-float-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .app-float-wa svg,
+  .app-float-wa .pj-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .app-float-call svg,
+  .app-float-call .pj-icon {
+    width: 21px;
+    height: 21px;
+  }
+
   .app-mobile-header,
   .mobile-services-app-header,
   .mobile-search-bar,
