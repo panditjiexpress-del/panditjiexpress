@@ -8,6 +8,10 @@
 /vastu-shanti-puja-bangalore.html  /services  301
 /vastu-shanti-puja-bangalore       /services  301
 
+# Redirect specific resource guides
+/resources/north-indian-wedding-rituals-bangalore.html  /north-indian-wedding-rituals-bangalore  301
+/resources/north-indian-wedding-rituals-bangalore       /north-indian-wedding-rituals-bangalore  301
+
 # Redirect resources to samagri (301 permanent)
 /resources.html            /samagri  301
 /resources                 /samagri  301
