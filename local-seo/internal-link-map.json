@@ -365,6 +365,62 @@
           "relationship": "Pillar to Related Ceremony"
         }
       ]
+    },
+    {
+      "hubUrl": "https://panditjiexpress.in/best-north-indian-pandit-bangalore",
+      "hubType": "Cornerstone Pillar Guide (Informational / Commercial Investigation)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/wedding-pandit-bangalore",
+          "recommendedAnchor": "North Indian wedding pandit in Bangalore",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh Puja in Bangalore",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Puja in Bangalore",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Havan and Yagna services",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/rudrabhishek-bangalore",
+          "recommendedAnchor": "Rudrabhishek Puja in Bangalore",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/ganesh-puja-bangalore",
+          "recommendedAnchor": "Ganesh Puja in Bangalore",
+          "relationship": "Pillar Guide to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "areas we serve in Bangalore",
+          "relationship": "Pillar Guide to Geographic Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "Puja Samagri Guide",
+          "relationship": "Pillar Guide to Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "book a North Indian Pandit",
+          "relationship": "Pillar Guide to Conversion Target"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/pandit-shyam-sundar",
+          "recommendedAnchor": "Pandit Shyam Sundar",
+          "relationship": "Pillar Guide to Author / Head Priest Profile"
+        }
+      ]
     }
   ]
 }

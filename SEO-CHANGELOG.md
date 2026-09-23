@@ -237,3 +237,31 @@ Initialized internal SEO control center containing 9 required JSON control-cente
 - **`local-seo/page-map.json`:** Synchronized exact titles and updated `lastAuditDate` to `2026-09-23`.
 - **`local-seo/internal-link-map.json`:** Added dedicated spoke clusters for Satyanarayan, Rudrabhishek, and Ganesh Puja pillars.
 
+---
+
+## [Cornerstone SEO Blog Upgrade: Best North Indian Pandit in Bangalore] — 2026-09-23
+
+### 1. `best-north-indian-pandit-bangalore.html`
+- **Canonical URL Preserved:** Maintained existing indexed URL `https://panditjiexpress.in/best-north-indian-pandit-bangalore` to preserve existing authority, backlinks, and internal links without unnecessary redirects.
+- **Title Tag Upgraded:** Updated to `<title>Best North Indian Pandit in Bangalore: How to Choose the Right Pandit Ji</title>`.
+- **Meta Description Upgraded:** Set to factual, high-intent description: `"Looking for the best North Indian Pandit in Bangalore? Learn how to choose a Hindi-speaking pandit for puja, wedding, havan, samagri, rituals and family traditions."` (156 chars).
+- **Single H1 Enforced:** `<h1 class="blog-h1">Best North Indian Pandit in Bangalore: A Complete Guide to Choosing the Right Pandit Ji</h1>`.
+- **AEO Quick Answers Block:** Embedded 4-question summary section covering definitions, booking steps, Hindi-speaking priests, and ceremony scope.
+- **Content Expansion:**
+  - Elaborated regional traditions (UP, Bihar, Rajasthan, MP, Haryana, Punjab, Delhi).
+  - Explicit shastric ritual variation caveats (*"There is no single ritual sequence that should automatically be presented as universal for every Hindu family"*).
+  - Dedicated spotlight cards contextually linking to all 6 service pillars (`/wedding-pandit-bangalore`, `/griha-pravesh-pooja-bangalore`, `/satyanarayan-puja-bangalore`, `/havan-yagna-bangalore`, `/rudrabhishek-bangalore`, `/ganesh-puja-bangalore`).
+  - Added practical guidance for Bangalore apartment ceremonies (ventilation, smoke management, RWA rules, lift/parking access).
+  - Integrated a structured inquiry message template for families contacting priests.
+  - Outlined E-E-A-T trustworthiness criteria for hiring Hindu priests.
+- **FAQs:** Implemented 8 structured FAQs in native accessible HTML `<details>` elements (zero generic `FAQPage` schema).
+- **Author & Reviewer E-E-A-T:** Byline updated to `Written & reviewed by Pandit Shyam Sundar (Founder & Head Vedic Priest · 15+ Years Experience)` with link to `/pandit-shyam-sundar` and editorial variation note. Retained `datePublished` (`2026-09-21T18:00:00+05:30`) and updated `dateModified` (`2026-09-23T16:00:00+05:30`).
+- **Internal Linking:** Added `/areas-we-serve` to desktop navigation, mobile drawer, and body text; verified zero internal `.html` links and zero `.com` references.
+- **JSON-LD Schema:** Validated `@graph` schema with `BlogPosting`, `BreadcrumbList`, `Organization`, and `Person` (author profile).
+
+### 2. Control Center Matrices Synchronized
+- **`local-seo/page-map.json`:** Synchronized exact title and primary keyword (`best north indian pandit in bangalore`).
+- **`local-seo/content-status.json`:** Registered cornerstone pillar guide status, updated E-E-A-T, AEO, schema, and internal linking statuses.
+- **`local-seo/internal-link-map.json`:** Registered bidirectional internal spoke links between the pillar guide and all 6 core service pillars, samagri guide, booking, and geographic hub.
+
+
