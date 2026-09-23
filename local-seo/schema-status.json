@@ -1,0 +1,764 @@
+[
+  {
+    "url": "https://panditjiexpress.in/about",
+    "filePath": "about.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/about#webpage",
+      "https://panditjiexpress.in/about#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/annaprashan-bangalore",
+    "filePath": "annaprashan-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/annaprashan-bangalore#webpage",
+      "https://panditjiexpress.in/annaprashan-bangalore#breadcrumb",
+      "https://panditjiexpress.in/annaprashan-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/best-north-indian-pandit-bangalore",
+    "filePath": "best-north-indian-pandit-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/best-north-indian-pandit-bangalore#article",
+      "https://panditjiexpress.in/best-north-indian-pandit-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/bihari-pandit-bangalore",
+    "filePath": "bihari-pandit-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/bihari-pandit-bangalore#webpage",
+      "https://panditjiexpress.in/bihari-pandit-bangalore#breadcrumb",
+      "https://panditjiexpress.in/bihari-pandit-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/blog",
+    "filePath": "blog.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/blog#webpage",
+      "https://panditjiexpress.in/blog#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/booking",
+    "filePath": "booking.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/booking#webpage",
+      "https://panditjiexpress.in/booking#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/contact",
+    "filePath": "contact.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/contact#webpage",
+      "https://panditjiexpress.in/contact#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/durga-puja-navratri-bangalore",
+    "filePath": "durga-puja-navratri-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/durga-puja-navratri-bangalore#webpage",
+      "https://panditjiexpress.in/durga-puja-navratri-bangalore#breadcrumb",
+      "https://panditjiexpress.in/durga-puja-navratri-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/gallery",
+    "filePath": "gallery.html",
+    "schemaTypes": [
+      "ImageGallery",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/gallery#gallery"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/ganesh-puja-bangalore",
+    "filePath": "ganesh-puja-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/ganesh-puja-bangalore#webpage",
+      "https://panditjiexpress.in/ganesh-puja-bangalore#breadcrumb",
+      "https://panditjiexpress.in/ganesh-puja-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+    "filePath": "griha-pravesh-pooja-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/griha-pravesh-pooja-bangalore#webpage",
+      "https://panditjiexpress.in/griha-pravesh-pooja-bangalore#breadcrumb",
+      "https://panditjiexpress.in/griha-pravesh-pooja-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "Phase 5A verified",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide",
+    "filePath": "griha-pravesh-puja-bangalore-guide.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide#article",
+      "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/havan-yagna-bangalore",
+    "filePath": "havan-yagna-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/havan-yagna-bangalore#webpage",
+      "https://panditjiexpress.in/havan-yagna-bangalore#breadcrumb",
+      "https://panditjiexpress.in/havan-yagna-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "Phase 5A verified",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/hindi-speaking-pandit-bangalore",
+    "filePath": "hindi-speaking-pandit-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/hindi-speaking-pandit-bangalore#article",
+      "https://panditjiexpress.in/hindi-speaking-pandit-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/how-to-book-pandit-bangalore",
+    "filePath": "how-to-book-pandit-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/how-to-book-pandit-bangalore#article",
+      "https://panditjiexpress.in/how-to-book-pandit-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/",
+    "filePath": "index.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Person"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/#webpage",
+      "https://panditjiexpress.in/#breadcrumb",
+      "https://panditjiexpress.in/pandit-shyam-sundar#person"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "Phase 4 verified: @graph normalized, clean WebPage without speakable, founder linked, zero syntax errors",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/maithil-pandit-bangalore",
+    "filePath": "maithil-pandit-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/maithil-pandit-bangalore#webpage",
+      "https://panditjiexpress.in/maithil-pandit-bangalore#breadcrumb",
+      "https://panditjiexpress.in/maithil-pandit-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/mundan-ceremony-bangalore",
+    "filePath": "mundan-ceremony-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/mundan-ceremony-bangalore#webpage",
+      "https://panditjiexpress.in/mundan-ceremony-bangalore#breadcrumb",
+      "https://panditjiexpress.in/mundan-ceremony-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/naamkaran-ceremony-bangalore",
+    "filePath": "naamkaran-ceremony-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/naamkaran-ceremony-bangalore#webpage",
+      "https://panditjiexpress.in/naamkaran-ceremony-bangalore#breadcrumb",
+      "https://panditjiexpress.in/naamkaran-ceremony-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
+    "filePath": "north-indian-pandit-hsr-layout.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/north-indian-pandit-hsr-layout#webpage",
+      "https://panditjiexpress.in/north-indian-pandit-hsr-layout#breadcrumb",
+      "https://panditjiexpress.in/north-indian-pandit-hsr-layout#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-marathahalli",
+    "filePath": "north-indian-pandit-marathahalli.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/north-indian-pandit-marathahalli#webpage",
+      "https://panditjiexpress.in/north-indian-pandit-marathahalli#breadcrumb",
+      "https://panditjiexpress.in/north-indian-pandit-marathahalli#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-whitefield",
+    "filePath": "north-indian-pandit-whitefield.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/north-indian-pandit-whitefield#webpage",
+      "https://panditjiexpress.in/north-indian-pandit-whitefield#breadcrumb",
+      "https://panditjiexpress.in/north-indian-pandit-whitefield#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore",
+    "filePath": "north-indian-wedding-rituals-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore#article",
+      "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/online-pandit-bangalore",
+    "filePath": "online-pandit-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/online-pandit-bangalore#webpage",
+      "https://panditjiexpress.in/online-pandit-bangalore#breadcrumb",
+      "https://panditjiexpress.in/online-pandit-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/pandit-cost-bangalore",
+    "filePath": "pandit-cost-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/pandit-cost-bangalore#article",
+      "https://panditjiexpress.in/pandit-cost-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/pandit-shyam-sundar",
+    "filePath": "pandit-shyam-sundar.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service",
+      "Person"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/pandit-shyam-sundar#webpage",
+      "https://panditjiexpress.in/pandit-shyam-sundar#breadcrumb",
+      "https://panditjiexpress.in/pandit-shyam-sundar#service",
+      "https://panditjiexpress.in/pandit-shyam-sundar#person"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/privacy",
+    "filePath": "privacy.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/privacy#webpage",
+      "https://panditjiexpress.in/privacy#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/puja-samagri-list-bangalore",
+    "filePath": "puja-samagri-list-bangalore.html",
+    "schemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/puja-samagri-list-bangalore#article",
+      "https://panditjiexpress.in/puja-samagri-list-bangalore#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/rudrabhishek-bangalore",
+    "filePath": "rudrabhishek-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/rudrabhishek-bangalore#webpage",
+      "https://panditjiexpress.in/rudrabhishek-bangalore#breadcrumb",
+      "https://panditjiexpress.in/rudrabhishek-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/samagri",
+    "filePath": "samagri.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/samagri#webpage",
+      "https://panditjiexpress.in/samagri#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+    "filePath": "satyanarayan-puja-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/satyanarayan-puja-bangalore#webpage",
+      "https://panditjiexpress.in/satyanarayan-puja-bangalore#breadcrumb",
+      "https://panditjiexpress.in/satyanarayan-puja-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/services",
+    "filePath": "services.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/services#webpage",
+      "https://panditjiexpress.in/services#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/upanayanam-janeu-bangalore",
+    "filePath": "upanayanam-janeu-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/upanayanam-janeu-bangalore#webpage",
+      "https://panditjiexpress.in/upanayanam-janeu-bangalore#breadcrumb",
+      "https://panditjiexpress.in/upanayanam-janeu-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/wedding-pandit-bangalore",
+    "filePath": "wedding-pandit-bangalore.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Service"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/wedding-pandit-bangalore#webpage",
+      "https://panditjiexpress.in/wedding-pandit-bangalore#breadcrumb",
+      "https://panditjiexpress.in/wedding-pandit-bangalore#service"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "Phase 5A verified",
+    "googleRichResultsValidation": "pending_production_test"
+  },
+  {
+    "url": "https://panditjiexpress.in/areas-we-serve",
+    "filePath": "areas-we-serve.html",
+    "schemaTypes": [
+      "LocalBusiness",
+      "ProfessionalService",
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "entityIds": [
+      "https://panditjiexpress.in/#organization",
+      "https://panditjiexpress.in/#website",
+      "https://panditjiexpress.in/areas-we-serve#webpage",
+      "https://panditjiexpress.in/areas-we-serve#breadcrumb"
+    ],
+    "hasDeprecatedFAQPage": false,
+    "jsonLdSyntax": "valid",
+    "semanticReview": "reviewed",
+    "googleRichResultsValidation": "pending_production_test"
+  }
+]

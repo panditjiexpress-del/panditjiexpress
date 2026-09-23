@@ -1,0 +1,247 @@
+{
+  "linkingStrategy": "Hub-and-Spoke with Bidirectional Semantic Clusters",
+  "rules": [
+    "Every service pillar must link to /services, /booking, /samagri, and related guides.",
+    "Every informational guide must link directly back to its corresponding transactional pillar.",
+    "Every locality page must link to /areas-we-serve (Batch 3) and top relevant services.",
+    "Descriptive, intent-focused anchor text must be used instead of repetitive exact-match or generic 'click here' labels."
+  ],
+  "hubAndSpokeClusters": [
+    {
+      "hub": "https://panditjiexpress.in/",
+      "hubType": "Primary Business Entity & Authority Hub (Phase 4 Optimized)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/services",
+          "recommendedAnchor": "Browse All Pujas & Ceremonies",
+          "relationship": "Homepage to Service Directory Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/wedding-pandit-bangalore",
+          "recommendedAnchor": "North Indian Wedding Ceremony",
+          "relationship": "Homepage to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh & Vastu Puja",
+          "relationship": "Homepage to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Katha & Puja",
+          "relationship": "Homepage to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Hawan & Sacred Fire Yagna",
+          "relationship": "Homepage to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/ganesh-puja-bangalore",
+          "recommendedAnchor": "Ganesh Puja & Sankashti",
+          "relationship": "Homepage to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Areas We Serve in Bangalore",
+          "relationship": "Homepage to Geographic Location Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/pandit-shyam-sundar",
+          "recommendedAnchor": "Pandit Shyam Sundar Profile",
+          "relationship": "Homepage to Founder & E-E-A-T Authority"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "Pure Vedic Samagri Kits",
+          "relationship": "Homepage to Doorstep Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/about",
+          "recommendedAnchor": "About Pandit Ji Express",
+          "relationship": "Homepage to About Entity Hub"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/wedding-pandit-bangalore",
+      "hubType": "Commercial Pillar",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore",
+          "recommendedAnchor": "North Indian wedding rituals guide",
+          "relationship": "Pillar to Informational Guide"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "wedding pooja samagri kits",
+          "relationship": "Pillar to Product/Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "check wedding muhurat and pandit availability",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/pandit-cost-bangalore",
+          "recommendedAnchor": "Pandit cost guide for Bangalore weddings",
+          "relationship": "Pillar to Pricing Guide"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Areas We Serve in Bangalore",
+          "relationship": "Pillar to Geographic Location Hub"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+      "hubType": "Commercial Pillar",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide",
+          "recommendedAnchor": "Griha Pravesh puja process and muhurat guide",
+          "relationship": "Pillar to Informational Guide"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/puja-samagri-list-bangalore",
+          "recommendedAnchor": "Griha Pravesh samagri checklist",
+          "relationship": "Pillar to Samagri Checklist"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "book Griha Pravesh puja in Bangalore",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/pandit-cost-bangalore",
+          "recommendedAnchor": "Griha Pravesh pandit dakshina in Bangalore",
+          "relationship": "Pillar to Cost Guide"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Bangalore service areas page",
+          "relationship": "Pillar to Geographic Location Hub"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/services",
+      "hubType": "Master Commercial Directory",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/wedding-pandit-bangalore",
+          "recommendedAnchor": "Vedic Wedding Ceremony",
+          "relationship": "Hub to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh & Vastu Shanti",
+          "relationship": "Hub to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Katha",
+          "relationship": "Hub to Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Hawan & Yagna Ceremonies",
+          "relationship": "Hub to Service Pillar"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/areas-we-serve",
+      "hubType": "Geographic Location Hub (Live Production)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/north-indian-pandit-whitefield",
+          "recommendedAnchor": "North Indian Pandit in Whitefield Guide",
+          "relationship": "Geographic Hub to Existing Locality Page"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
+          "recommendedAnchor": "North Indian Pandit in HSR Layout Guide",
+          "relationship": "Geographic Hub to Existing Locality Page"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/north-indian-pandit-marathahalli",
+          "recommendedAnchor": "North Indian Pandit in Marathahalli Guide",
+          "relationship": "Geographic Hub to Existing Locality Page"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/wedding-pandit-bangalore",
+          "recommendedAnchor": "Wedding Pandit",
+          "relationship": "Geographic Hub to Major Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh",
+          "relationship": "Geographic Hub to Major Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Katha",
+          "relationship": "Geographic Hub to Major Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Hawan & Yagna",
+          "relationship": "Geographic Hub to Major Service Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "puja samagri kits",
+          "relationship": "Geographic Hub to Product Pillar"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "Check Availability Online",
+          "relationship": "Geographic Hub to Transactional Booking"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/havan-yagna-bangalore",
+      "hubType": "Commercial Pillar",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/services",
+          "recommendedAnchor": "All Vedic Puja Services",
+          "relationship": "Pillar to Service Directory Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Bangalore service areas page",
+          "relationship": "Pillar to Geographic Location Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "puja samagri guide",
+          "relationship": "Pillar to Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/pandit-shyam-sundar",
+          "recommendedAnchor": "Pandit Shyam Sundar",
+          "relationship": "Pillar to Founder Authority"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "Book a Pandit",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/rudrabhishek-bangalore",
+          "recommendedAnchor": "Rudrabhishek Puja",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh Puja",
+          "relationship": "Pillar to Related Ceremony"
+        }
+      ]
+    }
+  ]
+}

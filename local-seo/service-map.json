@@ -1,0 +1,363 @@
+[
+  {
+    "serviceName": "Vedic Wedding Ceremony (Vivah Sanskar)",
+    "slug": "wedding-pandit-bangalore",
+    "url": "https://panditjiexpress.in/wedding-pandit-bangalore",
+    "category": "Sanskar",
+    "vedicScripture": "Rigveda & Grihya Sutras",
+    "keyRituals": [
+      "Ganesh Invocation",
+      "Jaimala/Varmala",
+      "Kanyadaan",
+      "Gathbandhan",
+      "Havan",
+      "Pheras",
+      "Saptapadi",
+      "Sindoor Daan"
+    ],
+    "samagriIncludedOption": true,
+    "supportingGuideUrl": "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore",
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "primaryIntent": "North Indian wedding pandit in Bangalore",
+    "relatedServices": [
+      "havan-yagna-bangalore",
+      "ganesh-puja-bangalore",
+      "griha-pravesh-pooja-bangalore"
+    ],
+    "ritualOverview": "Var Aagman, Dwar Puja, Jayamala, Mandap Pujan, Kanyadaan, Agni Sthapana, Laja Homa, Saptapadi, Sindoor Daan",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5A Enhanced",
+    "durationEstimated": "2.5 to 3.5 hours",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
+  },
+  {
+    "serviceName": "Griha Pravesh Puja & Vastu Shanti",
+    "slug": "griha-pravesh-pooja-bangalore",
+    "url": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+    "category": "Pooja",
+    "vedicScripture": "Vastu Shastra & Matsya Purana",
+    "keyRituals": [
+      "Dwaredwarye Puja",
+      "Gau Puja / Dvar Puja",
+      "Kalash Sthapana",
+      "Milk Boiling Ceremony",
+      "Navagraha Havan",
+      "Vastu Shanti Homam"
+    ],
+    "samagriIncludedOption": true,
+    "supportingGuideUrl": "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide",
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "primaryIntent": "Griha Pravesh / housewarming pandit in Bangalore",
+    "relatedServices": [
+      "vastu-shanti-puja-bangalore",
+      "havan-yagna-bangalore",
+      "ganesh-puja-bangalore",
+      "satyanarayan-puja-bangalore"
+    ],
+    "ritualOverview": "Dwar Pujan, Kalash Yatra, Milk Boiling, Ganesh Gauri Pujan, Navagraha & Vastu Devta Pujan, Indoor Havan, Purnahuti & Aarti",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5A Enhanced",
+    "durationEstimated": "2.0 to 2.5 hours (3.0 to 3.5 hours if combined with Satyanarayan Katha)",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
+  },
+  {
+    "serviceName": "Shri Satyanarayan Maha Puja & Katha",
+    "slug": "satyanarayan-puja-bangalore",
+    "url": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+    "category": "Pooja",
+    "durationHours": "1.5 to 2.5 hours",
+    "vedicScripture": "Skanda Purana (Reva Khanda)",
+    "keyRituals": [
+      "Ganesh Gauri Puja",
+      "Navagraha Puja",
+      "Kalash Sthapana",
+      "5 Adhyaya Narrative Katha",
+      "Havan",
+      "Panchamrit Aarti & Prasad Vitaran"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Hawan & Yagna Ceremonies",
+    "slug": "havan-yagna-bangalore",
+    "url": "https://panditjiexpress.in/havan-yagna-bangalore",
+    "category": "Havan",
+    "vedicScripture": "Yajurveda",
+    "keyRituals": [
+      "Agni Sthapana",
+      "Navagraha Ahuti",
+      "Gayatri Ahuti",
+      "Mahamrityunjaya Ahuti",
+      "Purnahuti",
+      "Shanti Path"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "primaryIntent": "Havan and Yagna pandit in Bangalore",
+    "relatedServices": [
+      "rudrabhishek-bangalore",
+      "griha-pravesh-pooja-bangalore",
+      "satyanarayan-puja-bangalore",
+      "ganesh-puja-bangalore"
+    ],
+    "ritualOverview": "Achaman, Sankalp, Ganesh & Navagraha Avahan, Agni Sthapana & Pradhan Havan Ahutis, Purnahuti, Bhasma Dharan & Shanti Path",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5A Enhanced",
+    "durationEstimated": "1.5 to 2.0 hours (2.5 to 3.5 hours for Maha Mrityunjaya with Japa)",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
+  },
+  {
+    "serviceName": "Maha Ganapati Puja & Sthapana",
+    "slug": "ganesh-puja-bangalore",
+    "url": "https://panditjiexpress.in/ganesh-puja-bangalore",
+    "category": "Pooja",
+    "durationHours": "1.0 to 2.0 hours",
+    "vedicScripture": "Ganapati Atharvashirsha & Mudgala Purana",
+    "keyRituals": [
+      "Shodashopachara Puja",
+      "Prana Pratishtha",
+      "Atharvashirsha Avartan",
+      "Durva & Modak Arpan",
+      "Maha Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Durga Puja, Chandi Paath & Navratri Path",
+    "slug": "durga-puja-navratri-bangalore",
+    "url": "https://panditjiexpress.in/durga-puja-navratri-bangalore",
+    "category": "Pooja",
+    "durationHours": "2.0 to 4.0 hours",
+    "vedicScripture": "Markandeya Purana (Devi Mahatmya)",
+    "keyRituals": [
+      "Ghatasthapana",
+      "Durga Saptashati Path",
+      "Nav Chandi Havan",
+      "Kanya Puja",
+      "Maha Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Rudrabhishek & Shiva Puja",
+    "slug": "rudrabhishek-bangalore",
+    "url": "https://panditjiexpress.in/rudrabhishek-bangalore",
+    "category": "Pooja",
+    "durationHours": "1.5 to 2.5 hours",
+    "vedicScripture": "Shukla Yajurveda (Shri Rudram / Namakam-Chamakam)",
+    "keyRituals": [
+      "Lingodbhava Sthapana",
+      "Panchamrit Snan",
+      "Shri Rudram Japa",
+      "Bilvapatra Arpan",
+      "Maha Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Naamkaran Sanskar (Baby Naming Ceremony)",
+    "slug": "naamkaran-ceremony-bangalore",
+    "url": "https://panditjiexpress.in/naamkaran-ceremony-bangalore",
+    "category": "Sanskar",
+    "durationHours": "1.5 to 2.0 hours",
+    "vedicScripture": "Paraskara Grihya Sutras",
+    "keyRituals": [
+      "Ganesh Puja",
+      "Punyahavachana",
+      "Nakshatra Puja",
+      "Whispering Name in Right Ear",
+      "Elder Blessings"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Mundan Ceremony (Chudakarana Sanskar)",
+    "slug": "mundan-ceremony-bangalore",
+    "url": "https://panditjiexpress.in/mundan-ceremony-bangalore",
+    "category": "Sanskar",
+    "durationHours": "1.5 to 2.0 hours",
+    "vedicScripture": "Ashvalayana Grihya Sutras",
+    "keyRituals": [
+      "Ayushya Havan",
+      "Tonsure Ritual (Hair Shaving)",
+      "Curd & Turmeric Application",
+      "Ganga Jal Snan",
+      "Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Annaprashan Ceremony (Baby First Rice Feeding)",
+    "slug": "annaprashan-bangalore",
+    "url": "https://panditjiexpress.in/annaprashan-bangalore",
+    "category": "Sanskar",
+    "durationHours": "1.0 to 1.5 hours",
+    "vedicScripture": "Sankhayana Grihya Sutras",
+    "keyRituals": [
+      "Ganesh Invocation",
+      "Kheer Sthapana & Blessing",
+      "Feeding with Silver Spoon",
+      "Propensity / Vocation Test",
+      "Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Upanayanam & Janeu Sanskar (Sacred Thread)",
+    "slug": "upanayanam-janeu-bangalore",
+    "url": "https://panditjiexpress.in/upanayanam-janeu-bangalore",
+    "category": "Sanskar",
+    "durationHours": "2.5 to 3.5 hours",
+    "vedicScripture": "Yajurveda & Baudhayana Sutras",
+    "keyRituals": [
+      "Matri Puja",
+      "Janeu Dharana",
+      "Brahmopadesham (Gayatri Mantra Upadesha)",
+      "Bhikshatanam",
+      "Yajna"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Vastu Shanti Puja",
+    "slug": "vastu-shanti-puja-bangalore",
+    "url": "https://panditjiexpress.in/services",
+    "category": "Pooja",
+    "durationHours": "2.0 to 3.0 hours",
+    "vedicScripture": "Brihat Samhita & Vastu Vidya",
+    "keyRituals": [
+      "Vastu Purusha Sthapana",
+      "Dikpalaka Puja",
+      "Vastu Mandala Havan",
+      "Shanti Path"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Maha Mrityunjaya Jaap & Havan",
+    "slug": "services",
+    "url": "https://panditjiexpress.in/services",
+    "category": "Havan",
+    "durationHours": "2.0 to 4.0 hours",
+    "vedicScripture": "Rigveda (Maha Mrityunjaya Sukta)",
+    "keyRituals": [
+      "Sankalpa for Health & Longevity",
+      "Japa Chanting",
+      "Amrita Ahuti in Hawan Kund",
+      "Aarti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Gayatri Havan & Yagya",
+    "slug": "services",
+    "url": "https://panditjiexpress.in/services",
+    "category": "Havan",
+    "durationHours": "1.5 to 2.5 hours",
+    "vedicScripture": "Rigveda",
+    "keyRituals": [
+      "Savita Dhyan",
+      "Gayatri Ahuti",
+      "Samidha Daan",
+      "Purnahuti"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Bhoomi Pujan & Foundation Stone Blessing",
+    "slug": "services",
+    "url": "https://panditjiexpress.in/services",
+    "category": "Pooja",
+    "durationHours": "1.5 to 2.5 hours",
+    "vedicScripture": "Vastu Shastra",
+    "keyRituals": [
+      "Bhumi Devi Invocation",
+      "Sheshnag Sthapana",
+      "Navaratna / Panchaloha Nyasa",
+      "Digbali"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+  {
+    "serviceName": "Office Opening & Business Ayudha Puja",
+    "slug": "services",
+    "url": "https://panditjiexpress.in/services",
+    "category": "Pooja",
+    "durationHours": "1.5 to 2.5 hours",
+    "vedicScripture": "Vedic Invocations",
+    "keyRituals": [
+      "Ganesh Lakshmi Puja",
+      "Navagraha Blessing",
+      "Workplace Vastu Shanti",
+      "Aarti & Prasad"
+    ],
+    "samagriIncludedOption": true,
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ]
+  }
+]
