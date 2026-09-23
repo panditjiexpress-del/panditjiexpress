@@ -189,3 +189,51 @@ Initialized internal SEO control center containing 9 required JSON control-cente
 - **`local-seo/schema-status.json`:** Verified valid JSON-LD syntax across all 3 pages, set `semanticReview: "Phase 5A verified"`, kept `googleRichResultsValidation: "pending_production_test"`.
 - **`local-seo/page-map.json`:** Synchronized updated titles and marked `liveHttpVerified: true` following live production HTTP 200 verification.
 - **`local-seo/internal-link-map.json`:** Added dedicated Havan spoke cluster and updated spoke links for Wedding and Griha Pravesh.
+
+---
+
+## [Phase 5: Sub-Batch 5B — Devotional Service Pillars Enhancement] — 2026-09-23
+
+### 1. `satyanarayan-puja-bangalore.html` (Satyanarayan Pillar)
+- **Title Tag & Meta Tags:** Upgraded title to `<title>Satyanarayan Puja Pandit in Bangalore | Vedic Katha | Pandit Ji Express</title>`. Clean, factual meta description without superlatives.
+- **Single H1 Enforced:** `<h1 class="subpage-hero-title">Satyanarayan Puja in Bangalore</h1>`.
+- **AEO Direct Answer Box:** Embedded factual 3-sentence direct answer definition: *"What is Shri Satyanarayan Puja & Katha?"* near top of content.
+- **Ritual Sequence Accuracy:** Formulated common ritual stages (Ganesh & Gauri Sthapana, Navagraha Avahan, Kalash Sthapana, 5-Chapter Katha Recitation, Optional Havan, Maha Aarti & Prasad Distribution) with explicit disclaimer: *"Ritual sequences can vary according to family tradition and the Pandit's guidance."*
+- **E-E-A-T & Trust Normalization:** Removed fake rating widget `4.9 (15+ Years Exp)` in sidebar; replaced with authentic credential: `Vedic Scholar • 15+ Years Experience` and `Traditional Vedic Vidhi`.
+- **Estimated Duration Standard:** Explicitly framed duration as estimated (`1.5 to 2.5 hours`) with required disclaimer.
+- **Internal Linking & Navigation:** Added `/areas-we-serve` to desktop navigation, mobile drawer, and footer quick navigation. Removed duplicate `<div class="container">` wrapping breadcrumbs. Added dual CTAs (`/booking` + Call/WhatsApp).
+- **Semantic FAQs:** Expanded to 6 structured ceremony FAQs in native HTML `<details>` tags without unsupported `FAQPage` schema.
+- **JSON-LD Schema:** Cleaned and verified valid JSON-LD `@graph` architecture (`LocalBusiness`, `Organization`, `WebSite`, `WebPage`, `BreadcrumbList`, `Service`).
+
+### 2. `rudrabhishek-bangalore.html` (Rudrabhishek Pillar)
+- **Title Tag & Meta Tags:** Upgraded title to `<title>Rudrabhishek Puja in Bangalore | North Indian Vedic Pandit | Pandit Ji Express</title>`. Factual meta description.
+- **Single H1 Enforced:** `<h1 class="subpage-hero-title">Rudrabhishek Puja in Bangalore</h1>`.
+- **Claim Safety & Tone Correction:** Completely eliminated unsubstantiated medical and supernatural problem-removal claims ("dissolves negative karma, removes chronic health distress, protects against unforeseen obstacles"). Framed spiritual purposes strictly as traditional devotional worship and religious practice.
+- **AEO Direct Answer Box:** Embedded direct answer definition: *"What is Rudrabhishek Puja?"* near top of content.
+- **Ritual Sequence Accuracy:** Formulated common stages (Deep Prajwalan, Ganesh Pujan, Kalash Sthapana, Continuous Dhara & Panchamrit Abhishekam, Bilvapatra & Bhasma Arpan, Maha Aarti) with tradition variance caveat.
+- **Apartment & Home Setup:** Provided practical advice on apartment abhishek setup (collecting fluids in deep tray without spillage or mess).
+- **Estimated Duration Standard:** Documented duration as estimated (`1.5 to 2.5 hours`) with required disclaimer.
+- **Semantic FAQs:** Implemented 6 structured, practical FAQs in native HTML `<details>` tags (previously had zero FAQs).
+- **E-E-A-T & Trust Normalization:** Removed fake rating widget in sidebar; replaced with verified credentials.
+- **Internal Linking & Navigation:** Added `/areas-we-serve` to desktop navigation, mobile drawer, and footer; removed duplicate breadcrumb container; added dual CTAs.
+- **JSON-LD Schema:** Cleaned and verified valid JSON-LD `@graph` architecture.
+
+### 3. `ganesh-puja-bangalore.html` (Ganesh Puja Pillar)
+- **Title Tag & Meta Tags:** Upgraded title to `<title>Ganesh Puja Pandit in Bangalore | Vedic Ganpati Sthapana | Pandit Ji Express</title>`. Factual meta description.
+- **Single H1 Enforced:** `<h1 class="subpage-hero-title">Ganesh Puja in Bangalore</h1>`.
+- **AEO Direct Answer Box:** Embedded direct answer definition: *"What is Ganesh Puja & Ganpati Sthapana?"* near top of content.
+- **Ritual Sequence Accuracy:** Formulated common stages (Deep Prajwalan & Sankalp, Ganpati Avahan, Shodashopachara Pujan, 21 Durva & Hibiscus, Ganpati Atharvashirsha Path, Modak Naivedyam & Maha Aarti) with tradition variance caveat.
+- **Corporate & Office Setup:** Detailed corporate and residential inaugurations across Bangalore tech corridors.
+- **Estimated Duration Standard:** Documented duration as estimated (`1.0 to 2.0 hours`) with required disclaimer.
+- **Semantic FAQs:** Expanded to 6 structured ceremony FAQs in native HTML `<details>` tags (previously had only 2 FAQs).
+- **E-E-A-T & Trust Normalization:** Removed fake rating widget in sidebar; replaced with verified credentials.
+- **Internal Linking & Navigation:** Added `/areas-we-serve` to desktop navigation, mobile drawer, and footer; removed duplicate breadcrumb container; added dual CTAs.
+- **JSON-LD Schema:** Cleaned and verified valid JSON-LD `@graph` architecture.
+
+### 4. Control Center Matrices (`/local-seo/`) Synchronized
+- **`local-seo/service-map.json`:** Enriched records for Satyanarayan, Rudrabhishek, and Ganesh Puja with primary intent, related services, ritual overview, ritual variation disclaimer, samagri reference, durationEstimated, durationDisclaimer, booking CTA, and page status (`Phase 5B Enhanced`).
+- **`local-seo/content-status.json`:** Updated all 3 records to reflect Phase 5B completion across E-E-A-T, AEO, Schema, and Internal Links.
+- **`local-seo/schema-status.json`:** Verified valid JSON-LD syntax across all 3 pages, set `semanticReview: "Phase 5B verified"`, kept `googleRichResultsValidation: "pending_production_test"`.
+- **`local-seo/page-map.json`:** Synchronized exact titles and updated `lastAuditDate` to `2026-09-23`.
+- **`local-seo/internal-link-map.json`:** Added dedicated spoke clusters for Satyanarayan, Rudrabhishek, and Ganesh Puja pillars.
+

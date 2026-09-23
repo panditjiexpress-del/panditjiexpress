@@ -242,6 +242,129 @@
           "relationship": "Pillar to Related Ceremony"
         }
       ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+      "hubType": "Commercial Pillar (Phase 5B Enhanced)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/services",
+          "recommendedAnchor": "All Services",
+          "relationship": "Pillar to Service Directory Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Bangalore service areas",
+          "relationship": "Pillar to Geographic Location Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "puja samagri kits",
+          "relationship": "Pillar to Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "Book a Pandit",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh Puja",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/ganesh-puja-bangalore",
+          "recommendedAnchor": "Ganesh Puja",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Havan & Yagna",
+          "relationship": "Pillar to Related Ceremony"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/rudrabhishek-bangalore",
+      "hubType": "Commercial Pillar (Phase 5B Enhanced)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/services",
+          "recommendedAnchor": "All Services",
+          "relationship": "Pillar to Service Directory Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Bangalore service areas",
+          "relationship": "Pillar to Geographic Location Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "puja samagri kits",
+          "relationship": "Pillar to Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "Book a Pandit",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Havan & Yagna",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Katha",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/ganesh-puja-bangalore",
+          "recommendedAnchor": "Ganesh Puja",
+          "relationship": "Pillar to Related Ceremony"
+        }
+      ]
+    },
+    {
+      "hub": "https://panditjiexpress.in/ganesh-puja-bangalore",
+      "hubType": "Commercial Pillar (Phase 5B Enhanced)",
+      "spokes": [
+        {
+          "targetUrl": "https://panditjiexpress.in/services",
+          "recommendedAnchor": "All Services",
+          "relationship": "Pillar to Service Directory Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/areas-we-serve",
+          "recommendedAnchor": "Bangalore service areas",
+          "relationship": "Pillar to Geographic Location Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/samagri",
+          "recommendedAnchor": "puja samagri kits",
+          "relationship": "Pillar to Samagri Hub"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/booking",
+          "recommendedAnchor": "Book a Pandit",
+          "relationship": "Pillar to Transactional Conversion"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+          "recommendedAnchor": "Satyanarayan Katha",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+          "recommendedAnchor": "Griha Pravesh Puja",
+          "relationship": "Pillar to Related Ceremony"
+        },
+        {
+          "targetUrl": "https://panditjiexpress.in/havan-yagna-bangalore",
+          "recommendedAnchor": "Havan & Yagna",
+          "relationship": "Pillar to Related Ceremony"
+        }
+      ]
     }
   ]
 }

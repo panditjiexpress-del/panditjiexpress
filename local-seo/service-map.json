@@ -75,7 +75,6 @@
     "slug": "satyanarayan-puja-bangalore",
     "url": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
     "category": "Pooja",
-    "durationHours": "1.5 to 2.5 hours",
     "vedicScripture": "Skanda Purana (Reva Khanda)",
     "keyRituals": [
       "Ganesh Gauri Puja",
@@ -89,7 +88,20 @@
     "languages": [
       "Hindi",
       "Sanskrit"
-    ]
+    ],
+    "primaryIntent": "Satyanarayan Puja and Katha pandit in Bangalore",
+    "relatedServices": [
+      "griha-pravesh-pooja-bangalore",
+      "ganesh-puja-bangalore",
+      "havan-yagna-bangalore"
+    ],
+    "ritualOverview": "Ganesh & Gauri Sthapana, Navagraha Pujan, Kalash Sthapana, 5-Chapter Katha Recitation, Havan (Optional), Maha Aarti & Prasad Distribution",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5B Enhanced",
+    "durationEstimated": "1.5 to 2.5 hours",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
   },
   {
     "serviceName": "Hawan & Yagna Ceremonies",
@@ -130,7 +142,6 @@
     "slug": "ganesh-puja-bangalore",
     "url": "https://panditjiexpress.in/ganesh-puja-bangalore",
     "category": "Pooja",
-    "durationHours": "1.0 to 2.0 hours",
     "vedicScripture": "Ganapati Atharvashirsha & Mudgala Purana",
     "keyRituals": [
       "Shodashopachara Puja",
@@ -143,7 +154,20 @@
     "languages": [
       "Hindi",
       "Sanskrit"
-    ]
+    ],
+    "primaryIntent": "Ganesh Puja and Ganpati Sthapana pandit in Bangalore",
+    "relatedServices": [
+      "griha-pravesh-pooja-bangalore",
+      "satyanarayan-puja-bangalore",
+      "havan-yagna-bangalore"
+    ],
+    "ritualOverview": "Deep Prajwalan & Sankalp, Ganpati Avahan & Sthapana, Shodashopachara Pujan, 21 Durva & Hibiscus Arpan, Ganpati Atharvashirsha Path, Modak Naivedyam & Maha Aarti",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5B Enhanced",
+    "durationEstimated": "1.0 to 2.0 hours",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
   },
   {
     "serviceName": "Durga Puja, Chandi Paath & Navratri Path",
@@ -170,7 +194,6 @@
     "slug": "rudrabhishek-bangalore",
     "url": "https://panditjiexpress.in/rudrabhishek-bangalore",
     "category": "Pooja",
-    "durationHours": "1.5 to 2.5 hours",
     "vedicScripture": "Shukla Yajurveda (Shri Rudram / Namakam-Chamakam)",
     "keyRituals": [
       "Lingodbhava Sthapana",
@@ -183,7 +206,20 @@
     "languages": [
       "Hindi",
       "Sanskrit"
-    ]
+    ],
+    "primaryIntent": "Rudrabhishek Puja and Shiva abhishekam in Bangalore",
+    "relatedServices": [
+      "havan-yagna-bangalore",
+      "satyanarayan-puja-bangalore",
+      "ganesh-puja-bangalore"
+    ],
+    "ritualOverview": "Deep Prajwalan & Sankalp, Ganesh & Gauri Pujan, Kalash Sthapana & Shivling Sthapana, Continuous Dhara & Panchamrit Abhishekam, Bilva Patra & Bhasma Arpan, Maha Aarti & Charanamrit Prasad",
+    "ritualVariationDisclaimer": "Ritual sequences can vary according to family tradition and the Pandit's guidance.",
+    "samagriReference": "https://panditjiexpress.in/samagri",
+    "bookingCta": "https://panditjiexpress.in/booking",
+    "pageStatus": "Phase 5B Enhanced",
+    "durationEstimated": "1.5 to 2.5 hours (2.5 to 3.5 hours for elaborate ceremonies with extended Japa)",
+    "durationDisclaimer": "Estimated duration; actual duration varies according to ceremony scope, family tradition, and Pandit's guidance."
   },
   {
     "serviceName": "Naamkaran Sanskar (Baby Naming Ceremony)",
