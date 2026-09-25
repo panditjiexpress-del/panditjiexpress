@@ -98,6 +98,15 @@ Additional Requirements: ${notes}`;
         formSuccessMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
 
+      if (typeof trackConversionEvent === 'function') {
+        trackConversionEvent('booking_submit', {
+          ceremony_type: ceremony,
+          locality: location,
+          language: language,
+          preferred_date: date
+        });
+      }
+
       // Open WhatsApp after a short delay
       setTimeout(() => {
         window.open(waUrl, '_blank');
@@ -614,7 +623,7 @@ function openCeremonyDetailModal(name, img, title, sub, rating) {
   if (subElem && sub) subElem.textContent = sub;
   if (ratingElem && rating) ratingElem.textContent = rating;
   if (descElem) {
-    descElem.textContent = `Our experienced North Indian pandits perform ${title || 'ceremony'} rituals as per your family's tradition – UP, Bihari, Maithil, Kumaoni and more.`;
+    descElem.textContent = `Our experienced North Indian pandits perform ${title || 'ceremony'} rituals as per traditional Vedic vidhi and your family customs.`;
   }
 
   // Reset tab to Overview
@@ -738,6 +747,16 @@ function handleAppBookingSubmit(event) {
     `Please confirm the auspicious Muhurat and priest allocation.`
   );
 
+  // Track conversion
+  if (typeof trackConversionEvent === 'function') {
+    trackConversionEvent('booking_submit', {
+      ceremony_type: activeAppCeremony,
+      preferred_date: activeAppDate,
+      time_slot: activeAppTimeSlot,
+      devotee_name: name
+    });
+  }
+
   // Open WhatsApp directly
   window.open(`https://wa.me/919065788789?text=${waText}`, '_blank');
 
@@ -778,6 +797,58 @@ function filterAppGallery(category, btn) {
   });
 }
 
+/**
+ * PANDIT JI EXPRESS - Universal Conversion Telemetry & Event Tracking
+ * Integrates with Google Analytics 4 (gtag), Google Tag Manager (dataLayer),
+ * and Meta Pixel (fbq) whenever tracking tags are present.
+ */
+function trackConversionEvent(eventName, eventParams) {
+  eventParams = eventParams || {};
+  eventParams.page_location = window.location.pathname;
+  eventParams.timestamp = new Date().toISOString();
+
+  // 1. Google Analytics 4 (gtag)
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, eventParams);
+  }
+
+  // 2. Google Tag Manager (dataLayer)
+  if (window.dataLayer && Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({ event: eventName, ...eventParams });
+  }
+
+  // 3. Meta Pixel (fbq)
+  if (typeof window.fbq === 'function' && eventName === 'booking_submit') {
+    window.fbq('track', 'Lead', { content_name: eventParams.ceremony_type || 'Puja Booking' });
+  }
+}
+
+// Global Click Listener for WhatsApp and Click-to-Call Telemetry
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
+  if (!link) return;
+  const href = link.getAttribute('href') || '';
+
+  if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+    trackConversionEvent('whatsapp_click', {
+      link_url: href,
+      link_text: (link.innerText || '').trim().slice(0, 60),
+      button_location: link.closest('.mobile-sticky-action-bar') ? 'sticky_mobile_bar' : 
+                       link.closest('.app-floating-contact-pills') ? 'floating_pill' : 
+                       link.closest('header') ? 'header' : 
+                       link.closest('footer') ? 'footer' : 'in_page_content'
+    });
+  } else if (href.startsWith('tel:')) {
+    trackConversionEvent('phone_call_click', {
+      phone_number: href.replace('tel:', ''),
+      button_location: link.closest('header') ? 'header' : 
+                       link.closest('footer') ? 'footer' : 
+                       link.closest('.app-floating-contact-pills') ? 'floating_pill' : 'in_page_content'
+    });
+  }
+});
+
+window.trackConversionEvent = trackConversionEvent;
 window.openCeremonyDetailModal = openCeremonyDetailModal;
 window.closeAppDetailModal = closeAppDetailModal;
 window.closeAppDetailModalOnBackdrop = closeAppDetailModalOnBackdrop;

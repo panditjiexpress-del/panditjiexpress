@@ -1,0 +1,123 @@
+{
+  "entityName": {
+    "value": "Pandit Ji Express",
+    "verificationStatus": "verified_from_website",
+    "source": "index.html, about.html, logo branding"
+  },
+  "alternateName": {
+    "value": "Pandit Ji Express Bangalore",
+    "verificationStatus": "verified_from_website",
+    "source": "schema markup across core pages"
+  },
+  "legalName": {
+    "value": "Pandit Ji Express",
+    "verificationStatus": "verified_from_website",
+    "source": "privacy.html, schema markup"
+  },
+  "foundingYear": {
+    "value": 2011,
+    "verificationStatus": "needs_verification",
+    "source": "Derived from 15+ years experience claims (2026 minus 15); pending formal incorporation papers"
+  },
+  "canonicalDomain": {
+    "value": "https://panditjiexpress.in",
+    "verificationStatus": "verified_from_website",
+    "source": "Canonical tags, Cloudflare DNS, and _redirects"
+  },
+  "slogan": {
+    "value": "Pooja • Pandit • Samagri",
+    "verificationStatus": "verified_from_website",
+    "source": "Header logo branding across all pages"
+  },
+  "description": {
+    "value": "Authentic North Indian Vedic Pandit & Purohit services in Bangalore with complete doorstep puja samagri arrangements. Officiating traditional Hindu ceremonies in Hindi and Sanskrit with Shastric vidhi.",
+    "verificationStatus": "verified_from_website",
+    "source": "Site meta descriptions and schema definitions"
+  },
+  "category": {
+    "value": "Hindu Priest / Religious Ceremony Service",
+    "verificationStatus": "verified_from_website",
+    "source": "Schema.org ProfessionalService category"
+  },
+  "founder": {
+    "name": "Pandit Shyam Sundar",
+    "role": "Founder & Head Vedic Priest",
+    "experienceYears": 15,
+    "lineage": "North Indian Shastric Vidhi & Traditional Gurukul Education",
+    "profileUrl": "https://panditjiexpress.in/pandit-shyam-sundar",
+    "entityId": "https://panditjiexpress.in/pandit-shyam-sundar#person",
+    "verificationStatus": "verified_from_website",
+    "source": "pandit-shyam-sundar.html, about.html, and founder JSON-LD schema"
+  },
+  "contact": {
+    "telephone": "+91 90657 88789",
+    "telephoneRaw": "+919065788789",
+    "email": "support@panditjiexpress.in",
+    "whatsApp": "https://wa.me/919065788789",
+    "bookingUrl": "https://panditjiexpress.in/booking",
+    "contactUrl": "https://panditjiexpress.in/contact",
+    "verificationStatus": "verified_from_website",
+    "source": "Universal header, footer, and contact page elements"
+  },
+  "address": {
+    "streetAddress": "Near Srirampura, Srirampura, Jakkur",
+    "locality": "Jakkur",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "postalCode": "560064",
+    "country": "India",
+    "countryCode": "IN",
+    "geo": {
+      "latitude": 13.0784,
+      "longitude": 77.6070
+    },
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pandit+Ji+Express+Srirampura+Jakkur+Bengaluru+560064",
+    "verificationStatus": "verified_from_website",
+    "source": "Schema.org PostalAddress and contact.html; exact Google Business Profile CID remains pending verification"
+  },
+  "serviceArea": {
+    "primaryCity": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "regions": [
+      "North Bangalore",
+      "North-East Bangalore",
+      "East Bangalore",
+      "South-East Bangalore",
+      "South Bangalore",
+      "Central Bangalore",
+      "West Bangalore",
+      "North-West Bangalore",
+      "Outer Bangalore"
+    ],
+    "headquartersBase": "Jakkur / Srirampura, North Bangalore",
+    "verificationStatus": "verified_from_website",
+    "source": "services.html, localities/scaffolds.md, and published locality pages"
+  },
+  "operatingHours": {
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "06:00",
+    "closes": "21:00",
+    "timezone": "Asia/Kolkata",
+    "verificationStatus": "verified_from_website",
+    "source": "index.html JSON-LD OpeningHoursSpecification"
+  },
+  "priceRange": {
+    "value": "₹₹",
+    "currencyAccepted": "INR",
+    "verificationStatus": "verified_from_website",
+    "source": "LocalBusiness schema definitions"
+  },
+  "socialProfiles": [
+    {
+      "url": "https://www.youtube.com/@panditjiexpress",
+      "platform": "YouTube",
+      "verificationStatus": "verified_from_website"
+    },
+    {
+      "url": "https://wa.me/919065788789",
+      "platform": "WhatsApp",
+      "verificationStatus": "verified_from_website"
+    }
+  ]
+}

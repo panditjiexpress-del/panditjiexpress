@@ -3,23 +3,23 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://panditjiexpress.in/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://panditjiexpress.in/assets/images/hero-bg-master.jpg</image:loc>
-      <image:title>Best North Indian Pandit in Bangalore - Pandit Ji Express</image:title>
+      <image:title>North Indian Vedic Pandit in Bangalore - Pandit Ji Express</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/services.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/services</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/pandit-shyam-sundar.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/pandit-shyam-sundar</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -28,14 +28,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/booking.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/booking</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/samagri.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/samagri</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -44,38 +44,38 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/gallery.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/gallery</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/blog.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/blog</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/about.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/about</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/contact.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/contact</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/privacy.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/privacy</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/griha-pravesh-pooja-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/griha-pravesh-pooja-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -84,8 +84,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/wedding-pandit-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/wedding-pandit-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
     <image:image>
@@ -94,8 +94,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/satyanarayan-puja-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/satyanarayan-puja-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -104,8 +104,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/havan-yagna-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/havan-yagna-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -114,8 +114,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/ganesh-puja-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/ganesh-puja-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -124,8 +124,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/naamkaran-ceremony-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/naamkaran-ceremony-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -134,8 +134,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/mundan-ceremony-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/mundan-ceremony-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -144,50 +144,80 @@
     </image:image>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/annaprashan-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/annaprashan-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/rudrabhishek-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/rudrabhishek-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/durga-puja-navratri-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/durga-puja-navratri-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/upanayanam-janeu-bangalore.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/upanayanam-janeu-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/north-indian-pandit-whitefield.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/areas-we-serve</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/north-indian-pandit-whitefield</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/north-indian-pandit-hsr-layout.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/north-indian-pandit-hsr-layout</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://panditjiexpress.in/north-indian-pandit-marathahalli.html</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://panditjiexpress.in/north-indian-pandit-marathahalli</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/north-indian-pandit-electronic-city</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/north-indian-pandit-sarjapur-road</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/chhath-puja-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/diwali-lakshmi-puja-bangalore</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://panditjiexpress.in/best-north-indian-pandit-bangalore</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -197,7 +227,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/pandit-cost-bangalore</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -207,7 +237,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -217,7 +247,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/puja-samagri-list-bangalore</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -227,7 +257,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/how-to-book-pandit-bangalore</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -237,7 +267,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/hindi-speaking-pandit-bangalore</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <image:image>
@@ -247,7 +277,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/bihari-pandit-bangalore</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -257,7 +287,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/maithil-pandit-bangalore</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -267,7 +297,7 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/online-pandit-bangalore</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -277,12 +307,32 @@
   </url>
   <url>
     <loc>https://panditjiexpress.in/north-indian-wedding-rituals-bangalore</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
       <image:loc>https://panditjiexpress.in/assets/images/north-indian-wedding-rituals-bangalore.jpg</image:loc>
       <image:title>North Indian Wedding Rituals in Bangalore: A Complete Guide to Planning Your Ceremony</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/griha-pravesh-samagri-checklist</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/griha-pravesh-puja-bangalore-guide.jpg</image:loc>
+      <image:title>Vedic Griha Pravesh Samagri Checklist Bangalore - Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/wedding-vivah-checklist</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/north-indian-wedding-rituals-bangalore.jpg</image:loc>
+      <image:title>North Indian Wedding Vivah Samagri Checklist Bangalore - Pandit Ji Express</image:title>
     </image:image>
   </url>
 </urlset>

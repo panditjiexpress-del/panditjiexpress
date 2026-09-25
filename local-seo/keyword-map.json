@@ -1,0 +1,531 @@
+[
+  {
+    "url": "https://panditjiexpress.in/",
+    "pageType": "Homepage",
+    "primaryKeyword": "north indian pandit in bangalore",
+    "secondaryKeywords": [
+      "hindi pandit in bangalore",
+      "vedic pandit bangalore",
+      "pandit for puja in bangalore",
+      "north indian purohit bengaluru"
+    ],
+    "searchIntent": "Local transactional",
+    "entities": ["Pandit Ji Express", "Bangalore", "Hindu priest", "Vedic puja"],
+    "location": "Bangalore",
+    "service": "All Vedic ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/services",
+    "pageType": "Service Hub",
+    "primaryKeyword": "puja services in bangalore",
+    "secondaryKeywords": [
+      "north indian puja services bangalore",
+      "vedic ceremonies bangalore",
+      "book pandit bangalore",
+      "hindu rituals bangalore"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["Vedic ceremonies", "Sanskars", "Hawan", "Pooja"],
+    "location": "Bangalore",
+    "service": "Directory of 16+ pujas",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/wedding-pandit-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "wedding pandit in bangalore",
+    "secondaryKeywords": [
+      "north indian wedding pandit bangalore",
+      "hindi wedding pandit bangalore",
+      "vivah sanskar pandit bangalore",
+      "marriage pandit bangalore"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Vivah Sanskar", "Pheras", "Saptapadi", "Kanyadaan", "Vedic wedding"],
+    "location": "Bangalore",
+    "service": "Vedic Wedding / Vivah Sanskar",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/griha-pravesh-pooja-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "griha pravesh pandit in bangalore",
+    "secondaryKeywords": [
+      "griha pravesh pooja bangalore",
+      "housewarming pandit bangalore",
+      "vastu shanti puja bangalore",
+      "hindi pandit for griha pravesh"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Griha Pravesh", "Vastu Shanti", "Navagraha Havan", "Kalash Sthapana"],
+    "location": "Bangalore",
+    "service": "Griha Pravesh Puja",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/satyanarayan-puja-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "satyanarayan puja pandit in bangalore",
+    "secondaryKeywords": [
+      "satyanarayan katha bangalore",
+      "satyanarayan pooja hindi pandit",
+      "lord vishnu katha bangalore"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Satyanarayan Puja", "Vishnu Katha", "Panchamrit", "Prasad"],
+    "location": "Bangalore",
+    "service": "Satyanarayan Puja",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/havan-yagna-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "havan pandit in bangalore",
+    "secondaryKeywords": [
+      "yagna services bangalore",
+      "hawan kund puja bangalore",
+      "navchandi havan bangalore",
+      "maha ganapati havan"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Havan", "Yagna", "Hawan Kund", "Ghee", "Samagri"],
+    "location": "Bangalore",
+    "service": "Havan & Yagna",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/ganesh-puja-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "ganesh puja pandit in bangalore",
+    "secondaryKeywords": [
+      "ganesh sthapana bangalore",
+      "ganpati puja hindi pandit",
+      "maha ganapati puja"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Ganesh Puja", "Sthapana", "Vighnaharta", "Modak"],
+    "location": "Bangalore",
+    "service": "Ganesh Puja",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/durga-puja-navratri-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "durga puja pandit in bangalore",
+    "secondaryKeywords": [
+      "navratri path bangalore",
+      "durga saptashati path bangalore",
+      "chandi paath pandit"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Durga Puja", "Navratri", "Durga Saptashati", "Chandi Paath"],
+    "location": "Bangalore",
+    "service": "Durga Puja & Navratri",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/rudrabhishek-bangalore",
+    "pageType": "Service Pillar",
+    "primaryKeyword": "rudrabhishek pandit in bangalore",
+    "secondaryKeywords": [
+      "shiva puja pandit bangalore",
+      "rudram path bangalore",
+      "shiva abhishekam priest"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Rudrabhishek", "Lord Shiva", "Maha Shivaratri", "Rudram"],
+    "location": "Bangalore",
+    "service": "Rudrabhishek Puja",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/naamkaran-ceremony-bangalore",
+    "pageType": "Sanskar Pillar",
+    "primaryKeyword": "naamkaran ceremony pandit in bangalore",
+    "secondaryKeywords": [
+      "baby naming sanskar bangalore",
+      "naamkaran puja hindi pandit",
+      "vedic naming ceremony"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Naamkaran", "Baby naming", "Samskara", "Nakshatra"],
+    "location": "Bangalore",
+    "service": "Naamkaran Sanskar",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/mundan-ceremony-bangalore",
+    "pageType": "Sanskar Pillar",
+    "primaryKeyword": "mundan ceremony pandit in bangalore",
+    "secondaryKeywords": [
+      "chudakarana sanskar bangalore",
+      "tonsure ceremony pandit bangalore",
+      "baby hair shaving puja"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Mundan", "Chudakarana", "Tonsure", "Vedic Sanskar"],
+    "location": "Bangalore",
+    "service": "Mundan Ceremony",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/annaprashan-bangalore",
+    "pageType": "Sanskar Pillar",
+    "primaryKeyword": "annaprashan pandit in bangalore",
+    "secondaryKeywords": [
+      "baby first feeding ceremony bangalore",
+      "annaprashan vidhi hindi pandit",
+      "mukhe bhat ceremony"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Annaprashan", "First rice feeding", "Vedic Sanskar"],
+    "location": "Bangalore",
+    "service": "Annaprashan Ceremony",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/upanayanam-janeu-bangalore",
+    "pageType": "Sanskar Pillar",
+    "primaryKeyword": "upanayanam ceremony pandit in bangalore",
+    "secondaryKeywords": [
+      "janeu sanskar bangalore",
+      "sacred thread ceremony pandit",
+      "yagnopavita sanskar bangalore"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Upanayanam", "Janeu", "Yagnopavita", "Gayatri Mantra"],
+    "location": "Bangalore",
+    "service": "Upanayanam (Janeu) Sanskar",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-whitefield",
+    "pageType": "Location Page",
+    "primaryKeyword": "north indian pandit in whitefield",
+    "secondaryKeywords": [
+      "hindi pandit whitefield",
+      "pandit for griha pravesh whitefield",
+      "puja pandit kadugodi"
+    ],
+    "searchIntent": "Local transactional",
+    "entities": ["Whitefield", "ITPL", "Kadugodi", "North Indian communities"],
+    "location": "Whitefield, Bangalore",
+    "service": "Local Vedic ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
+    "pageType": "Location Page",
+    "primaryKeyword": "north indian pandit in hsr layout",
+    "secondaryKeywords": [
+      "hindi pandit hsr layout",
+      "griha pravesh pandit hsr",
+      "puja services hsr sector"
+    ],
+    "searchIntent": "Local transactional",
+    "entities": ["HSR Layout", "Sectors 1-7", "South-East Bangalore"],
+    "location": "HSR Layout, Bangalore",
+    "service": "Local Vedic ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-pandit-marathahalli",
+    "pageType": "Location Page",
+    "primaryKeyword": "north indian pandit in marathahalli",
+    "secondaryKeywords": [
+      "hindi pandit marathahalli",
+      "outer ring road pandit bangalore",
+      "puja pandit spice garden"
+    ],
+    "searchIntent": "Local transactional",
+    "entities": ["Marathahalli", "Outer Ring Road", "Munnekollal"],
+    "location": "Marathahalli, Bangalore",
+    "service": "Local Vedic ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/hindi-speaking-pandit-bangalore",
+    "pageType": "Cultural Hub",
+    "primaryKeyword": "hindi speaking pandit in bangalore",
+    "secondaryKeywords": [
+      "hindi purohit bangalore",
+      "pandit who speaks hindi bangalore",
+      "hindi wedding priest bangalore"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["Hindi language", "Vedic Sanskrit", "North Indian diaspora"],
+    "location": "Bangalore",
+    "service": "Language-specific officiating",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/bihari-pandit-bangalore",
+    "pageType": "Cultural Hub",
+    "primaryKeyword": "bihari pandit in bangalore",
+    "secondaryKeywords": [
+      "bihar puja rituals bangalore",
+      "chhath puja pandit bangalore",
+      "bhojpuri speaking pandit bangalore"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["Bihari tradition", "Chhath Puja", "Satyanarayan Katha"],
+    "location": "Bangalore",
+    "service": "Regional Bihari ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/maithil-pandit-bangalore",
+    "pageType": "Cultural Hub",
+    "primaryKeyword": "maithil pandit in bangalore",
+    "secondaryKeywords": [
+      "maithili pandit bangalore",
+      "mithila vivah sanskar bangalore",
+      "maithil rituals purohit"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["Mithila culture", "Maithili language", "Vedic Vivah"],
+    "location": "Bangalore",
+    "service": "Regional Maithil ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/online-pandit-bangalore",
+    "pageType": "Remote Service",
+    "primaryKeyword": "online pandit in bangalore",
+    "secondaryKeywords": [
+      "e-puja bangalore",
+      "virtual puja pandit bangalore",
+      "online havan booking"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["E-puja", "Virtual ceremony", "Video call puja"],
+    "location": "Bangalore / Remote",
+    "service": "Virtual & E-Pooja ceremonies",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/best-north-indian-pandit-bangalore",
+    "pageType": "Pillar Guide",
+    "primaryKeyword": "how to choose north indian pandit in bangalore",
+    "secondaryKeywords": [
+      "selecting vedic priest bangalore",
+      "pandit verification criteria",
+      "questions to ask a pandit"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Vedic credentials", "Gurukul qualifications", "Dakshina norms"],
+    "location": "Bangalore",
+    "service": "Priest Selection Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/pandit-cost-bangalore",
+    "pageType": "Cost Guide",
+    "primaryKeyword": "pandit cost in bangalore",
+    "secondaryKeywords": [
+      "pandit fees bangalore",
+      "dakshina rates for puja in bangalore",
+      "cost of griha pravesh pandit"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Dakshina", "Puja pricing", "Samagri costs"],
+    "location": "Bangalore",
+    "service": "Ceremony Pricing Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/griha-pravesh-puja-bangalore-guide",
+    "pageType": "Process Guide",
+    "primaryKeyword": "griha pravesh puja in bangalore process",
+    "secondaryKeywords": [
+      "housewarming steps bangalore",
+      "milk boiling ceremony rules",
+      "vastu shanti apartment vidhi"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Griha Pravesh vidhi", "Milk boiling", "Apartment fire safety"],
+    "location": "Bangalore",
+    "service": "Housewarming Ritual Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/puja-samagri-list-bangalore",
+    "pageType": "Samagri Guide",
+    "primaryKeyword": "puja samagri list for bangalore ceremonies",
+    "secondaryKeywords": [
+      "puja items checklist bangalore",
+      "havan samagri list",
+      "griha pravesh materials checklist"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Puja Samagri", "Havan kund", "Ghee", "Camphor", "Dravyas"],
+    "location": "Bangalore",
+    "service": "Samagri Checklist Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/how-to-book-pandit-bangalore",
+    "pageType": "Booking Guide",
+    "primaryKeyword": "how to book pandit in bangalore",
+    "secondaryKeywords": [
+      "pandit booking process",
+      "advance muhurat booking",
+      "doorstep pandit booking steps"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Booking workflow", "Shubh Muhurat calculation", "Gotra requirements"],
+    "location": "Bangalore",
+    "service": "Booking Process Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/north-indian-wedding-rituals-bangalore",
+    "pageType": "Resource Guide",
+    "primaryKeyword": "north indian wedding rituals in bangalore",
+    "secondaryKeywords": [
+      "north indian wedding ceremony bangalore",
+      "vivah sanskar steps bangalore",
+      "difference between pheras and saptapadi",
+      "wedding samagri checklist"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Vivah Sanskar", "Pheras", "Saptapadi", "Kanyadaan", "Jaimala"],
+    "location": "Bangalore",
+    "service": "Wedding Rituals Guide",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/pandit-shyam-sundar",
+    "pageType": "Priest Profile",
+    "primaryKeyword": "pandit shyam sundar bangalore",
+    "secondaryKeywords": [
+      "pandit shyam sundar founder",
+      "vedic priest shyam sundar",
+      "north indian head priest bangalore"
+    ],
+    "searchIntent": "Navigational",
+    "entities": ["Pandit Shyam Sundar", "Gurukul education", "Founder"],
+    "location": "Jakkur / Bangalore",
+    "service": "Founder & Head Vedic Priest",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/samagri",
+    "pageType": "Product/Service Hub",
+    "primaryKeyword": "pooja samagri in bangalore",
+    "secondaryKeywords": [
+      "doorstep samagri kit bangalore",
+      "havan samagri box bangalore",
+      "pure puja ingredients"
+    ],
+    "searchIntent": "Commercial investigation",
+    "entities": ["Pooja Samagri Kit", "Doorstep delivery", "Pure ingredients"],
+    "location": "Bangalore",
+    "service": "Doorstep Samagri Kits",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/about",
+    "pageType": "Entity Page",
+    "primaryKeyword": "about pandit ji express",
+    "secondaryKeywords": [
+      "pandit ji express mission",
+      "vedic shastric vidhi bangalore"
+    ],
+    "searchIntent": "Navigational",
+    "entities": ["Pandit Ji Express", "Vedic tradition", "Mission"],
+    "location": "Bangalore",
+    "service": "Company Information",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/contact",
+    "pageType": "Contact Page",
+    "primaryKeyword": "contact pandit ji express",
+    "secondaryKeywords": [
+      "pandit ji express phone number",
+      "pandit ji express address jakkur"
+    ],
+    "searchIntent": "Navigational",
+    "entities": ["Contact", "Jakkur address", "Phone number"],
+    "location": "Bangalore",
+    "service": "Customer Support & Booking Office",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/booking",
+    "pageType": "Transactional Portal",
+    "primaryKeyword": "book pandit online bangalore",
+    "secondaryKeywords": [
+      "pandit online booking form",
+      "schedule puja ceremony bangalore"
+    ],
+    "searchIntent": "Transactional",
+    "entities": ["Booking portal", "Muhurat scheduling", "Sankalpa details"],
+    "location": "Bangalore",
+    "service": "Online Ceremony Booking Portal",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/gallery",
+    "pageType": "Media Gallery",
+    "primaryKeyword": "vedic puja photos bangalore",
+    "secondaryKeywords": [
+      "pandit ji express ceremony photos",
+      "griha pravesh wedding photos"
+    ],
+    "searchIntent": "Informational",
+    "entities": ["Ceremony gallery", "Vedic rituals photos"],
+    "location": "Bangalore",
+    "service": "Visual Ceremony Portfolio",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/blog",
+    "pageType": "Blog Hub",
+    "primaryKeyword": "vedic puja blog bangalore",
+    "secondaryKeywords": [
+      "hindu ceremony guides",
+      "muhurat articles bangalore"
+    ],
+    "searchIntent": "Navigational",
+    "entities": ["Blog", "Puja guides", "Ritual insights"],
+    "location": "Bangalore",
+    "service": "Content Hub",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/privacy",
+    "pageType": "Legal",
+    "primaryKeyword": "pandit ji express privacy policy",
+    "secondaryKeywords": ["terms and privacy"],
+    "searchIntent": "Navigational",
+    "entities": ["Privacy policy", "Data protection"],
+    "location": "Bangalore",
+    "service": "Legal Documentation",
+    "status": "Published"
+  },
+  {
+    "url": "https://panditjiexpress.in/areas-we-serve",
+    "pageType": "Geographic Location Hub",
+    "primaryKeyword": "areas we serve bangalore pandit",
+    "secondaryKeywords": [
+      "north indian pandit puja coverage bangalore",
+      "hindi pandit bangalore areas",
+      "pandit service locations bengaluru",
+      "vedic puja coverage bangalore"
+    ],
+    "searchIntent": "Geographic navigation / Local investigation",
+    "entities": [
+      "Pandit Ji Express",
+      "Bengaluru",
+      "Bangalore geographic clusters",
+      "North Indian Vedic Pandit",
+      "Doorstep Puja Samagri"
+    ],
+    "location": "Bangalore (Primary Corridors & Service Clusters)",
+    "service": "Geographic Location Hub & Service Coverage",
+    "status": "Published (Batch 3)"
+  }
+]

@@ -5,6 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "npx -y serve . -p 8080",
+    "validate-business": "node scripts/validate.js validate-business",
+    "typecheck": "node scripts/validate.js typecheck",
+    "lint": "node scripts/validate.js lint",
+    "format:check": "node scripts/validate.js format:check",
+    "build": "node scripts/validate.js build",
     "deploy": "npx wrangler pages deploy . --project-name panditjiexpress",
     "deploy:preview": "npx wrangler pages deploy . --project-name panditjiexpress --branch preview"
   },

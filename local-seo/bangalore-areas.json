@@ -1,0 +1,378 @@
+{
+  "locationHub": {
+    "name": "Areas We Serve in Bangalore",
+    "canonicalUrl": "https://panditjiexpress.in/areas-we-serve",
+    "status": "Published (Batch 3)",
+    "datePublished": "2026-09-23",
+    "clustersCovered": 9,
+    "existingDedicatedLocalityPagesLinked": [
+      "https://panditjiexpress.in/north-indian-pandit-whitefield",
+      "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
+      "https://panditjiexpress.in/north-indian-pandit-marathahalli"
+    ]
+  },
+  "clusters": [
+    {
+      "clusterId": "north",
+      "clusterName": "North Bangalore",
+      "headquartersBase": true,
+      "baseLocation": "Jakkur / Srirampura (Bengaluru 560064)",
+      "dispatchTime": "Immediate / 10-25 mins",
+      "areas": [
+        {
+          "name": "Jakkur",
+          "slug": "jakkur",
+          "nearbyAreas": ["Srirampura", "Yelahanka", "Hebbal", "Thanisandra"],
+          "relevantServices": ["Griha Pravesh", "Satyanarayan Katha", "Vedic Vivah", "Havan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in jakkur bangalore",
+          "publishedStatus": "Base Headquarters (Referenced in NAP)",
+          "hasOwnUrl": false,
+          "phase": "HQ Base"
+        },
+        {
+          "name": "Hebbal",
+          "slug": "hebbal",
+          "nearbyAreas": ["Kempapura", "Manyata Tech Park", "Nagawara", "Jakkur"],
+          "relevantServices": ["Office Puja", "Griha Pravesh", "Satyanarayan Katha"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit hebbal",
+          "publishedStatus": "Planned Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Yelahanka",
+          "slug": "yelahanka",
+          "nearbyAreas": ["Yelahanka New Town", "Judicial Layout", "Kogilu Road"],
+          "relevantServices": ["Griha Pravesh", "Vivah", "Mundan", "Naamkaran"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit yelahanka",
+          "publishedStatus": "Planned Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Thanisandra",
+          "slug": "thanisandra",
+          "nearbyAreas": ["Bhartiya City", "Hennur Road", "Nagawara"],
+          "relevantServices": ["Apartment Griha Pravesh", "Hawan", "Vastu Shanti"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in thanisandra bangalore",
+          "publishedStatus": "Planned Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "east",
+      "clusterName": "East Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "35-50 mins",
+      "areas": [
+        {
+          "name": "Whitefield",
+          "slug": "north-indian-pandit-whitefield",
+          "nearbyAreas": ["ITPL", "Kadugodi", "Hope Farm", "Hoodi", "Varthur"],
+          "relevantServices": ["Apartment Balcony Hawan", "Griha Pravesh", "Vedic Vivah", "Satyanarayan Katha"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit in whitefield",
+          "publishedStatus": "Live Production",
+          "hasOwnUrl": true,
+          "url": "https://panditjiexpress.in/north-indian-pandit-whitefield",
+          "phase": "Phase 1 Published"
+        },
+        {
+          "name": "Marathahalli",
+          "slug": "north-indian-pandit-marathahalli",
+          "nearbyAreas": ["Outer Ring Road", "Munnekollal", "Spice Garden", "Kundalahalli"],
+          "relevantServices": ["Griha Pravesh", "Satyanarayan Katha", "Rudrabhishek"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit in marathahalli",
+          "publishedStatus": "Live Production",
+          "hasOwnUrl": true,
+          "url": "https://panditjiexpress.in/north-indian-pandit-marathahalli",
+          "phase": "Phase 1 Published"
+        },
+        {
+          "name": "KR Puram",
+          "slug": "kr-puram",
+          "nearbyAreas": ["TC Palya", "Ramamurthy Nagar", "Battarahalli"],
+          "relevantServices": ["Griha Pravesh", "Havan", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in kr puram",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "south-east",
+      "clusterName": "South-East Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "35-50 mins",
+      "areas": [
+        {
+          "name": "HSR Layout",
+          "slug": "north-indian-pandit-hsr-layout",
+          "nearbyAreas": ["Sectors 1-7", "Agara", "27th Main Corridor", "Bellandur"],
+          "relevantServices": ["Duplex & Apartment Griha Pravesh", "Vedic Vivah", "Office Puja"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit in hsr layout",
+          "publishedStatus": "Live Production",
+          "hasOwnUrl": true,
+          "url": "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
+          "phase": "Phase 1 Published"
+        },
+        {
+          "name": "Bellandur",
+          "slug": "bellandur",
+          "nearbyAreas": ["Green Glen Layout", "Ecospace", "Devarabisanahalli"],
+          "relevantServices": ["Apartment Griha Pravesh", "Havan", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in bellandur bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Sarjapur Road",
+          "slug": "sarjapur-road",
+          "nearbyAreas": ["Carmelaram", "Doddakannelli", "Kasavanahalli", "Somapura"],
+          "relevantServices": ["Gated Villa Hawan", "Griha Pravesh", "Vivah"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit sarjapur road",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Electronic City",
+          "slug": "electronic-city",
+          "nearbyAreas": ["Phase 1", "Phase 2", "Neeladri Road", "Doddathoguru"],
+          "relevantServices": ["High-rise Griha Pravesh", "Ayudha Puja", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit electronic city",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Koramangala",
+          "slug": "koramangala",
+          "nearbyAreas": ["Blocks 1-8", "Sony World Junction", "ST Bed"],
+          "relevantServices": ["Startup Office Puja", "Griha Pravesh", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in koramangala bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "south",
+      "clusterName": "South Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "45-60 mins",
+      "areas": [
+        {
+          "name": "Jayanagar",
+          "slug": "jayanagar",
+          "nearbyAreas": ["4th Block", "9th Block", "Tilak Nagar"],
+          "relevantServices": ["Traditional Vedic Ceremonies", "Griha Pravesh", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in jayanagar bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "JP Nagar",
+          "slug": "jp-nagar",
+          "nearbyAreas": ["Phases 1-8", "Brigade Millennium", "Puttenahalli"],
+          "relevantServices": ["Apartment Griha Pravesh", "Mundan", "Naamkaran"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit jp nagar",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "BTM Layout",
+          "slug": "btm-layout",
+          "nearbyAreas": ["1st Stage", "2nd Stage", "Udupi Garden"],
+          "relevantServices": ["Griha Pravesh", "Satyanarayan", "Rudrabhishek"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in btm layout",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Banashankari",
+          "slug": "banashankari",
+          "nearbyAreas": ["Stages 1-6", "Kathriguppe", "BSK 3rd Stage"],
+          "relevantServices": ["Vedic Sanskars", "Griha Pravesh", "Havan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in banashankari",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "central",
+      "clusterName": "Central Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "30-40 mins",
+      "areas": [
+        {
+          "name": "Indiranagar",
+          "slug": "indiranagar",
+          "nearbyAreas": ["100ft Road", "12th Main", "HAL 2nd Stage", "Defence Colony"],
+          "relevantServices": ["Griha Pravesh", "Office Puja", "Satyanarayan Katha"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "north indian pandit indiranagar",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "MG Road / CBD",
+          "slug": "mg-road-cbd",
+          "nearbyAreas": ["Brigade Road", "Lavelle Road", "Richmond Town"],
+          "relevantServices": ["Corporate Office Invocations", "Vastu Shanti"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "office puja pandit bangalore cbd",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "north-east",
+      "clusterName": "North-East Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "20-30 mins",
+      "areas": [
+        {
+          "name": "Kalyan Nagar",
+          "slug": "kalyan-nagar",
+          "nearbyAreas": ["HRBR Layout", "Banaswadi", "Kammanahalli"],
+          "relevantServices": ["Griha Pravesh", "Havan", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in kalyan nagar bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Hennur",
+          "slug": "hennur",
+          "nearbyAreas": ["Hennur Main Road", "Geddalahalli", "Bio-Tech Park"],
+          "relevantServices": ["Apartment Puja", "Griha Pravesh", "Vastu Shanti"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in hennur bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "west",
+      "clusterName": "West Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "40-55 mins",
+      "areas": [
+        {
+          "name": "Rajajinagar",
+          "slug": "rajajinagar",
+          "nearbyAreas": ["Basaveshwaranagar", "Mahalakshmi Layout"],
+          "relevantServices": ["Vedic Sanskars", "Griha Pravesh", "Satyanarayan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in rajajinagar bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Malleshwaram",
+          "slug": "malleshwaram",
+          "nearbyAreas": ["Margosa Road", "Sampige Road", "Sadashivanagar"],
+          "relevantServices": ["Temple Traditions", "Griha Pravesh", "Rudrabhishek"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in malleshwaram bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "RR Nagar",
+          "slug": "rr-nagar",
+          "nearbyAreas": ["Rajarajeshwari Nagar", "Kengeri", "Nayandahalli"],
+          "relevantServices": ["Griha Pravesh", "Havan", "Vivah"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in rr nagar bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "north-west",
+      "clusterName": "North-West Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "30-45 mins",
+      "areas": [
+        {
+          "name": "Yeshwanthpur",
+          "slug": "yeshwanthpur",
+          "nearbyAreas": ["Mathikere", "Goraguntepalya", "Peenya"],
+          "relevantServices": ["Factory & Business Invocations", "Griha Pravesh"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in yeshwanthpur",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        },
+        {
+          "name": "Peenya",
+          "slug": "peenya",
+          "nearbyAreas": ["Peenya Industrial Area", "Jalahalli"],
+          "relevantServices": ["Ayudha Puja", "Vishwakarma Puja", "Bhoomi Pujan"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "factory puja pandit peenya bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    },
+    {
+      "clusterId": "outer",
+      "clusterName": "Outer Bangalore",
+      "headquartersBase": false,
+      "dispatchTime": "60-80 mins",
+      "areas": [
+        {
+          "name": "Devanahalli",
+          "slug": "devanahalli",
+          "nearbyAreas": ["Airport Corridor", "KIADB Aerospace Park"],
+          "relevantServices": ["Township Griha Pravesh", "Bhoomi Pujan", "Vivah"],
+          "uniqueContentRequired": true,
+          "primaryKeywordIntent": "pandit in devanahalli bangalore",
+          "publishedStatus": "Candidate",
+          "hasOwnUrl": false,
+          "phase": "Candidate"
+        }
+      ]
+    }
+  ]
+}

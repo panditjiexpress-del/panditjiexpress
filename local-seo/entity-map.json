@@ -1,0 +1,212 @@
+{
+  "brandEntity": {
+    "name": "Pandit Ji Express",
+    "alternateName": "Pandit Ji Express Bangalore",
+    "id": "https://panditjiexpress.in/#organization",
+    "url": "https://panditjiexpress.in/",
+    "sameAs": [
+      "https://www.youtube.com/@panditjiexpress",
+      "https://www.google.com/maps/search/?api=1&query=Pandit+Ji+Express+Srirampura+Jakkur+Bengaluru+560064"
+    ],
+    "type": ["LocalBusiness", "ProfessionalService", "Organization"]
+  },
+  "personEntity": {
+    "name": "Pandit Shyam Sundar",
+    "id": "https://panditjiexpress.in/pandit-shyam-sundar#person",
+    "url": "https://panditjiexpress.in/pandit-shyam-sundar",
+    "jobTitle": "Founder & Head Vedic Priest",
+    "description": "Vedic scholar with 15+ years of ritual experience officiating North Indian Vedic ceremonies across Bangalore.",
+    "knowsLanguage": ["Hindi", "Sanskrit", "Maithili", "Bhojpuri", "English"],
+    "hasCredential": "Vedic Gurukul Education & Shastric Vidhi Training",
+    "knowsAbout": [
+      "Vedic Karmakanda",
+      "Grihya Sutras",
+      "Hindu Wedding Rituals",
+      "Vastu Shanti",
+      "Havan & Yagna",
+      "Gotra Pravara Sankalpa"
+    ]
+  },
+  "locationEntities": [
+    {
+      "name": "Bengaluru",
+      "alternateName": "Bangalore",
+      "wikidataId": "Q1355",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bangalore"
+    },
+    {
+      "name": "Karnataka",
+      "wikidataId": "Q1185",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Karnataka"
+    },
+    {
+      "name": "Jakkur",
+      "type": "Neighborhood",
+      "postalCode": "560064",
+      "city": "Bengaluru"
+    },
+    {
+      "name": "Whitefield",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q7996160",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Whitefield,_Bangalore"
+    },
+    {
+      "name": "HSR Layout",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q5636034",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/HSR_Layout"
+    },
+    {
+      "name": "Marathahalli",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q6755030",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marathahalli"
+    },
+    {
+      "name": "Bellandur",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q4883492",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bellandur"
+    },
+    {
+      "name": "Sarjapur Road",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q7424177",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sarjapura"
+    },
+    {
+      "name": "Electronic City",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q3522204",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Electronic_City"
+    },
+    {
+      "name": "Koramangala",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q6431405",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Koramangala"
+    },
+    {
+      "name": "Indiranagar",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q6024982",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Indiranagar"
+    },
+    {
+      "name": "Yelahanka",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q8051515",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Yelahanka"
+    },
+    {
+      "name": "Hebbal",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q5696347",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hebbal"
+    },
+    {
+      "name": "Malleshwaram",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q6744158",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Malleshwaram"
+    },
+    {
+      "name": "Basavanagudi",
+      "type": "Neighborhood",
+      "city": "Bengaluru",
+      "wikidataId": "Q4866304",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Basavanagudi"
+    }
+  ],
+  "topicEntities": [
+    {
+      "name": "Vivah Sanskar (Hindu Wedding)",
+      "wikidataId": "Q1530366",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hindu_wedding",
+      "subEntities": ["Pheras", "Saptapadi", "Kanyadaan", "Varmala", "Sindoor"]
+    },
+    {
+      "name": "Griha Pravesh",
+      "wikidataId": "Q3506306",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Griha_Pravesh",
+      "subEntities": ["Vastu Shanti", "Navagraha Havan", "Kalash Sthapana", "Doodh Ufanna"]
+    },
+    {
+      "name": "Satyanarayan Puja",
+      "wikidataId": "Q3634044",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Satyanarayan_Puja"
+    },
+    {
+      "name": "Homa / Yajna",
+      "wikidataId": "Q1392813",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Yajna"
+    },
+    {
+      "name": "Ganesha",
+      "wikidataId": "Q1579",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ganesha"
+    },
+    {
+      "name": "Shiva / Rudrabhishek",
+      "wikidataId": "Q11380",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shiva"
+    },
+    {
+      "name": "Durga Puja & Navratri",
+      "wikidataId": "Q1032126",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Durga_Puja"
+    },
+    {
+      "name": "Upanayana (Janeu)",
+      "wikidataId": "Q1341094",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Upanayana"
+    },
+    {
+      "name": "Chudakarana (Mundan)",
+      "wikidataId": "Q3634931",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chudakarana"
+    },
+    {
+      "name": "Namakarana",
+      "wikidataId": "Q3505677",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Namakarana"
+    },
+    {
+      "name": "Annaprashana",
+      "wikidataId": "Q564560",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Annaprashana"
+    },
+    {
+      "name": "Chhath Puja",
+      "wikidataId": "Q5094970",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chhath"
+    },
+    {
+      "name": "Maithil Culture",
+      "wikidataId": "Q3348633",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Maithil"
+    },
+    {
+      "name": "Puja Samagri",
+      "wikidataId": "Q11406",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Puja_(Hinduism)"
+    },
+    {
+      "name": "Purohita (Hindu Priest / Pandit)",
+      "wikidataId": "Q2348574",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Purohita"
+    }
+  ]
+}

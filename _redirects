@@ -22,3 +22,9 @@
 # www to non-www redirect (set this in Cloudflare DNS too)
 https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
 https://panditjiexpress-avp.pages.dev/*  https://panditjiexpress.in/:splat  301
+/north-indian-pandit-electronic-city  /north-indian-pandit-electronic-city.html  200
+/north-indian-pandit-sarjapur-road  /north-indian-pandit-sarjapur-road.html  200
+/chhath-puja-bangalore  /chhath-puja-bangalore.html  200
+/diwali-lakshmi-puja-bangalore  /diwali-lakshmi-puja-bangalore.html  200
+/griha-pravesh-samagri-checklist  /griha-pravesh-samagri-checklist.html  200
+/wedding-vivah-checklist  /wedding-vivah-checklist.html  200
