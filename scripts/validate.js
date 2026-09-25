@@ -109,8 +109,8 @@ if (command === 'lint') {
 
   for (const hf of htmlFiles) {
     const base = path.basename(hf);
-    if (base === 'pandit-rahul-shastri.html' || base === 'pandits.html' || base === 'resources.html' || base === 'vastu-shanti-puja-bangalore.html') {
-      continue; // Skip redirect stubs
+    if (base === '404.html' || base === 'pandit-rahul-shastri.html' || base === 'pandits.html' || base === 'resources.html' || base === 'vastu-shanti-puja-bangalore.html') {
+      continue; // Skip redirect and error stubs
     }
 
     const content = fs.readFileSync(hf, 'utf8');

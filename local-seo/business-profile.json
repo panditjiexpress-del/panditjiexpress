@@ -56,6 +56,22 @@
     "whatsApp": "https://wa.me/919065788789",
     "bookingUrl": "https://panditjiexpress.in/booking",
     "contactUrl": "https://panditjiexpress.in/contact",
+    "contactPoints": [
+      {
+        "contactType": "customer service",
+        "telephone": "+919065788789",
+        "email": "support@panditjiexpress.in",
+        "availableLanguages": ["Hindi", "English", "Bhojpuri", "Maithili", "Sanskrit"],
+        "areaServed": "IN"
+      },
+      {
+        "contactType": "reservations",
+        "telephone": "+919065788789",
+        "email": "support@panditjiexpress.in",
+        "availableLanguages": ["Hindi", "English", "Bhojpuri", "Maithili", "Sanskrit"],
+        "areaServed": "IN"
+      }
+    ],
     "verificationStatus": "verified_from_website",
     "source": "Universal header, footer, and contact page elements"
   },

@@ -32,3 +32,7 @@ Disallow: /.system_generated/
 # Master XML Sitemap
 Sitemap: https://panditjiexpress.in/sitemap.xml
 
+# AI Agent Guidance & LLM Reference
+# LLMs-Text: https://panditjiexpress.in/llms.txt
+# Agent-Instructions: https://panditjiexpress.in/agent-instructions.txt
+

@@ -10,6 +10,7 @@
     "lint": "node scripts/validate.js lint",
     "format:check": "node scripts/validate.js format:check",
     "build": "node scripts/validate.js build",
+    "test:agent": "node scripts/test_agent_readiness.js",
     "deploy": "npx wrangler pages deploy . --project-name panditjiexpress",
     "deploy:preview": "npx wrangler pages deploy . --project-name panditjiexpress --branch preview"
   },
