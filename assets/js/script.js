@@ -453,6 +453,9 @@ function handleMobileBack() {
 }
 
 function triggerMobileCall() {
+  if (typeof trackConversionEvent === 'function') {
+    trackConversionEvent('phone_call_click', { phone_number: '+919065788789', button_location: 'header_bell_btn' });
+  }
   window.location.href = 'tel:+919065788789';
 }
 
@@ -820,6 +823,47 @@ function trackConversionEvent(eventName, eventParams) {
   // 3. Meta Pixel (fbq)
   if (typeof window.fbq === 'function' && eventName === 'booking_submit') {
     window.fbq('track', 'Lead', { content_name: eventParams.ceremony_type || 'Puja Booking' });
+  }
+
+  // 4. Pandit Ji Express Backend Telemetry (/api/track)
+  if (eventName === 'whatsapp_click' || eventName === 'phone_call_click') {
+    const payload = JSON.stringify({
+      event: eventName,
+      page: window.location.pathname || '/',
+      position: eventParams.button_location || 'in_page_content',
+      link: eventParams.link_url || eventParams.phone_number || '',
+      timestamp: Date.now()
+    });
+
+    try {
+      if (navigator.sendBeacon) {
+        const blob = new Blob([payload], { type: 'application/json' });
+        navigator.sendBeacon('/api/track', blob);
+      } else {
+        fetch('/api/track', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: payload,
+          keepalive: true
+        }).catch(() => {});
+      }
+    } catch (e) {
+      fetch('/api/track', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
+        keepalive: true
+      }).catch(() => {});
+    }
+
+    // LocalStorage fallback cache
+    try {
+      const statsKey = 'pj_local_clicks';
+      const current = JSON.parse(localStorage.getItem(statsKey) || '{"whatsapp":0,"call":0}');
+      if (eventName === 'whatsapp_click') current.whatsapp = (current.whatsapp || 0) + 1;
+      if (eventName === 'phone_call_click') current.call = (current.call || 0) + 1;
+      localStorage.setItem(statsKey, JSON.stringify(current));
+    } catch (e) {}
   }
 }
 

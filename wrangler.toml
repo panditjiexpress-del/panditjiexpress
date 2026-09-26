@@ -1,0 +1,7 @@
+name = "panditjiexpress"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "."
+
+[[kv_namespaces]]
+binding = "CLICKS_KV"
+id = "6586ab9d01d043048d5197191b8ad0b7"

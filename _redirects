@@ -19,6 +19,10 @@
 # Remove trailing slashes (canonical URL hygiene)
 /index.html                /  301
 
+# Admin Analytics Dashboard (clean URL rewrites)
+/admin                     /admin.html  200
+/analytics                 /admin.html  200
+
 # www to non-www redirect (set this in Cloudflare DNS too)
 https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
 https://panditjiexpress-avp.pages.dev/*  https://panditjiexpress.in/:splat  301

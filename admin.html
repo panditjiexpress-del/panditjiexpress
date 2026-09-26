@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Lead &amp; Click Analytics Dashboard | Pandit Ji Express</title>
+  <meta name="description" content="Private backend click and lead analytics tracking dashboard for Pandit Ji Express Bangalore.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://panditjiexpress.in/admin">
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <style>
+    :root {
+      --dash-bg: #FBF8F4;
+      --card-bg: #FFFFFF;
+      --card-border: #EFE6D8;
+      --wa-green: #25D366;
+      --wa-green-dark: #1EBE5D;
+      --call-maroon: #541419;
+    }
+    body {
+      background-color: var(--dash-bg);
+      font-family: var(--font-body);
+      color: var(--color-text-dark);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .admin-header {
+      background: linear-gradient(135deg, #430C0F 0%, #200406 100%);
+      color: #FFF;
+      padding: 1.25rem 0;
+      border-bottom: 2px solid var(--color-gold);
+    }
+    .admin-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .admin-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .admin-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid var(--color-gold);
+    }
+    .admin-brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FFF;
+      line-height: 1.1;
+    }
+    .admin-badge {
+      display: inline-block;
+      background: var(--color-gold);
+      color: #2D0B0E;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+    .admin-controls {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn-dash {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(255,255,255,0.1);
+      color: #FFF;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+    .btn-dash:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    .btn-dash-primary {
+      background: var(--color-orange-primary);
+      border-color: var(--color-orange-deep);
+      color: #FFF;
+    }
+    .btn-dash-primary:hover {
+      background: var(--color-orange-deep);
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .metric-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 14px rgba(84, 20, 25, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .metric-card.card-wa {
+      border-top: 4px solid var(--wa-green);
+    }
+    .metric-card.card-call {
+      border-top: 4px solid var(--call-maroon);
+    }
+    .metric-card.card-total {
+      border-top: 4px solid var(--color-orange-primary);
+    }
+    .metric-card.card-top {
+      border-top: 4px solid var(--color-gold);
+    }
+    .metric-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .metric-value {
+      font-family: var(--font-heading);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--color-maroon-deep);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .metric-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 20px;
+    }
+    .badge-today-green {
+      background: #E8F5E9;
+      color: #2E7D32;
+    }
+    .badge-today-maroon {
+      background: #FBE9E7;
+      color: #C62828;
+    }
+    .badge-today-orange {
+      background: #FFF3E0;
+      color: #E65100;
+    }
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 14px rgba(84, 20, 25, 0.04);
+    }
+    .section-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .section-heading {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--color-maroon-deep);
+      margin: 0;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .data-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: #FDF9F3;
+      border-bottom: 2px solid var(--card-border);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--color-text-muted);
+    }
+    .data-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid #F5EFE6;
+      vertical-align: middle;
+    }
+    .data-table tr:hover td {
+      background: #FFFDF9;
+    }
+    .event-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .event-badge.wa {
+      background: #E8F5E9;
+      color: #1B5E20;
+    }
+    .event-badge.call {
+      background: #FBE9E7;
+      color: #B71C1C;
+    }
+    .bar-container {
+      background: #EFE6D8;
+      border-radius: 4px;
+      height: 8px;
+      width: 120px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0.5rem;
+    }
+    .bar-fill-wa {
+      background: var(--wa-green);
+      height: 100%;
+    }
+    .bar-fill-call {
+      background: var(--call-maroon);
+      height: 100%;
+    }
+    .tab-nav {
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 2px solid var(--card-border);
+      margin-bottom: 1.25rem;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+    }
+    .tab-btn.active {
+      color: var(--color-orange-primary);
+      border-bottom: 3px solid var(--color-orange-primary);
+      margin-bottom: -2px;
+    }
+    .pin-modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(45, 11, 14, 0.85);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      padding: 1rem;
+    }
+    .pin-modal {
+      background: #FFF;
+      border-radius: 12px;
+      padding: 2.25rem;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border: 1px solid var(--card-border);
+    }
+    .pin-input {
+      font-family: inherit;
+      font-size: 1.5rem;
+      letter-spacing: 4px;
+      text-align: center;
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid var(--card-border);
+      border-radius: 8px;
+      margin: 1.25rem 0;
+      box-sizing: border-box;
+    }
+    .pin-input:focus {
+      outline: none;
+      border-color: var(--color-orange-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Admin Navigation Header -->
+  <header class="admin-header">
+    <div class="container admin-header-inner">
+      <div class="admin-title-wrap">
+        <img src="/assets/images/logo.png?v=8k" alt="Pandit Ji Express Logo" class="admin-logo">
+        <div>
+          <div class="admin-brand-title">
+            Pandit Ji Express <span class="admin-badge">Admin Telemetry</span>
+          </div>
+          <div style="font-size:0.75rem; color:rgba(255,255,255,0.75); margin-top:2px;">
+            Bangalore Vedic Pujas &bull; WhatsApp &amp; Call Inquiries
+          </div>
+        </div>
+      </div>
+      <div class="admin-controls">
+        <button class="btn-dash" onclick="fetchAnalytics()" id="refreshBtn" title="Refresh Live Data">
+          <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg> Refresh
+        </button>
+        <button class="btn-dash" onclick="exportCsv()" title="Download CSV">
+          <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Export CSV
+        </button>
+        <button class="btn-dash btn-dash-primary" onclick="triggerTestClick('whatsapp')" title="Test Live Tracking">
+          + Test WA Click
+        </button>
+        <button class="btn-dash btn-dash-primary" onclick="triggerTestClick('call')" title="Test Live Tracking">
+          + Test Call Click
+        </button>
+        <button class="btn-dash" onclick="logoutAdmin()" title="Lock Session" style="border-color:rgba(255,100,100,0.4); color:#FFCDD2;">
+          Lock
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PIN Protection Modal -->
+  <div id="pinModal" class="pin-modal-overlay" style="display:none;">
+    <div class="pin-modal">
+      <div style="font-size:2.5rem; margin-bottom:0.5rem;">🔒</div>
+      <h2 style="font-family:var(--font-heading); color:var(--color-maroon-deep); margin:0 0 0.5rem; font-size:1.5rem;">Admin Access</h2>
+      <p style="font-size:0.88rem; color:var(--color-text-muted); margin:0;">Enter your admin PIN to view lead and call analytics.</p>
+      <form onsubmit="handlePinSubmit(event)">
+        <input type="password" id="pinCode" class="pin-input" placeholder="••••••••" autofocus autocomplete="current-password">
+        <button type="submit" class="btn btn-primary" style="width:100%; padding:0.8rem; font-size:1rem; cursor:pointer;">Unlock Dashboard</button>
+      </form>
+      <div id="pinError" style="color:#C62828; font-size:0.82rem; margin-top:0.75rem; font-weight:600; display:none;">
+        Incorrect PIN. Please try again.
+      </div>
+      <div style="font-size:0.75rem; color:#888; margin-top:1rem;">Default initial PIN: <code>panditji2026</code></div>
+    </div>
+  </div>
+
+  <main class="container" style="max-width:1160px; padding:1.5rem 1rem 3rem; flex:1;">
+
+    <!-- Single Accessible H1 -->
+    <h1 style="font-family:var(--font-heading); color:var(--color-maroon-deep); font-size:1.75rem; margin-bottom:0.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <span>Inquiry &amp; Conversion Telemetry</span>
+      <span id="storageBadge" style="font-family:var(--font-body); font-size:0.78rem; font-weight:600; background:#EFE6D8; color:var(--color-text-dark); padding:0.25rem 0.65rem; border-radius:12px;">
+        Connecting...
+      </span>
+    </h1>
+    <p style="color:var(--color-text-muted); font-size:0.92rem; margin:0 0 1.5rem;">
+      Live tracking of customer clicks on <strong>WhatsApp Consultation</strong> and <strong>Click-to-Call (+91 90657 88789)</strong> buttons across Bengaluru ceremony pages.
+    </p>
+
+    <!-- Top KPI Cards -->
+    <div class="metric-grid">
+      <!-- WhatsApp Card -->
+      <div class="metric-card card-wa">
+        <div class="metric-title">💬 WhatsApp Clicks</div>
+        <div class="metric-value" id="valTotalWa">0</div>
+        <div>
+          <span class="metric-badge badge-today-green" id="valTodayWa">+0 Today</span>
+          <span style="font-size:0.78rem; color:var(--color-text-muted); margin-left:0.35rem;">(All Time)</span>
+        </div>
+      </div>
+
+      <!-- Phone Call Card -->
+      <div class="metric-card card-call">
+        <div class="metric-title">📞 Phone Call Clicks</div>
+        <div class="metric-value" id="valTotalCall">0</div>
+        <div>
+          <span class="metric-badge badge-today-maroon" id="valTodayCall">+0 Today</span>
+          <span style="font-size:0.78rem; color:var(--color-text-muted); margin-left:0.35rem;">(All Time)</span>
+        </div>
+      </div>
+
+      <!-- Total Leads Card -->
+      <div class="metric-card card-total">
+        <div class="metric-title">🎯 Total Inquiries</div>
+        <div class="metric-value" id="valTotalClicks">0</div>
+        <div>
+          <span class="metric-badge badge-today-orange" id="valTodayClicks">+0 Today</span>
+          <span style="font-size:0.78rem; color:var(--color-text-muted); margin-left:0.35rem;">(WA + Calls)</span>
+        </div>
+      </div>
+
+      <!-- Top Converting Page -->
+      <div class="metric-card card-top">
+        <div class="metric-title">🏆 Top Performing Page</div>
+        <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; color:var(--color-maroon-deep); margin-bottom:0.4rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" id="valTopPage">
+          Loading...
+        </div>
+        <div style="font-size:0.8rem; color:var(--color-text-muted);" id="valTopPageCount">
+          0 inquiries
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('tabPages')">📄 By Page / Ceremony</button>
+      <button class="tab-btn" onclick="switchTab('tabRecent')">⚡ Live Click Stream (Last 50)</button>
+      <button class="tab-btn" onclick="switchTab('tabPositions')">🔘 Button Placements</button>
+      <button class="tab-btn" onclick="switchTab('tabDaily')">📅 14-Day Trend</button>
+    </div>
+
+    <!-- TAB 1: By Page -->
+    <div id="tabPages" class="section-card">
+      <div class="section-header-row">
+        <h2 class="section-heading">Ceremony &amp; Locality Page Conversions</h2>
+        <span style="font-size:0.82rem; color:var(--color-text-muted);">Ranked by highest inquiry generation</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Page Path</th>
+              <th style="text-align:center;">WhatsApp</th>
+              <th style="text-align:center;">Calls</th>
+              <th style="text-align:center;">Total</th>
+              <th>Share of Leads</th>
+            </tr>
+          </thead>
+          <tbody id="pagesTableBody">
+            <tr><td colspan="5" style="text-align:center; color:#888;">Loading page statistics...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 2: Live Click Stream -->
+    <div id="tabRecent" class="section-card" style="display:none;">
+      <div class="section-header-row">
+        <h2 class="section-heading">Live Click Stream (Most Recent 50)</h2>
+        <span style="font-size:0.82rem; color:var(--color-text-muted);">Real-time visitor interactions</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Timestamp (IST)</th>
+              <th>Channel</th>
+              <th>Page</th>
+              <th>Button Position</th>
+              <th>Device</th>
+            </tr>
+          </thead>
+          <tbody id="recentTableBody">
+            <tr><td colspan="5" style="text-align:center; color:#888;">No clicks recorded yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 3: Button Positions -->
+    <div id="tabPositions" class="section-card" style="display:none;">
+      <div class="section-header-row">
+        <h2 class="section-heading">Conversions by Button Placement</h2>
+        <span style="font-size:0.82rem; color:var(--color-text-muted);">Analyze which button layout drives calls vs WhatsApp</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Position Name</th>
+              <th style="text-align:center;">WhatsApp</th>
+              <th style="text-align:center;">Calls</th>
+              <th style="text-align:center;">Total</th>
+            </tr>
+          </thead>
+          <tbody id="positionsTableBody">
+            <tr><td colspan="4" style="text-align:center; color:#888;">Loading button placement data...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 4: 14-Day Daily Trend -->
+    <div id="tabDaily" class="section-card" style="display:none;">
+      <div class="section-header-row">
+        <h2 class="section-heading">Daily Inquiry Trend (Last 14 Days)</h2>
+        <span style="font-size:0.82rem; color:var(--color-text-muted);">Daily lead volumes</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Date (IST)</th>
+              <th style="text-align:center;">WhatsApp</th>
+              <th style="text-align:center;">Phone Calls</th>
+              <th style="text-align:center;">Total Inquiries</th>
+            </tr>
+          </thead>
+          <tbody id="dailyTableBody">
+            <tr><td colspan="4" style="text-align:center; color:#888;">Loading daily records...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Reset Data Accordion -->
+    <div style="text-align:right; margin-top:1rem;">
+      <button onclick="resetCounters()" style="background:none; border:none; color:#C62828; font-size:0.82rem; cursor:pointer; text-decoration:underline;">
+        Clear / Reset All Counters
+      </button>
+    </div>
+
+  </main>
+
+  <script>
+    const DEFAULT_PIN = "panditji2026";
+    let currentData = null;
+
+    function checkAuth() {
+      const pin = sessionStorage.getItem("pj_admin_pin") || new URLSearchParams(window.location.search).get("pin");
+      if (pin === DEFAULT_PIN) {
+        sessionStorage.setItem("pj_admin_pin", pin);
+        document.getElementById("pinModal").style.display = "none";
+        fetchAnalytics();
+      } else {
+        document.getElementById("pinModal").style.display = "flex";
+      }
+    }
+
+    function handlePinSubmit(e) {
+      e.preventDefault();
+      const code = document.getElementById("pinCode").value.trim();
+      if (code === DEFAULT_PIN) {
+        sessionStorage.setItem("pj_admin_pin", code);
+        document.getElementById("pinModal").style.display = "none";
+        document.getElementById("pinError").style.display = "none";
+        fetchAnalytics();
+      } else {
+        document.getElementById("pinError").style.display = "block";
+      }
+    }
+
+    function logoutAdmin() {
+      sessionStorage.removeItem("pj_admin_pin");
+      window.location.reload();
+    }
+
+    async function fetchAnalytics() {
+      const btn = document.getElementById("refreshBtn");
+      if (btn) btn.innerHTML = "Refreshing...";
+
+      try {
+        const res = await fetch("/api/stats");
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        currentData = data;
+        renderDashboard(data);
+      } catch (err) {
+        console.warn("Backend /api/stats unreachable, reading local storage fallback", err);
+        // Fallback to local storage if running in local preview or offline
+        const local = JSON.parse(localStorage.getItem("pj_local_clicks") || '{"whatsapp":0,"call":0}');
+        const fallback = {
+          summary: {
+            total_whatsapp: local.whatsapp || 0,
+            total_calls: local.call || 0,
+            total_clicks: (local.whatsapp || 0) + (local.call || 0),
+            today_whatsapp: local.whatsapp || 0,
+            today_calls: local.call || 0,
+            today_clicks: (local.whatsapp || 0) + (local.call || 0)
+          },
+          top_pages: [{ page: "/", whatsapp: local.whatsapp || 0, call: local.call || 0, total: (local.whatsapp || 0) + (local.call || 0) }],
+          positions: [{ position: "in_page_content", whatsapp: local.whatsapp || 0, call: local.call || 0, total: (local.whatsapp || 0) + (local.call || 0) }],
+          daily_trends: [],
+          recent_clicks: [],
+          storage_type: "Local Storage (Preview)"
+        };
+        renderDashboard(fallback);
+      } finally {
+        if (btn) btn.innerHTML = `<svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg> Refresh`;
+      }
+    }
+
+    function renderDashboard(data) {
+      const s = data.summary || {};
+      document.getElementById("valTotalWa").textContent = s.total_whatsapp || 0;
+      document.getElementById("valTodayWa").textContent = `+${s.today_whatsapp || 0} Today`;
+
+      document.getElementById("valTotalCall").textContent = s.total_calls || 0;
+      document.getElementById("valTodayCall").textContent = `+${s.today_calls || 0} Today`;
+
+      document.getElementById("valTotalClicks").textContent = s.total_clicks || 0;
+      document.getElementById("valTodayClicks").textContent = `+${s.today_clicks || 0} Today`;
+
+      document.getElementById("storageBadge").textContent = data.storage_type || "Cloudflare KV";
+
+      // Top Page
+      if (data.top_pages && data.top_pages.length > 0 && data.top_pages[0].total > 0) {
+        document.getElementById("valTopPage").textContent = data.top_pages[0].page;
+        document.getElementById("valTopPageCount").textContent = `${data.top_pages[0].total} inquiries (${data.top_pages[0].whatsapp} WA, ${data.top_pages[0].call} Call)`;
+      } else {
+        document.getElementById("valTopPage").textContent = "No data yet";
+        document.getElementById("valTopPageCount").textContent = "Send a test click to start";
+      }
+
+      // Render Pages Table
+      const pagesTbody = document.getElementById("pagesTableBody");
+      if (data.top_pages && data.top_pages.length > 0) {
+        const totalOverall = s.total_clicks || 1;
+        pagesTbody.innerHTML = data.top_pages.map(p => {
+          const pct = Math.round((p.total / totalOverall) * 100);
+          return `
+            <tr>
+              <td><strong><a href="${p.page}" target="_blank" style="color:var(--color-maroon-primary); text-decoration:none;">${p.page}</a></strong></td>
+              <td style="text-align:center; font-weight:700; color:#2E7D32;">${p.whatsapp}</td>
+              <td style="text-align:center; font-weight:700; color:#C62828;">${p.call}</td>
+              <td style="text-align:center; font-weight:800;">${p.total}</td>
+              <td>
+                <span>${pct}%</span>
+                <div class="bar-container">
+                  <div class="bar-fill-wa" style="width:${pct}%;"></div>
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      } else {
+        pagesTbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#888;">No clicks recorded yet.</td></tr>`;
+      }
+
+      // Render Recent Table
+      const recentTbody = document.getElementById("recentTableBody");
+      if (data.recent_clicks && data.recent_clicks.length > 0) {
+        recentTbody.innerHTML = data.recent_clicks.map(c => `
+          <tr>
+            <td style="font-size:0.85rem; color:#666;">${c.time_ist || new Date(c.timestamp).toLocaleString()}</td>
+            <td>
+              <span class="event-badge ${c.event === 'whatsapp' ? 'wa' : 'call'}">
+                ${c.event === 'whatsapp' ? '💬 WhatsApp' : '📞 Call'}
+              </span>
+            </td>
+            <td><strong>${c.page}</strong></td>
+            <td><code>${c.position}</code></td>
+            <td><span style="font-size:0.82rem; background:#EEE; padding:0.15rem 0.5rem; border-radius:4px;">${c.device || 'Desktop'}</span></td>
+          </tr>
+        `).join('');
+      } else {
+        recentTbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#888;">No clicks recorded yet.</td></tr>`;
+      }
+
+      // Render Positions Table
+      const posTbody = document.getElementById("positionsTableBody");
+      if (data.positions && data.positions.length > 0) {
+        posTbody.innerHTML = data.positions.map(pos => `
+          <tr>
+            <td><strong>${pos.position}</strong></td>
+            <td style="text-align:center; font-weight:700; color:#2E7D32;">${pos.whatsapp}</td>
+            <td style="text-align:center; font-weight:700; color:#C62828;">${pos.call}</td>
+            <td style="text-align:center; font-weight:800;">${pos.total}</td>
+          </tr>
+        `).join('');
+      } else {
+        posTbody.innerHTML = `<tr><td colspan="4" style="text-align:center; color:#888;">No button position data yet.</td></tr>`;
+      }
+
+      // Render Daily Table
+      const dailyTbody = document.getElementById("dailyTableBody");
+      if (data.daily_trends && data.daily_trends.length > 0) {
+        dailyTbody.innerHTML = data.daily_trends.slice().reverse().map(d => `
+          <tr>
+            <td><strong>${d.date}</strong></td>
+            <td style="text-align:center; font-weight:700; color:#2E7D32;">${d.whatsapp}</td>
+            <td style="text-align:center; font-weight:700; color:#C62828;">${d.call}</td>
+            <td style="text-align:center; font-weight:800;">${d.total}</td>
+          </tr>
+        `).join('');
+      } else {
+        dailyTbody.innerHTML = `<tr><td colspan="4" style="text-align:center; color:#888;">No trend data yet.</td></tr>`;
+      }
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.section-card').forEach(s => s.style.display = 'none');
+
+      if (event && event.target) event.target.classList.add('active');
+      const target = document.getElementById(tabId);
+      if (target) target.style.display = 'block';
+    }
+
+    async function triggerTestClick(type) {
+      const payload = {
+        event: type === 'whatsapp' ? 'whatsapp_click' : 'phone_call_click',
+        page: "/admin",
+        position: "admin_test_trigger",
+        link: type === 'whatsapp' ? "https://wa.me/919065788789" : "tel:+919065788789",
+        timestamp: Date.now()
+      };
+
+      try {
+        await fetch("/api/track", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        await fetchAnalytics();
+        alert(`Recorded test ${type} click! Data refreshed.`);
+      } catch (e) {
+        alert("Failed to send test click: " + e.message);
+      }
+    }
+
+    async function resetCounters() {
+      if (!confirm("Are you sure you want to reset all click counters to 0? This cannot be undone.")) return;
+      const pin = prompt("Enter Admin PIN to confirm reset:");
+      if (pin !== DEFAULT_PIN) {
+        alert("Incorrect PIN. Reset aborted.");
+        return;
+      }
+      try {
+        const res = await fetch(`/api/stats?action=reset&pin=${encodeURIComponent(pin)}`, { method: "POST" });
+        const json = await res.json();
+        if (json.success) {
+          localStorage.removeItem("pj_local_clicks");
+          await fetchAnalytics();
+          alert("All counters have been reset to 0.");
+        } else {
+          alert("Reset failed: " + (json.error || "Unknown error"));
+        }
+      } catch (e) {
+        alert("Reset failed: " + e.message);
+      }
+    }
+
+    function exportCsv() {
+      if (!currentData || !currentData.recent_clicks || currentData.recent_clicks.length === 0) {
+        alert("No clicks to export yet.");
+        return;
+      }
+      const headers = ["ID", "Timestamp (IST)", "Channel", "Page", "Position", "Device", "Link"];
+      const rows = currentData.recent_clicks.map(c => [
+        c.id || "",
+        `"${c.time_ist || new Date(c.timestamp).toISOString()}"`,
+        c.event,
+        `"${c.page}"`,
+        `"${c.position}"`,
+        c.device || "Desktop",
+        `"${c.link || ''}"`
+      ]);
+      const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", `panditji_clicks_${new Date().toISOString().split('T')[0]}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Auto-refresh every 30 seconds
+    setInterval(fetchAnalytics, 30000);
+
+    // Initial check
+    window.addEventListener("DOMContentLoaded", checkAuth);
+  </script>
+</body>
+</html>
