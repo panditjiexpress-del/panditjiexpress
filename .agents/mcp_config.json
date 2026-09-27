@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "seomonster": {
+      "command": "/Users/shekharyadav/.local/bin/uvx",
+      "args": [
+        "--from",
+        "seo-monster",
+        "seo-monster"
+      ],
+      "env": {
+        "SEO_MCP_GOOGLE_OAUTH_CLIENT": "/Users/shekharyadav/Downloads/client_secret_271595222837-tqgbiqs952tjedk1i8vtaqorg7tdm97i.apps.googleusercontent.com (1).json",
+        "SEO_MCP_GOOGLE_TOKEN": "/Users/shekharyadav/.config/seo-mcp/google-token.json"
+      }
+    }
+  }
+}
