@@ -335,4 +335,24 @@
       <image:title>North Indian Wedding Vivah Samagri Checklist Bangalore - Pandit Ji Express</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://panditjiexpress.in/pandit-ji-in-bangalore</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/hero-desktop-master.jpg</image:loc>
+      <image:title>Pandit Ji in Bangalore - Complete Guide by Pandit Ji Express</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://panditjiexpress.in/north-indian-pandit-ji-in-bangalore</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://panditjiexpress.in/assets/images/hindi-speaking-pandit-bangalore.jpg</image:loc>
+      <image:title>North Indian Pandit Ji in Bangalore - Vedic Traditions by Pandit Ji Express</image:title>
+    </image:image>
+  </url>
 </urlset>

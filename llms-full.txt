@@ -186,6 +186,8 @@ Conducting an authentic Vedic fire ceremony in modern high-rise apartments requi
 | `https://panditjiexpress.in/samagri` | Samagri Pillar | Pooja Samagri Bangalore, Complete Puja Kits |
 | `https://panditjiexpress.in/puja-samagri-list-bangalore` | Samagri Checklist | Puja Samagri List Bangalore, Checklist |
 | `https://panditjiexpress.in/best-north-indian-pandit-bangalore` | Cornerstone Guide | Best North Indian Pandit in Bangalore (3,800w) |
+| `https://panditjiexpress.in/pandit-ji-in-bangalore` | Comprehensive Guide | Pandit Ji in Bangalore, Home Puja Booking, Muhurat & Vidhi |
+| `https://panditjiexpress.in/north-indian-pandit-ji-in-bangalore` | Cultural Guide | North Indian Pandit Ji in Bangalore, Shastric Traditions & Samagri |
 | `https://panditjiexpress.in/pandit-shyam-sundar` | Person Entity | Pandit Shyam Sundar, Head Vedic Scholar Profile |
 | `https://panditjiexpress.in/about` | About Entity | About Pandit Ji Express, Vedic Philosophy |
 | `https://panditjiexpress.in/booking` | Transactional | Book a Pandit Online, Muhurat Request |
