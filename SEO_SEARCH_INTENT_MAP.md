@@ -40,7 +40,7 @@
 | `/about` | `about pandit ji express` | `pandit ji express founder`, `vedic purohit story` | Navigational / Trust | Organization Knowledge Box | Learn Our Philosophy |
 | `/contact` | `contact pandit ji express` | `pandit ji express phone number`, `jakkur office` | Navigational / Conversion | Local Business Card | Call / WhatsApp Support |
 | `/privacy` | `privacy policy pandit ji express` | `user data terms pandit ji express` | Legal / Trust | Legal Text Snippet | Review Privacy Policy |
-| `/wedding-pandit-bangalore` | `wedding pandit in bangalore` | `north indian marriage priest`, `vivah pandit bangalore` | Transactional | Local 3-Pack, Rich Service | Book Wedding Pandit |
+| `/wedding-pandit-bangalore` | `wedding pandit in bangalore` / `north indian pandit in bangalore for marriage` | `north indian marriage pandit`, `north indian wedding pandit bangalore`, `vivah pandit bangalore` | Transactional / Commercial | Local 3-Pack, Rich Service | Book Wedding Pandit |
 | `/griha-pravesh-pooja-bangalore`| `griha pravesh pandit in bangalore`| `housewarming puja bangalore`, `vastu shanti pandit` | Transactional | Local 3-Pack, Rich Service | Book Griha Pravesh |
 | `/havan-yagna-bangalore` | `havan pandit in bangalore` | `navagraha havan priest`, `residential yagna bangalore`| Transactional | Rich Service Snippet | Book Sacred Havan |
 | `/satyanarayan-puja-bangalore` | `satyanarayan puja pandit in bangalore`| `satyanarayan katha priest`, `vishnu puja bangalore` | Transactional | Rich Service Snippet | Book Satyanarayan Puja |
