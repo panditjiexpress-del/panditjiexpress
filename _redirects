@@ -1,25 +1,76 @@
-# Redirect old pandit pages to Pandit Shyam Sundar (SEO-safe 301)
-/pandits.html              /pandit-shyam-sundar  301
-/pandits                   /pandit-shyam-sundar  301
-/pandit-rahul-shastri.html /pandit-shyam-sundar  301
-/pandit-rahul-shastri      /pandit-shyam-sundar  301
+# ----------------------------------------------------
+# Canonical Domain Redirects (Single-Hop 301)
+# ----------------------------------------------------
+http://panditjiexpress.in/*       https://panditjiexpress.in/:splat  301
+http://www.panditjiexpress.in/*   https://panditjiexpress.in/:splat  301
+https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
 
-# Redirect vastu page to services (301 permanent)
-/vastu-shanti-puja-bangalore.html  /services  301
-/vastu-shanti-puja-bangalore       /services  301
+# Root index redirect
+/index.html                       /                                   301
 
-# Redirect specific resource guides
+# ----------------------------------------------------
+# Legacy Redirects (SEO-safe 301)
+# ----------------------------------------------------
+/pandits.html                     /pandit-shyam-sundar                301
+/pandits                          /pandit-shyam-sundar                301
+/pandit-rahul-shastri.html        /pandit-shyam-sundar                301
+/pandit-rahul-shastri             /pandit-shyam-sundar                301
+/vastu-shanti-puja-bangalore.html /services                           301
+/vastu-shanti-puja-bangalore      /services                           301
 /resources/north-indian-wedding-rituals-bangalore.html  /north-indian-wedding-rituals-bangalore  301
 /resources/north-indian-wedding-rituals-bangalore       /north-indian-wedding-rituals-bangalore  301
+/resources.html                   /samagri                            301
+/resources                        /samagri                            301
 
-# Redirect resources to samagri (301 permanent)
-/resources.html            /samagri  301
-/resources                 /samagri  301
-
-# Remove trailing slashes (canonical URL hygiene)
-/index.html                /  301
-
-# www to non-www redirect (set this in Cloudflare DNS too)
-https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
-# NOTE: Clean URL routing is handled natively by Cloudflare Pages "Pretty URLs" feature.
-# DO NOT add 200 rewrites here — they conflict with CF's built-in .html stripping and cause redirect loops.
+# ----------------------------------------------------
+# Clean URL Extensions (301-redirect legacy .html URLs to clean slugs)
+# ----------------------------------------------------
+/annaprashan-bangalore.html                 /annaprashan-bangalore                  301
+/apartment-havan-smoke-safety-bangalore.html /apartment-havan-smoke-safety-bangalore 301
+/best-north-indian-pandit-bangalore.html    /best-north-indian-pandit-bangalore     301
+/bihari-pandit-bangalore.html               /bihari-pandit-bangalore                301
+/chhath-puja-bangalore.html                 /chhath-puja-bangalore                  301
+/diwali-lakshmi-puja-bangalore.html         /diwali-lakshmi-puja-bangalore          301
+/durga-puja-navratri-bangalore.html         /durga-puja-navratri-bangalore          301
+/ganesh-puja-bangalore.html                 /ganesh-puja-bangalore                  301
+/griha-pravesh-muhurat-bangalore.html       /griha-pravesh-muhurat-bangalore        301
+/griha-pravesh-pooja-bangalore.html         /griha-pravesh-pooja-bangalore          301
+/griha-pravesh-puja-bangalore-guide.html    /griha-pravesh-puja-bangalore-guide     301
+/griha-pravesh-samagri-checklist.html       /griha-pravesh-samagri-checklist        301
+/havan-yagna-bangalore.html                 /havan-yagna-bangalore                  301
+/hindi-speaking-pandit-bangalore.html       /hindi-speaking-pandit-bangalore        301
+/hindu-puja-bangalore.html                  /hindu-puja-bangalore                   301
+/how-to-book-pandit-bangalore.html          /how-to-book-pandit-bangalore           301
+/kundali-matching-gun-milan-bangalore.html  /kundali-matching-gun-milan-bangalore   301
+/maithil-pandit-bangalore.html              /maithil-pandit-bangalore               301
+/mundan-ceremony-bangalore.html             /mundan-ceremony-bangalore              301
+/naamkaran-ceremony-bangalore.html          /naamkaran-ceremony-bangalore           301
+/north-indian-pandit-electronic-city.html   /north-indian-pandit-electronic-city    301
+/north-indian-pandit-hsr-layout.html        /north-indian-pandit-hsr-layout         301
+/north-indian-pandit-ji-in-bangalore.html   /north-indian-pandit-ji-in-bangalore    301
+/north-indian-pandit-marathahalli.html      /north-indian-pandit-marathahalli       301
+/north-indian-pandit-sarjapur-road.html     /north-indian-pandit-sarjapur-road      301
+/north-indian-pandit-whitefield.html        /north-indian-pandit-whitefield         301
+/north-indian-wedding-rituals-bangalore.html /north-indian-wedding-rituals-bangalore 301
+/online-pandit-bangalore.html               /online-pandit-bangalore                301
+/pandit-cost-bangalore.html                 /pandit-cost-bangalore                  301
+/pandit-ji-in-bangalore.html                /pandit-ji-in-bangalore                 301
+/pandit-shyam-sundar.html                   /pandit-shyam-sundar                    301
+/puja-samagri-list-bangalore.html           /puja-samagri-list-bangalore            301
+/rudrabhishek-bangalore.html                /rudrabhishek-bangalore                 301
+/satyanarayan-puja-bangalore.html           /satyanarayan-puja-bangalore            301
+/upanayanam-janeu-bangalore.html            /upanayanam-janeu-bangalore             301
+/wedding-muhurat-dates-bangalore.html       /wedding-muhurat-dates-bangalore        301
+/wedding-pandit-bangalore.html              /wedding-pandit-bangalore               301
+/wedding-vivah-checklist.html               /wedding-vivah-checklist                301
+/about.html                                 /about                                  301
+/areas-we-serve.html                        /areas-we-serve                         301
+/blog.html                                  /blog                                   301
+/booking.html                               /booking                                301
+/contact.html                               /contact                                301
+/faq.html                                   /faq                                    301
+/gallery.html                               /gallery                                301
+/privacy.html                               /privacy                                301
+/samagri.html                               /samagri                                301
+/services.html                              /services                               301
+/terms.html                                 /terms                                  301
