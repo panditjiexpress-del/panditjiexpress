@@ -29,6 +29,7 @@ https://www.panditjiexpress.in/*  https://panditjiexpress.in/:splat  301
 /planning-hindu-ceremony-bangalore        /griha-pravesh-muhurat-bangalore        301
 /north-indian-festivals-bangalore.html    /wedding-muhurat-dates-bangalore        301
 /north-indian-festivals-bangalore         /wedding-muhurat-dates-bangalore        301
+/assets/images/pandit_shyam_sundar.jpg     /assets/images/pandit-shyam-sundar.jpg  301
 
 # ----------------------------------------------------
 # Clean URL Extensions (301-redirect legacy .html URLs to clean slugs)
