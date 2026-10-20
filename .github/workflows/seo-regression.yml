@@ -1,0 +1,33 @@
+name: Automated SEO Regression Suite
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  seo-regression:
+    name: SEO & Quality Regression Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate Business Safeguards
+        run: node scripts/validate.js validate-business
+
+      - name: Validate JSON & Structured Data
+        run: node scripts/validate.js typecheck
+
+      - name: Lint HTML & Basic Meta
+        run: node scripts/validate.js lint
+
+      - name: Run Full Automated SEO Regression Suite
+        run: node scripts/seo_regression_check.js

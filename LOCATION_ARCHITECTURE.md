@@ -38,7 +38,9 @@ We do NOT auto-generate dozens of thin locality pages. Every location page must 
 | `/north-indian-pandit-hsr-layout` | HSR Sectors 1–7, Agara, Koramangala | Purva Fairmont, Salarpuria Serenity, Sobha Classic | High | Compact apartment balconies, morning park traffic avoidance | **ACTIVE** |
 | `/north-indian-pandit-marathahalli` | Marathahalli, Spice Garden, ORR | Rohan Viti, Purva Riviera, Divyasree Republic | High | Tech park shift workers, bridge/junction transit coordination | **ACTIVE** |
 | `/north-indian-pandit-electronic-city` | E-City Phase 1 & 2, Bettadasanapura | GM Infinite, Ajmera Infinity, Concorde Cuppertino | High | Elevated tollway coordination, multi-tier tech complexes | **ACTIVE** |
-| `/north-indian-pandit-sarjapur-road` | Sarjapur Road, Bellandur, Carmelaram | Sobha Royal Pavilion, Assetz 63 East, Godrej Park Retreat | High | High-density North Indian diaspora, balcony smoke protocols | **ACTIVE** |
+| `/north-indian-pandit-sarjapur-road` | Sarjapur Road, Carmelaram | Sobha Royal Pavilion, Assetz 63 East, Godrej Park Retreat | High | High-density North Indian diaspora, balcony smoke protocols | **ACTIVE** |
+| `/north-indian-pandit-bellandur` | Bellandur, Green Glen, ORR Corridor | Adarsh Palm Retreat, Sobha Dahlia, Rohan Jharoka | High | Tech park shift workers, low-smoke havan, ORR morning transit | **ACTIVE** |
+| `/north-indian-pandit-koramangala` | Koramangala Blocks 1–8, ST Bed | Raheja Residency, National Games Village, Sony World | High | Independent homes & startup office pujas, Madivala mandi samagri | **ACTIVE** |
 | `/north-indian-pandit-indiranagar` | Indiranagar, Domlur, HAL | Independent bungalows & heritage apartments | Medium | Currently routed via `/areas-we-serve` | *PLANNED* |
 | `/north-indian-pandit-yelahanka` | Yelahanka, Hebbal, Jakkur | Prestige Misty Waters, Godrej Platinum | High | Immediate proximity to HQ (Jakkur) — routed via `/areas-we-serve` | *PLANNED* |
 
