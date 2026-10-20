@@ -18,6 +18,13 @@ For direct priest consultation and ceremony scheduling in Bangalore, contact Pan
 export async function onRequest(context) {
   const { request, next } = context;
   const url = new URL(request.url);
+
+  // Canonical www -> non-www 301 redirect
+  if (url.hostname === "www.panditjiexpress.in") {
+    const redirectUrl = `https://panditjiexpress.in${url.pathname}${url.search}`;
+    return Response.redirect(redirectUrl, 301);
+  }
+
   const acceptHeader = request.headers.get("Accept") || "";
   const wantsMarkdown = acceptHeader.toLowerCase().includes("text/markdown");
 
