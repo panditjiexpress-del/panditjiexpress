@@ -10,7 +10,9 @@
       "https://panditjiexpress.in/north-indian-pandit-hsr-layout",
       "https://panditjiexpress.in/north-indian-pandit-marathahalli",
       "https://panditjiexpress.in/north-indian-pandit-bellandur",
-      "https://panditjiexpress.in/north-indian-pandit-koramangala"
+      "https://panditjiexpress.in/north-indian-pandit-koramangala",
+      "https://panditjiexpress.in/north-indian-pandit-hebbal",
+      "https://panditjiexpress.in/north-indian-pandit-yelahanka"
     ]
   },
   "clusters": [
@@ -58,9 +60,9 @@
           ],
           "uniqueContentRequired": true,
           "primaryKeywordIntent": "north indian pandit hebbal",
-          "publishedStatus": "Planned Candidate",
-          "hasOwnUrl": false,
-          "phase": "Candidate"
+          "publishedStatus": "Live Production",
+          "hasOwnUrl": true,
+          "phase": "Phase 2 Active"
         },
         {
           "name": "Yelahanka",
@@ -78,9 +80,9 @@
           ],
           "uniqueContentRequired": true,
           "primaryKeywordIntent": "north indian pandit yelahanka",
-          "publishedStatus": "Planned Candidate",
-          "hasOwnUrl": false,
-          "phase": "Candidate"
+          "publishedStatus": "Live Production",
+          "hasOwnUrl": true,
+          "phase": "Phase 2 Active"
         },
         {
           "name": "Thanisandra",

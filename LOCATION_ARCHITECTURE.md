@@ -40,6 +40,8 @@ We do NOT auto-generate dozens of thin locality pages. Every location page must 
 | `/north-indian-pandit-electronic-city` | E-City Phase 1 & 2, Bettadasanapura | GM Infinite, Ajmera Infinity, Concorde Cuppertino | High | Elevated tollway coordination, multi-tier tech complexes | **ACTIVE** |
 | `/north-indian-pandit-sarjapur-road` | Sarjapur Road, Carmelaram | Sobha Royal Pavilion, Assetz 63 East, Godrej Park Retreat | High | High-density North Indian diaspora, balcony smoke protocols | **ACTIVE** |
 | `/north-indian-pandit-bellandur` | Bellandur, Green Glen, ORR Corridor | Adarsh Palm Retreat, Sobha Dahlia, Rohan Jharoka | High | Tech park shift workers, low-smoke havan, ORR morning transit | **ACTIVE** |
+| `/north-indian-pandit-hebbal` | Hebbal, Kempapura, Bellary Road | Godrej Woodsman, L&T Raintree Blvd, Embassy Lake Terraces | High | Manyata tech corridor, 10-min Jakkur dispatch, corporate office pujas | **ACTIVE** |
+| `/north-indian-pandit-yelahanka` | Yelahanka New & Old Town, Judicial Layout | Prestige Monte Carlo, Godrej Avenues, Purva Venezia | High | Villa courtyard havans, Yelahanka mandi samagri, 10-min arrival | **ACTIVE** |
 | `/north-indian-pandit-koramangala` | Koramangala Blocks 1–8, ST Bed | Raheja Residency, National Games Village, Sony World | High | Independent homes & startup office pujas, Madivala mandi samagri | **ACTIVE** |
 | `/north-indian-pandit-indiranagar` | Indiranagar, Domlur, HAL | Independent bungalows & heritage apartments | Medium | Currently routed via `/areas-we-serve` | *PLANNED* |
 | `/north-indian-pandit-yelahanka` | Yelahanka, Hebbal, Jakkur | Prestige Misty Waters, Godrej Platinum | High | Immediate proximity to HQ (Jakkur) — routed via `/areas-we-serve` | *PLANNED* |
