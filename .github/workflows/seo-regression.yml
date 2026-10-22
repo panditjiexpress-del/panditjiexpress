@@ -31,3 +31,7 @@ jobs:
 
       - name: Run Full Automated SEO Regression Suite
         run: node scripts/seo_regression_check.js
+
+      - name: Post-Deploy Smoke Test & Edge Health Check
+        run: node scripts/smoke_test.js
+        continue-on-error: true

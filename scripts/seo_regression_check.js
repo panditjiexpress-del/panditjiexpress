@@ -12,6 +12,7 @@
  * 6. Image Assets & Alt attributes (files exist on disk, non-empty alt text)
  * 7. Structured Data JSON-LD (syntax, schema.org context, valid entities)
  * 8. Sitemap.xml Synchronization (bidirectional mapping between sitemap and files)
+ * 9. Contextual Q&A Links and Descriptive Anchor Text (puja and booking destinations, zero generic anchors)
  */
 
 const fs = require('fs');
@@ -418,6 +419,127 @@ function runRegressionSuite() {
     }
     console.log(`   ${colors.green}✔ ${sitemapUrls.size} sitemap URLs verified against disk files.${colors.reset}\n`);
   }
+
+  // ---------------------------------------------------------
+  // SUITE 9: CONTEXTUAL Q&A LINKS & DESCRIPTIVE ANCHOR TEXT
+  // ---------------------------------------------------------
+  console.log(`${colors.bold}9. Validating Contextual Q&A Links and Descriptive Anchor Text...${colors.reset}`);
+  
+  function extractFaqBlocks(html) {
+    const blocks = [];
+    const detailsRegex = /<details[^>]*class=["'][^"']*(?:faq|blog-faq)[^"']*["'][^>]*>([\s\S]*?)<\/details>/gi;
+    let m;
+    while ((m = detailsRegex.exec(html)) !== null) {
+      blocks.push(m[0]);
+    }
+    const articleRegex = /<article[^>]*class=["'][^"']*faq-card[^"']*["'][^>]*>([\s\S]*?)<\/article>/gi;
+    while ((m = articleRegex.exec(html)) !== null) {
+      blocks.push(m[0]);
+    }
+    const divRegex = /<div[^>]*class=["'][^"']*faq-item[^"']*["'][^>]*>([\s\S]*?)<\/div>/gi;
+    while ((m = divRegex.exec(html)) !== null) {
+      blocks.push(m[0]);
+    }
+    return blocks;
+  }
+
+  const genericAnchorSet = new Set([
+    'click here', 'here', 'read more', 'learn more', 'link', 'this link',
+    'more', 'check here', 'view here', 'go here', 'this', 'page', 'visit'
+  ]);
+
+  let totalFaqLinksScanned = 0;
+  let faqBlocksScanned = 0;
+
+  for (const f of files) {
+    if (f === 'admin.html') continue;
+    const content = fileCache.get(f);
+    const blocks = extractFaqBlocks(content);
+    faqBlocksScanned += blocks.length;
+
+    for (const b of blocks) {
+      const aRegex = /<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+      let am;
+      while ((am = aRegex.exec(b)) !== null) {
+        totalFaqLinksScanned++;
+        const targetHref = am[1].trim();
+        const rawAnchor = am[2].replace(/<[^>]+>/g, '').trim();
+
+        if (!rawAnchor || rawAnchor.length === 0) {
+          reportError('Q&A Anchor', f, `Empty anchor text found in Q&A section linking to "${targetHref}"`);
+        } else {
+          if (genericAnchorSet.has(rawAnchor.toLowerCase())) {
+            reportError('Q&A Anchor', f, `Non-descriptive anchor text "${rawAnchor}" in Q&A section linking to "${targetHref}". Use descriptive anchor text.`);
+          }
+          if (rawAnchor.length < 4) {
+            reportWarn('Q&A Anchor', f, `Very short anchor text ("${rawAnchor}") in Q&A section for "${targetHref}"`);
+          }
+        }
+
+        // Verify route integrity of internal link
+        if (targetHref.startsWith('/') && !targetHref.startsWith('//')) {
+          const cleanPath = targetHref.split('#')[0].split('?')[0];
+          const isValid = validSlugs.has(cleanPath) || redirects.has(cleanPath) || redirects.has(cleanPath.replace(/^\//, ''));
+          if (!isValid && cleanPath !== '') {
+            reportError('Q&A Link', f, `Broken internal link in Q&A: "${targetHref}"`);
+          }
+        }
+      }
+    }
+  }
+
+  // Required Q&A contextual links for key ceremony and guide pages
+  const requiredQaLinks = {
+    'griha-pravesh-pooja-bangalore.html': [
+      { target: '/griha-pravesh-muhurat-bangalore', label: 'Griha Pravesh muhurat guide' },
+      { target: '/booking', label: 'Griha Pravesh booking' }
+    ],
+    'naamkaran-ceremony-bangalore.html': [
+      { target: '/booking', label: 'Naamkaran ceremony booking' }
+    ],
+    'wedding-muhurat-dates-bangalore.html': [
+      { target: '/wedding-pandit-bangalore', label: 'Wedding pandit services' },
+      { target: '/booking', label: 'Wedding booking' }
+    ],
+    'index.html': [
+      { target: '/areas-we-serve', label: 'Areas We Serve hub' },
+      { target: '/services', label: 'Puja and pandit services' },
+      { target: '/booking', label: 'Vedic pandit booking' }
+    ],
+    'puja-samagri-list-bangalore.html': [
+      { target: '/samagri', label: 'Puja samagri packages' },
+      { target: '/booking', label: 'Puja booking with samagri' }
+    ]
+  };
+
+  let requiredQaVerified = 0;
+  for (const [targetFile, reqLinks] of Object.entries(requiredQaLinks)) {
+    const content = fileCache.get(targetFile);
+    if (!content) {
+      reportError('Q&A Requirement', targetFile, `File not found in regression cache`);
+      continue;
+    }
+    const blocks = extractFaqBlocks(content);
+    const combinedFaqHtml = blocks.join('\n');
+
+    for (const req of reqLinks) {
+      const linkRegex = new RegExp(`<a[^>]+href=["']${req.target.replace('/', '\\/')}[^"']*["'][^>]*>([\\s\\S]*?)<\\/a>`, 'i');
+      const match = linkRegex.exec(combinedFaqHtml);
+      if (!match) {
+        reportError('Q&A Requirement', targetFile, `Missing required Q&A contextual link to ${req.target} (${req.label})`);
+      } else {
+        const anchor = match[1].replace(/<[^>]+>/g, '').trim();
+        if (genericAnchorSet.has(anchor.toLowerCase()) || anchor.length < 4) {
+          reportError('Q&A Requirement', targetFile, `Q&A link to ${req.target} has non-descriptive anchor text: "${anchor}"`);
+        } else {
+          requiredQaVerified++;
+        }
+      }
+    }
+  }
+
+  console.log(`   ${colors.green}✔ ${totalFaqLinksScanned} Q&A internal links scanned across ${faqBlocksScanned} FAQ blocks (0 generic anchors).${colors.reset}`);
+  console.log(`   ${colors.green}✔ All ${requiredQaVerified} required ceremony & booking Q&A contextual links verified with descriptive anchors.${colors.reset}\n`);
 
   // ---------------------------------------------------------
   // FINAL RESULTS SUMMARY

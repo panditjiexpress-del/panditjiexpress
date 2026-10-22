@@ -14,7 +14,9 @@
     "deploy": "npx wrangler pages deploy . --project-name panditjiexpress",
     "deploy:preview": "npx wrangler pages deploy . --project-name panditjiexpress --branch preview",
     "test:seo": "node scripts/seo_regression_check.js",
-    "test": "node scripts/seo_regression_check.js"
+    "test": "node scripts/seo_regression_check.js",
+    "test:smoke": "node scripts/smoke_test.js",
+    "smoke": "node scripts/smoke_test.js"
   },
   "devDependencies": {
     "wrangler": "^4.134.0"
