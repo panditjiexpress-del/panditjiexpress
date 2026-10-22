@@ -33,5 +33,13 @@ jobs:
         run: node scripts/seo_regression_check.js
 
       - name: Post-Deploy Smoke Test & Edge Health Check
-        run: node scripts/smoke_test.js
+        run: node scripts/smoke_test.js --output=smoke-test-results.json
         continue-on-error: true
+
+      - name: Upload Smoke Test JSON Summary Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-test-results
+          path: smoke-test-results.json
+          retention-days: 14

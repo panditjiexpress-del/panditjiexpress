@@ -6,6 +6,9 @@
  * Verifies live HTTP responses, latency, and edge headers for all recently updated
  * ceremony Q&A pages and core service/booking hubs.
  * 
+ * Emits a machine-readable JSON summary capturing status, latency, and CF-RAY identifiers
+ * for every endpoint tested, suitable for CI artifact archiving.
+ * 
  * Accurately detects and reports Cloudflare 403 responses (WAF / Bot Management)
  * with full diagnostic logging (CF-RAY, edge headers) without modifying
  * existing Cloudflare access controls or firewall rules.
@@ -14,9 +17,20 @@
 const https = require('https');
 const http = require('http');
 const url = require('url');
+const fs = require('fs');
+const path = require('path');
 
 const DEFAULT_ORIGIN = process.env.TARGET_URL || process.env.SMOKE_URL || 'https://panditjiexpress.in';
 const STRICT_403 = process.argv.includes('--strict-403');
+
+// Parse output path for machine-readable JSON summary
+let outputPath = 'smoke-test-results.json';
+const outputArg = process.argv.find(arg => arg.startsWith('--output=') || arg.startsWith('--json='));
+if (outputArg) {
+  outputPath = outputArg.split('=')[1].trim();
+} else if (process.argv.includes('--no-json')) {
+  outputPath = null;
+}
 
 // Core updated pages and primary conversion routes
 const SMOKE_TARGETS = [
@@ -110,6 +124,7 @@ async function runSmokeSuite() {
   let countCloudflare403 = 0;
   let countCriticalErrors = 0;
   const cf403Details = [];
+  const endpointSummaries = [];
 
   for (const target of SMOKE_TARGETS) {
     const fullUrl = `${DEFAULT_ORIGIN.replace(/\/$/, '')}${target.path}`;
@@ -119,16 +134,34 @@ async function runSmokeSuite() {
       countCriticalErrors++;
       console.log(`  ${colors.red}✖ [CONNECTION FAILED]${colors.reset} ${target.path}`);
       console.log(`    Detail: ${result.error.message}\n`);
+      endpointSummaries.push({
+        path: target.path,
+        url: fullUrl,
+        name: target.name,
+        status: null,
+        latencyMs: result.latency,
+        cfRay: null,
+        server: 'unknown',
+        isCloudflare: false,
+        cloudflareBlocked: false,
+        passed: false,
+        contentVerified: false,
+        error: result.error.message
+      });
       continue;
     }
 
     const cfRay = result.headers['cf-ray'] || 'None';
     const serverHeader = result.headers['server'] || 'Unknown';
     const isCloudflare = (serverHeader.toLowerCase() === 'cloudflare') || cfRay !== 'None';
+    const cleanCfRay = (cfRay !== 'None' && cfRay !== 'N/A') ? cfRay : null;
+    let endpointPassed = false;
+    let hasContent = false;
 
     if (result.statusCode === 200) {
       countSuccess++;
-      const hasContent = !target.requiredText || result.body.toLowerCase().includes(target.requiredText.toLowerCase());
+      endpointPassed = true;
+      hasContent = !target.requiredText || result.body.toLowerCase().includes(target.requiredText.toLowerCase());
       const contentFlag = hasContent ? '' : ` ${colors.yellow}(Warning: missing expected keyword "${target.requiredText}")${colors.reset}`;
       console.log(`  ${colors.green}✔ [200 OK]${colors.reset} ${target.path} ${colors.gray}(${result.latency}ms, CF-RAY: ${cfRay})${colors.reset}${contentFlag}`);
     } else if (result.statusCode === 403) {
@@ -145,6 +178,7 @@ async function runSmokeSuite() {
       }
     } else if (result.statusCode === 301 || result.statusCode === 302) {
       countSuccess++;
+      endpointPassed = true;
       const loc = result.headers['location'] || 'Unknown';
       console.log(`  ${colors.cyan}ℹ [${result.statusCode} REDIRECT]${colors.reset} ${target.path} -> ${loc}`);
     } else if (result.statusCode === 404) {
@@ -154,6 +188,21 @@ async function runSmokeSuite() {
       countCriticalErrors++;
       console.log(`  ${colors.red}✖ [HTTP ${result.statusCode}]${colors.reset} ${target.path} ${colors.gray}(CF-RAY: ${cfRay})${colors.reset}\n`);
     }
+
+    endpointSummaries.push({
+      path: target.path,
+      url: fullUrl,
+      name: target.name,
+      status: result.statusCode,
+      latencyMs: result.latency,
+      cfRay: cleanCfRay,
+      server: serverHeader,
+      isCloudflare,
+      cloudflareBlocked: result.statusCode === 403 && isCloudflare,
+      passed: endpointPassed,
+      contentVerified: hasContent,
+      error: null
+    });
   }
 
   // Summary Table
@@ -174,6 +223,28 @@ async function runSmokeSuite() {
     }
     console.log(`- Access controls, WAF rules, and security policies remain intentionally untouched.`);
     console.log(`- Standard browsers and real visitors continue to receive HTTP 200 responses.\n`);
+  }
+
+  // Machine-readable JSON summary artifact generation
+  const summaryJson = {
+    timestamp: new Date().toISOString(),
+    targetOrigin: DEFAULT_ORIGIN,
+    totalEndpoints: SMOKE_TARGETS.length,
+    successfulCount: countSuccess,
+    cloudflare403Count: countCloudflare403,
+    criticalErrorCount: countCriticalErrors,
+    overallStatus: countCriticalErrors === 0 ? 'PASSED' : 'FAILED',
+    endpoints: endpointSummaries
+  };
+
+  if (outputPath) {
+    try {
+      const resolvedPath = path.resolve(outputPath);
+      fs.writeFileSync(resolvedPath, JSON.stringify(summaryJson, null, 2), 'utf8');
+      console.log(`${colors.cyan}📄 Machine-readable JSON summary written to:${colors.reset} ${colors.bold}${outputPath}${colors.reset}\n`);
+    } catch (err) {
+      console.warn(`${colors.yellow}⚠ Failed to write JSON summary output to ${outputPath}: ${err.message}${colors.reset}\n`);
+    }
   }
 
   if (countCriticalErrors > 0) {
