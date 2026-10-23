@@ -362,14 +362,16 @@ function runRegressionSuite() {
   console.log(`   ${colors.green}✔ ${imgCount} image references checked.${colors.reset}\n`);
 
   // ---------------------------------------------------------
-  // SUITE 7: JSON-LD STRUCTURED DATA
+  // SUITE 7: JSON-LD STRUCTURED DATA & BREADCRUMBLIST INTEGRITY
   // ---------------------------------------------------------
-  console.log(`${colors.bold}7. Validating Schema.org JSON-LD Structured Data...${colors.reset}`);
+  console.log(`${colors.bold}7. Validating Schema.org JSON-LD Structured Data & Breadcrumbs...${colors.reset}`);
   let jsonLdCount = 0;
+  let breadcrumbSchemaCount = 0;
   const jsonLdRegex = /<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi;
   for (const f of files) {
     const content = fileCache.get(f);
     let match;
+    const breadcrumbLists = [];
     while ((match = jsonLdRegex.exec(content)) !== null) {
       jsonLdCount++;
       try {
@@ -377,12 +379,51 @@ function runRegressionSuite() {
         if (!parsed['@context']) {
           reportError('Schema', f, 'JSON-LD missing @context');
         }
+        if (parsed['@type'] === 'BreadcrumbList') {
+          breadcrumbLists.push(parsed);
+        } else if (Array.isArray(parsed['@graph'])) {
+          for (const item of parsed['@graph']) {
+            if (item['@type'] === 'BreadcrumbList') {
+              breadcrumbLists.push(item);
+            }
+          }
+        }
       } catch (err) {
         reportError('Schema', f, `Malformed JSON-LD syntax: ${err.message}`);
       }
     }
+
+    // Verify BreadcrumbList integrity on indexable subpages with visible breadcrumbs
+    if (!NON_INDEXABLE_STUBS.has(f) && f !== 'index.html') {
+      const hasVisibleBreadcrumb = /class=["'][^"']*breadcrumb[^"']*["']/i.test(content) || /aria-label=["']breadcrumb["']/i.test(content);
+      if (hasVisibleBreadcrumb) {
+        if (breadcrumbLists.length === 0) {
+          reportError('Schema', f, 'Page has visible breadcrumbs but missing BreadcrumbList JSON-LD schema');
+        } else {
+          for (const bc of breadcrumbLists) {
+            breadcrumbSchemaCount++;
+            const items = bc.itemListElement;
+            if (!Array.isArray(items) || items.length < 2) {
+              reportError('Schema', f, 'BreadcrumbList itemListElement must be an array with at least 2 items');
+            } else {
+              items.forEach((item, idx) => {
+                if (item.position !== idx + 1) {
+                  reportError('Schema', f, `Breadcrumb item at index ${idx} has invalid position ${item.position} (expected ${idx + 1})`);
+                }
+                if (!item.name || typeof item.name !== 'string' || item.name.trim() === '') {
+                  reportError('Schema', f, `Breadcrumb item position ${item.position} missing valid name`);
+                }
+                if (!item.item || typeof item.item !== 'string' || !item.item.startsWith('http')) {
+                  reportError('Schema', f, `Breadcrumb item position ${item.position} missing valid absolute item URL`);
+                }
+              });
+            }
+          }
+        }
+      }
+    }
   }
-  console.log(`   ${colors.green}✔ ${jsonLdCount} JSON-LD blocks validated.${colors.reset}\n`);
+  console.log(`   ${colors.green}✔ ${jsonLdCount} JSON-LD blocks validated (including ${breadcrumbSchemaCount} verified BreadcrumbList schemas).${colors.reset}\n`);
 
   // ---------------------------------------------------------
   // SUITE 8: SITEMAP.XML SYNCHRONIZATION
